@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>counters</name>
+    <description>dsfsdf</description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.demigrantsoft.ctrs</app-id>
+    <unique-id>lbsim9dqew5w</unique-id>
+    <saved-with-version>25500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>640</width>
+        <height>360</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Scale outer</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="counter_base" sid="954619397172409">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="value" sid="798800541730445" type="number" />
+            </instance-variables>
+            <container>
+                <type>counter_single_arrow_down</type>
+                <type>counter_single_arrow_up</type>
+                <type>counter_text</type>
+                <type>counter_base</type>
+                <type>counter_double_arrow_up</type>
+                <type>counter_triple_arrow_up</type>
+                <type>counter_double_arrow_down</type>
+                <type>counter_triple_arrow_down</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="131617247299081" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="C:\Users\adnan\Desktop\Projects\counters\shield-icon-76348.png">
+                        <image-point name="text" x="0.52" y="0.52" />
+                        <collision-poly>
+                            <point x="0.146484" y="0.146484" />
+                            <point x="0.5" y="0.0507813" />
+                            <point x="0.876953" y="0.123047" />
+                            <point x="0.876953" y="0.5" />
+                            <point x="0.763672" y="0.763672" />
+                            <point x="0.5" y="0.927734" />
+                            <point x="0.248047" y="0.751953" />
+                            <point x="0.146484" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="counter_single_arrow_down" sid="837389881050021">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="185738139493129">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>counter_single_arrow_down</type>
+                <type>counter_single_arrow_up</type>
+                <type>counter_text</type>
+                <type>counter_base</type>
+                <type>counter_double_arrow_up</type>
+                <type>counter_triple_arrow_up</type>
+                <type>counter_double_arrow_down</type>
+                <type>counter_triple_arrow_down</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="919328126075967" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.53125" original-source="C:\Users\adnan\Desktop\Projects\counters\f1.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="counter_single_arrow_up" sid="878818927751190">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="589385527681016">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>counter_single_arrow_down</type>
+                <type>counter_single_arrow_up</type>
+                <type>counter_text</type>
+                <type>counter_base</type>
+                <type>counter_double_arrow_up</type>
+                <type>counter_triple_arrow_up</type>
+                <type>counter_double_arrow_down</type>
+                <type>counter_triple_arrow_down</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="676886519641166" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.53125" original-source="C:\Users\adnan\Desktop\Projects\counters\f1.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Browser" sid="928838949549495">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Mouse" sid="792165067678170">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Function" sid="927755351310147">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Touch" sid="470312519381940">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="counter_text" sid="650554764882229">
+            <plugin id="Text" />
+            <container>
+                <type>counter_single_arrow_down</type>
+                <type>counter_single_arrow_up</type>
+                <type>counter_text</type>
+                <type>counter_base</type>
+                <type>counter_double_arrow_up</type>
+                <type>counter_triple_arrow_up</type>
+                <type>counter_double_arrow_down</type>
+                <type>counter_triple_arrow_down</type>
+            </container>
+        </object-type>
+        <object-type name="counter_double_arrow_up" sid="635719712937599">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="312025575171371">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>counter_single_arrow_down</type>
+                <type>counter_single_arrow_up</type>
+                <type>counter_text</type>
+                <type>counter_base</type>
+                <type>counter_double_arrow_up</type>
+                <type>counter_triple_arrow_up</type>
+                <type>counter_double_arrow_down</type>
+                <type>counter_triple_arrow_down</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="567467600420524" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\adnan\Desktop\Projects\counters\f2.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="counter_triple_arrow_up" sid="378976972826046">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="992684878091777">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>counter_single_arrow_down</type>
+                <type>counter_single_arrow_up</type>
+                <type>counter_text</type>
+                <type>counter_base</type>
+                <type>counter_double_arrow_up</type>
+                <type>counter_triple_arrow_up</type>
+                <type>counter_double_arrow_down</type>
+                <type>counter_triple_arrow_down</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="935703719316011" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\adnan\Desktop\Projects\counters\f3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="settings" sid="242713879617607">
+            <plugin id="Dictionary" />
+        </object-type>
+        <object-type name="counter_double_arrow_down" sid="979558389581303">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="872726162444699">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>counter_single_arrow_down</type>
+                <type>counter_single_arrow_up</type>
+                <type>counter_text</type>
+                <type>counter_base</type>
+                <type>counter_double_arrow_up</type>
+                <type>counter_triple_arrow_up</type>
+                <type>counter_double_arrow_down</type>
+                <type>counter_triple_arrow_down</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="484070776307681" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\adnan\Desktop\Projects\counters\f2.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="counter_triple_arrow_down" sid="210505473596906">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="568544812688384">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>counter_single_arrow_down</type>
+                <type>counter_single_arrow_up</type>
+                <type>counter_text</type>
+                <type>counter_base</type>
+                <type>counter_double_arrow_up</type>
+                <type>counter_triple_arrow_up</type>
+                <type>counter_double_arrow_down</type>
+                <type>counter_triple_arrow_down</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="404798197631843" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\adnan\Desktop\Projects\counters\f3.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_counters" sid="206270385725686">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="181883939349381" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_counter_list" sid="136750699683057">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="357490273574651" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_coin" sid="531971825277665">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="352410115826643" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_dice" sid="305525076632179">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="746521794250582" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dice" sid="731240975045078">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="431199646437288" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_dice_six_sided" sid="911012827108288">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="689072997078315" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="601104038675562">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="611037313782979" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="395979950606056">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="294393806729081" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_counter_ten" sid="966795920797594">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="989140885309475" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_counter_one" sid="242960914639678">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="130073107002245" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_counter_two" sid="698736806906181">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="351379074331841" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="counter" plugin-id="Sprite" sid="733230733472908">
+            <members>
+                <member>counter_base</member>
+                <member>counter_double_arrow_down</member>
+                <member>counter_double_arrow_up</member>
+                <member>counter_single_arrow_down</member>
+                <member>counter_single_arrow_up</member>
+                <member>counter_triple_arrow_down</member>
+                <member>counter_triple_arrow_up</member>
+            </members>
+        </family>
+        <family name="counter_arrow" plugin-id="Sprite" sid="793617758598548">
+            <members>
+                <member>counter_double_arrow_down</member>
+                <member>counter_double_arrow_up</member>
+                <member>counter_single_arrow_down</member>
+                <member>counter_single_arrow_up</member>
+                <member>counter_triple_arrow_down</member>
+                <member>counter_triple_arrow_up</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="value" sid="985750065033780" type="number" />
+                <instance-variable name="base_uid" sid="814277735604018" type="number" />
+            </instance-variables>
+        </family>
+        <family name="main_menu_buttons" plugin-id="Sprite" sid="244541225659679">
+            <members>
+                <member>menu_coin</member>
+                <member>menu_counter_list</member>
+                <member>menu_counters</member>
+                <member>menu_dice</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="layout" sid="124016727009288" type="string" />
+                <instance-variable name="scroll_x" sid="405276616270177" type="number" />
+                <instance-variable name="scroll_y" sid="498890558553732" type="number" />
+            </instance-variables>
+        </family>
+        <family name="final_menu_buttons" plugin-id="Sprite" sid="942424887921889">
+            <members>
+                <member>menu_counter_one</member>
+                <member>menu_counter_ten</member>
+                <member>menu_counter_two</member>
+                <member>menu_dice_six_sided</member>
+                <member>Sprite2</member>
+                <member>Sprite3</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="type" sid="718996342012019" type="string" />
+                <instance-variable name="layout" sid="225185002939114" type="string" />
+            </instance-variables>
+        </family>
+        <family name="object" plugin-id="Sprite" sid="222196948767362">
+            <members>
+                <member>counter_base</member>
+                <member>counter_double_arrow_down</member>
+                <member>counter_double_arrow_up</member>
+                <member>counter_single_arrow_down</member>
+                <member>counter_single_arrow_up</member>
+                <member>counter_triple_arrow_down</member>
+                <member>counter_triple_arrow_up</member>
+                <member>dice</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>main.xml</layout>
+        <layout>menu.xml</layout>
+        <layout>test.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>main.xml</event-sheet>
+        <event-sheet>menu.xml</event-sheet>
+        <event-sheet>settings.xml</event-sheet>
+        <event-sheet>counter.xml</event-sheet>
+        <event-sheet>dice.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Browser" uid="0" />
+        <global-instance type="Mouse" uid="2" />
+        <global-instance type="Function" uid="5" />
+        <global-instance type="Touch" uid="6">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

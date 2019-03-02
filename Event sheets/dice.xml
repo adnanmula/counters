@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>dice</name>
+    <events>
+        <event-block sid="787321640215693">
+            <conditions>
+                <condition id="0" name="On function" sid="830579796426768" type="Function">
+                    <param id="0" name="Name">&quot;create_dice_one_six_sided_landscape&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="982924808596410" type="System">
+                    <param id="0" name="Object to create">dice</param>
+                    <param id="1" name="Layer">&quot;main&quot;</param>
+                    <param id="2" name="X">WindowWidth/2</param>
+                    <param id="3" name="Y">WindowHeight/2</param>
+                </action>
+                <action id="-7" name="Set size" sid="544613514388468" type="dice">
+                    <param id="0" name="Width">200</param>
+                    <param id="1" name="Height">200</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="777449195495326">
+            <conditions>
+                <condition id="0" name="On function" sid="306603172568835" type="Function">
+                    <param id="0" name="Name">&quot;create_dice_one_six_sided_portrait&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="853490817036796" type="System">
+                    <param id="0" name="Object to create">dice</param>
+                    <param id="1" name="Layer">&quot;main&quot;</param>
+                    <param id="2" name="X">WindowWidth/2</param>
+                    <param id="3" name="Y">WindowHeight/2</param>
+                </action>
+                <action id="-7" name="Set size" sid="596638504829484" type="dice">
+                    <param id="0" name="Width">200</param>
+                    <param id="1" name="Height">200</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

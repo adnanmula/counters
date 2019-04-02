@@ -1,0 +1,160 @@
+{
+	"name": "menu",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "current_menu",
+			"type": "string",
+			"initialValue": "mode",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 574404449259334
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "settings"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 781224380659023,
+					"parameters": {
+						"object": "main_menu_buttons"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 709357134226855,
+					"parameters": {
+						"variable": "current_menu",
+						"value": "main_menu_buttons.layout"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 885817512371458,
+					"parameters": {
+						"x": "main_menu_buttons.scroll_x",
+						"y": "main_menu_buttons.scroll_y"
+					}
+				}
+			],
+			"sid": 893470295847282
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 442644270696402,
+					"parameters": {
+						"object": "final_menu_buttons"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "settings",
+					"sid": 491268012042437,
+					"parameters": {
+						"key": "\"layout\"",
+						"value": "final_menu_buttons.type&\"_\"&final_menu_buttons.layout"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 845264038917363,
+					"parameters": {
+						"layout": "main"
+					}
+				}
+			],
+			"sid": 877744315136202
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-back-button",
+					"objectClass": "Browser",
+					"sid": 269548696094809
+				}
+			],
+			"actions": [],
+			"sid": 747242799746251,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 716577593106781,
+							"parameters": {
+								"variable": "current_menu",
+								"comparison": 0,
+								"value": "\"mode\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "close",
+							"objectClass": "Browser",
+							"sid": 178027181404836
+						}
+					],
+					"sid": 817016558115568
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 438087693259625,
+							"parameters": {
+								"variable": "current_menu",
+								"comparison": 1,
+								"value": "\"mode\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "scroll-to-position",
+							"objectClass": "System",
+							"sid": 540105638268944,
+							"parameters": {
+								"x": "320",
+								"y": "180"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 603511317001572,
+							"parameters": {
+								"variable": "current_menu",
+								"value": "\"mode\""
+							}
+						}
+					],
+					"sid": 279998330816984
+				}
+			]
+		}
+	],
+	"sid": 413805959310103
+}

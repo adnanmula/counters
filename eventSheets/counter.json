@@ -1,0 +1,1854 @@
+{
+	"name": "counter",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Creation",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "done",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-function",
+									"objectClass": "Function",
+									"sid": 187021544971345,
+									"parameters": {
+										"name": "\"create_counter_two_landscape\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 240390423662573,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 129471051451562,
+											"parameters": {
+												"key": "\"counter_arrow_size_multiplier\"",
+												"value": "1.5"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 323943852654101,
+											"parameters": {
+												"key": "\"counter_base_width\"",
+												"value": "293.067"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 781073612913027,
+											"parameters": {
+												"key": "\"counter_base_height\"",
+												"value": "264.435"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 116919033021710,
+											"parameters": {
+												"key": "\"counter_text_size_default\"",
+												"value": "72"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 992222265095046,
+											"parameters": {
+												"key": "\"counter_text_size_four_chars\"",
+												"value": "54"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 564641387673016,
+											"parameters": {
+												"key": "\"counter_text_size_five_chars\"",
+												"value": "42"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 339113307510804,
+											"parameters": {
+												"key": "\"counter_text_size_six_chars\"",
+												"value": "34"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 280081191165990,
+											"parameters": {
+												"key": "\"counter_text_size_seven_chars\"",
+												"value": "30"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 571817932133527,
+											"parameters": {
+												"key": "\"counter_arrow_offset_x\"",
+												"value": "80"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 114814851269539,
+											"parameters": {
+												"key": "\"counter_arrow_offset_y\"",
+												"value": "20"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 195334200148685,
+											"parameters": {
+												"key": "\"counter_arrow_offset_y_down\"",
+												"value": "5"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 635895153274718,
+											"parameters": {
+												"object-to-create": "counter_base",
+												"layer": "\"main\"",
+												"x": "202.63",
+												"y": "183.796"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 340045132334016,
+											"parameters": {
+												"object-to-create": "counter_base",
+												"layer": "\"main\"",
+												"x": "445.784",
+												"y": "183.796"
+											}
+										}
+									],
+									"sid": 371049874103626
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-function",
+									"objectClass": "Function",
+									"sid": 811909237716343,
+									"parameters": {
+										"name": "\"create_counter_two_portrait\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 974071816594289,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 286120177681439,
+											"parameters": {
+												"key": "\"counter_arrow_size_multiplier\"",
+												"value": "4"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 437704896481167,
+											"parameters": {
+												"key": "\"counter_base_width\"",
+												"value": "331.085"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 503698640320953,
+											"parameters": {
+												"key": "\"counter_base_height\"",
+												"value": "298.739"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 136300909899949,
+											"parameters": {
+												"key": "\"counter_text_size_default\"",
+												"value": "60"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 847273724699146,
+											"parameters": {
+												"key": "\"counter_text_size_four_chars\"",
+												"value": "54"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 404239366649033,
+											"parameters": {
+												"key": "\"counter_text_size_five_chars\"",
+												"value": "48"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 302868109244475,
+											"parameters": {
+												"key": "\"counter_text_size_six_chars\"",
+												"value": "40"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 386357452084658,
+											"parameters": {
+												"key": "\"counter_text_size_seven_chars\"",
+												"value": "34"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 412019918408534,
+											"parameters": {
+												"key": "\"counter_arrow_offset_x\"",
+												"value": "200"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 563944424050093,
+											"parameters": {
+												"key": "\"counter_arrow_offset_y\"",
+												"value": "50"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 892712087540287,
+											"parameters": {
+												"key": "\"counter_arrow_offset_y_down\"",
+												"value": "20"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 928066834154460,
+											"parameters": {
+												"object-to-create": "counter_base",
+												"layer": "\"main\"",
+												"x": "319.122",
+												"y": "309.208"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 179885733777135,
+											"parameters": {
+												"object-to-create": "counter_base",
+												"layer": "\"main\"",
+												"x": "319.122",
+												"y": "838.742"
+											}
+										}
+									],
+									"sid": 239919014521314
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-function",
+									"objectClass": "Function",
+									"sid": 676791344957209,
+									"parameters": {
+										"name": "\"create_counter_one_landscape\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 649808261511307,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 138153247455086,
+											"parameters": {
+												"key": "\"counter_arrow_size_multiplier\"",
+												"value": "1.5"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 346217282629343,
+											"parameters": {
+												"key": "\"counter_base_width\"",
+												"value": "293.067"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 839213395241309,
+											"parameters": {
+												"key": "\"counter_base_height\"",
+												"value": "264.435"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 542786234403688,
+											"parameters": {
+												"key": "\"counter_text_size_default\"",
+												"value": "72"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 524987150714632,
+											"parameters": {
+												"key": "\"counter_text_size_four_chars\"",
+												"value": "54"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 576851936742606,
+											"parameters": {
+												"key": "\"counter_text_size_five_chars\"",
+												"value": "42"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 595044138775019,
+											"parameters": {
+												"key": "\"counter_text_size_six_chars\"",
+												"value": "34"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 184692928124899,
+											"parameters": {
+												"key": "\"counter_text_size_seven_chars\"",
+												"value": "30"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 771981407230601,
+											"parameters": {
+												"key": "\"counter_arrow_offset_x\"",
+												"value": "80"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 229445674867452,
+											"parameters": {
+												"key": "\"counter_arrow_offset_y\"",
+												"value": "20"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 224039436721803,
+											"parameters": {
+												"key": "\"counter_arrow_offset_y_down\"",
+												"value": "5"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 314725370176156,
+											"parameters": {
+												"object-to-create": "counter_base",
+												"layer": "\"main\"",
+												"x": "325.861",
+												"y": "185.289"
+											}
+										}
+									],
+									"sid": 758988838203141
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-function",
+									"objectClass": "Function",
+									"sid": 213665405597702,
+									"parameters": {
+										"name": "\"create_counter_one_portrait\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 677346497279966,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 888044720172901,
+											"parameters": {
+												"key": "\"counter_arrow_size_multiplier\"",
+												"value": "4"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 133218288158833,
+											"parameters": {
+												"key": "\"counter_base_width\"",
+												"value": "576.292"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 737250160333581,
+											"parameters": {
+												"key": "\"counter_base_height\"",
+												"value": "519.99"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 225121106700756,
+											"parameters": {
+												"key": "\"counter_text_size_default\"",
+												"value": "110"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 194510394860601,
+											"parameters": {
+												"key": "\"counter_text_size_four_chars\"",
+												"value": "94"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 988108960902047,
+											"parameters": {
+												"key": "\"counter_text_size_five_chars\"",
+												"value": "84"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 946126400802577,
+											"parameters": {
+												"key": "\"counter_text_size_six_chars\"",
+												"value": "66"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 515132885117455,
+											"parameters": {
+												"key": "\"counter_text_size_seven_chars\"",
+												"value": "58"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 736610038054050,
+											"parameters": {
+												"key": "\"counter_arrow_offset_x\"",
+												"value": "200"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 400980270601130,
+											"parameters": {
+												"key": "\"counter_arrow_offset_y\"",
+												"value": "100"
+											}
+										},
+										{
+											"id": "set-key",
+											"objectClass": "settings",
+											"sid": 595315031425061,
+											"parameters": {
+												"key": "\"counter_arrow_offset_y_down\"",
+												"value": "50"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 122360709554455,
+											"parameters": {
+												"object-to-create": "counter_base",
+												"layer": "\"main\"",
+												"x": "324.026",
+												"y": "578.4"
+											}
+										}
+									],
+									"sid": 389111595424132
+								}
+							]
+						}
+					],
+					"sid": 543753207074190
+				},
+				{
+					"eventType": "comment",
+					"text": "Portrait"
+				},
+				{
+					"eventType": "comment",
+					"text": "X-625 Y-1136"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 295513040604503,
+							"parameters": {
+								"name": "\"create_counter_ten_landscape\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 697828854942209,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "99.495, 263.843"
+						},
+						{
+							"eventType": "variable",
+							"name": "first_row_y",
+							"type": "number",
+							"initialValue": "94.495",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 416027922495359
+						},
+						{
+							"eventType": "variable",
+							"name": "second_row_y",
+							"type": "number",
+							"initialValue": "268.843",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 894067240015638
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 376274072890829,
+									"parameters": {
+										"key": "\"counter_base_width\"",
+										"value": "135.393"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 244077409506339,
+									"parameters": {
+										"key": "\"counter_base_height\"",
+										"value": "133.437"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 916049256637228,
+									"parameters": {
+										"key": "\"counter_arrow_size_multiplier\"",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 319343382481318,
+									"parameters": {
+										"key": "\"counter_text_size_default\"",
+										"value": "32"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 638123563071765,
+									"parameters": {
+										"key": "\"counter_text_size_four_chars\"",
+										"value": "25"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 678381812135772,
+									"parameters": {
+										"key": "\"counter_text_size_five_chars\"",
+										"value": "20"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 878616524380635,
+									"parameters": {
+										"key": "\"counter_text_size_six_chars\"",
+										"value": "16"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 379789559160383,
+									"parameters": {
+										"key": "\"counter_text_size_seven_chars\"",
+										"value": "14"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 701709473820915,
+									"parameters": {
+										"key": "\"counter_arrow_offset_x\"",
+										"value": "40"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 741847508252179,
+									"parameters": {
+										"key": "\"counter_arrow_offset_y\"",
+										"value": "10"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 553959427266134,
+									"parameters": {
+										"key": "\"counter_arrow_offset_y_down\"",
+										"value": "-2"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 739195013828046,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "62.708",
+										"y": "first_row_y"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 587601459737710,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "192.708",
+										"y": "first_row_y"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 748526075961833,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "322.708",
+										"y": "first_row_y"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 852105295302465,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "452.708",
+										"y": "first_row_y"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 880174351385305,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "582.708",
+										"y": "first_row_y"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 584051333779876,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "62.708",
+										"y": "second_row_y"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 434244763171324,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "192.708",
+										"y": "second_row_y"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 795434686141881,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "322.708",
+										"y": "second_row_y"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 441902118645049,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "452.708",
+										"y": "second_row_y"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 247026507040071,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "582.708",
+										"y": "second_row_y"
+									}
+								}
+							],
+							"sid": 838154183745160
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 304623522028283,
+							"parameters": {
+								"name": "\"create_counter_ten_portrait\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 547891393063699,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "211.57, 436.557"
+						},
+						{
+							"eventType": "variable",
+							"name": "first_row_x",
+							"type": "number",
+							"initialValue": "206.57",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 974992177683418
+						},
+						{
+							"eventType": "variable",
+							"name": "second_row_x",
+							"type": "number",
+							"initialValue": "441.557",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 939530894769817
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 526521622324604,
+									"parameters": {
+										"key": "\"counter_base_width\"",
+										"value": "202.85"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 660447366968046,
+									"parameters": {
+										"key": "\"counter_base_height\"",
+										"value": "183.032"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 885042025379738,
+									"parameters": {
+										"key": "\"counter_arrow_size_multiplier\"",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 895954449217832,
+									"parameters": {
+										"key": "\"counter_text_size_default\"",
+										"value": "32"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 946313781204159,
+									"parameters": {
+										"key": "\"counter_text_size_four_chars\"",
+										"value": "30"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 992591896320468,
+									"parameters": {
+										"key": "\"counter_text_size_five_chars\"",
+										"value": "26"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 781853300206773,
+									"parameters": {
+										"key": "\"counter_text_size_six_chars\"",
+										"value": "22"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 973453003556880,
+									"parameters": {
+										"key": "\"counter_text_size_seven_chars\"",
+										"value": "20"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 747018756125364,
+									"parameters": {
+										"key": "\"counter_arrow_offset_x\"",
+										"value": "60"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 205558061422534,
+									"parameters": {
+										"key": "\"counter_arrow_offset_y\"",
+										"value": "7"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "settings",
+									"sid": 938741293231038,
+									"parameters": {
+										"key": "\"counter_arrow_offset_y_down\"",
+										"value": "-10"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 933893051978074,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "first_row_x",
+										"y": "145"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 223491433161325,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "first_row_x",
+										"y": "358"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 180239257053105,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "first_row_x",
+										"y": "570"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 102019876555997,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "first_row_x",
+										"y": "783"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 613775926852759,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "first_row_x",
+										"y": "995"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 914484702301305,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "second_row_x",
+										"y": "145"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 549167344470169,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "second_row_x",
+										"y": "358"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 591093820626451,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "second_row_x",
+										"y": "570"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 389076395367051,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "second_row_x",
+										"y": "783"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 840379417701165,
+									"parameters": {
+										"object-to-create": "counter_base",
+										"layer": "\"main\"",
+										"x": "second_row_x",
+										"y": "995"
+									}
+								}
+							],
+							"sid": 205234686821182
+						}
+					]
+				}
+			],
+			"sid": 363731043604239
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 491081668842017,
+					"parameters": {
+						"name": "\"getTextFontSizeByLenght\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 885371803303079,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "Function",
+							"sid": 751294633180135,
+							"parameters": {
+								"index": "0",
+								"comparison": 3,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-return-value",
+							"objectClass": "Function",
+							"sid": 713878123209291,
+							"parameters": {
+								"value": "settings.Get(\"counter_text_size_default\")"
+							}
+						}
+					],
+					"sid": 261444759974014
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "Function",
+							"sid": 229850423686711,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-return-value",
+							"objectClass": "Function",
+							"sid": 817588370544864,
+							"parameters": {
+								"value": "settings.Get(\"counter_text_size_four_chars\")"
+							}
+						}
+					],
+					"sid": 531012505355541
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "Function",
+							"sid": 174961017155103,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-return-value",
+							"objectClass": "Function",
+							"sid": 294393487189544,
+							"parameters": {
+								"value": "settings.Get(\"counter_text_size_five_chars\")"
+							}
+						}
+					],
+					"sid": 974114775861625
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "Function",
+							"sid": 425488612272816,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-return-value",
+							"objectClass": "Function",
+							"sid": 649539806706697,
+							"parameters": {
+								"value": "settings.Get(\"counter_text_size_six_chars\")"
+							}
+						}
+					],
+					"sid": 460034537808459
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "Function",
+							"sid": 977886148832869,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-return-value",
+							"objectClass": "Function",
+							"sid": 917724469178467,
+							"parameters": {
+								"value": "settings.Get(\"counter_text_size_seven_chars\")"
+							}
+						}
+					],
+					"sid": 903431474853535
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 629425050203053,
+					"parameters": {
+						"name": "\"updateCounter\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 905366375566451,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "max_value",
+					"type": "number",
+					"initialValue": "9999999",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 569611824566483
+				},
+				{
+					"eventType": "variable",
+					"name": "min_value",
+					"type": "number",
+					"initialValue": "-999999",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 149123250016363
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "counter_base",
+							"sid": 600546715835351,
+							"parameters": {
+								"unique-id": "Function.Param(0)"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 559083788498707,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "counter_base",
+									"sid": 724067127620410,
+									"parameters": {
+										"instance-variable": "value",
+										"value": "counter_base.value + Function.Param(1) > max_value ? max_value : (counter_base.value + Function.Param(1) < min_value ? min_value : counter_base.value + Function.Param(1) )"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "counter_text",
+									"sid": 952557906247504,
+									"parameters": {
+										"text": "counter_base.value"
+									}
+								},
+								{
+									"id": "set-font-size",
+									"objectClass": "counter_text",
+									"sid": 956784101014446,
+									"parameters": {
+										"size-pt": "Function.Call(\"getTextFontSizeByLenght\", len(str(counter_base.value)))"
+									}
+								}
+							],
+							"sid": 402700247334326
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "counter_base",
+					"sid": 995113349129581
+				}
+			],
+			"actions": [],
+			"sid": 570672970056836,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "counter_triple_arrow_up",
+							"sid": 289885043619607,
+							"parameters": {
+								"width": "Self.Width * settings.Get(\"counter_arrow_size_multiplier\")",
+								"height": "Self.Height * settings.Get(\"counter_arrow_size_multiplier\")"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "counter_double_arrow_up",
+							"sid": 815887878348929,
+							"parameters": {
+								"width": "Self.Width * settings.Get(\"counter_arrow_size_multiplier\")",
+								"height": "Self.Height * settings.Get(\"counter_arrow_size_multiplier\")"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "counter_single_arrow_up",
+							"sid": 794296503790424,
+							"parameters": {
+								"width": "Self.Width * settings.Get(\"counter_arrow_size_multiplier\")",
+								"height": "Self.Height * settings.Get(\"counter_arrow_size_multiplier\")"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "counter_single_arrow_down",
+							"sid": 836617467998448,
+							"parameters": {
+								"width": "Self.Width * settings.Get(\"counter_arrow_size_multiplier\")",
+								"height": "Self.Height * settings.Get(\"counter_arrow_size_multiplier\")"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "counter_double_arrow_down",
+							"sid": 289741621398167,
+							"parameters": {
+								"width": "Self.Width * settings.Get(\"counter_arrow_size_multiplier\")",
+								"height": "Self.Height * settings.Get(\"counter_arrow_size_multiplier\")"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "counter_triple_arrow_down",
+							"sid": 912503114264435,
+							"parameters": {
+								"width": "Self.Width * settings.Get(\"counter_arrow_size_multiplier\")",
+								"height": "Self.Height * settings.Get(\"counter_arrow_size_multiplier\")"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "counter_base",
+							"sid": 134409970549358,
+							"parameters": {
+								"width": "settings.Get(\"counter_base_width\")",
+								"height": "settings.Get(\"counter_base_height\")"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "counter_triple_arrow_up",
+							"sid": 695496341526207,
+							"parameters": {
+								"x": "counter_base.X+settings.Get(\"counter_arrow_offset_x\")",
+								"y": "counter_base.Y - (counter_base.Height/2) - settings.Get(\"counter_arrow_offset_y\")"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "counter_double_arrow_up",
+							"sid": 424832112891594,
+							"parameters": {
+								"x": "counter_base.X - settings.Get(\"counter_arrow_offset_x\")",
+								"y": "counter_base.Y - (counter_base.Height/2) - settings.Get(\"counter_arrow_offset_y\")"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "counter_single_arrow_up",
+							"sid": 309706098976144,
+							"parameters": {
+								"x": "counter_base.X",
+								"y": "counter_base.Y - (counter_base.Height/2) - settings.Get(\"counter_arrow_offset_y\")"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "counter_single_arrow_down",
+							"sid": 746276630726452,
+							"parameters": {
+								"x": "counter_base.X",
+								"y": "counter_base.Y + (counter_base.Height/2) + settings.Get(\"counter_arrow_offset_y_down\")"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "counter_double_arrow_down",
+							"sid": 762211171254697,
+							"parameters": {
+								"x": "counter_base.X - settings.Get(\"counter_arrow_offset_x\")",
+								"y": "counter_base.Y + (counter_base.Height/2) + settings.Get(\"counter_arrow_offset_y_down\")"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "counter_triple_arrow_down",
+							"sid": 335130478610028,
+							"parameters": {
+								"x": "counter_base.X+settings.Get(\"counter_arrow_offset_x\")",
+								"y": "counter_base.Y + (counter_base.Height/2) + settings.Get(\"counter_arrow_offset_y_down\")"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "counter_triple_arrow_up",
+							"sid": 752280921769670,
+							"parameters": {
+								"instance-variable": "base_uid",
+								"value": "counter_base.UID"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "counter_double_arrow_up",
+							"sid": 730006951989374,
+							"parameters": {
+								"instance-variable": "base_uid",
+								"value": "counter_base.UID"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "counter_single_arrow_up",
+							"sid": 997776919681314,
+							"parameters": {
+								"instance-variable": "base_uid",
+								"value": "counter_base.UID"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "counter_single_arrow_down",
+							"sid": 828428694784763,
+							"parameters": {
+								"instance-variable": "base_uid",
+								"value": "counter_base.UID"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "counter_double_arrow_down",
+							"sid": 750133557587616,
+							"parameters": {
+								"instance-variable": "base_uid",
+								"value": "counter_base.UID"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "counter_triple_arrow_down",
+							"sid": 708448180255839,
+							"parameters": {
+								"instance-variable": "base_uid",
+								"value": "counter_base.UID"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "counter_text",
+							"sid": 154540471950319,
+							"parameters": {
+								"width": "Self.Width*2",
+								"height": "Self.Height*2"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "counter_text",
+							"sid": 687865340472819,
+							"parameters": {
+								"x": "counter_base.ImagePointX(\"text\")-Self.Width/2",
+								"y": "counter_base.ImagePointY(\"text\")-Self.Height/2-10"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "counter_text",
+							"sid": 972264244809594,
+							"parameters": {
+								"size-pt": "Function.Call(\"getTextFontSizeByLenght\", len(str(counter_base.value)))"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "counter_triple_arrow_up",
+							"sid": 828386606322263,
+							"parameters": {
+								"instance-variable": "value",
+								"value": "settings.Get(\"triple_arrow_value\")"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "counter_double_arrow_up",
+							"sid": 919885556199699,
+							"parameters": {
+								"instance-variable": "value",
+								"value": "settings.Get(\"double_arrow_value\")"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "counter_single_arrow_up",
+							"sid": 483298302447908,
+							"parameters": {
+								"instance-variable": "value",
+								"value": "settings.Get(\"single_arrow_value\")"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "counter_single_arrow_down",
+							"sid": 512006379707132,
+							"parameters": {
+								"instance-variable": "value",
+								"value": "-settings.Get(\"single_arrow_value\")"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "counter_double_arrow_down",
+							"sid": 970630349043050,
+							"parameters": {
+								"instance-variable": "value",
+								"value": "-settings.Get(\"double_arrow_value\")"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "counter_triple_arrow_down",
+							"sid": 193503592076098,
+							"parameters": {
+								"instance-variable": "value",
+								"value": "-settings.Get(\"triple_arrow_value\")"
+							}
+						}
+					],
+					"sid": 432528801244934
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 449913390615755,
+					"parameters": {
+						"object": "counter_arrow"
+					}
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "counter_base",
+					"sid": 779560223336306,
+					"parameters": {
+						"unique-id": "counter_arrow.base_uid"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 499454668538217,
+					"parameters": {
+						"name": "\"updateCounter\"",
+						"parameter-n": [
+							"counter_arrow.base_uid",
+							"counter_arrow.value"
+						]
+					}
+				}
+			],
+			"sid": 581977404829917
+		},
+		{
+			"eventType": "comment",
+			"text": "Mantener pulsado"
+		},
+		{
+			"eventType": "variable",
+			"name": "hold_counter",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 919510615823406
+		},
+		{
+			"eventType": "variable",
+			"name": "hold_base_uid",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 154965526565620
+		},
+		{
+			"eventType": "variable",
+			"name": "hold_arrow_uid",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 241250768838080
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Hold gesture",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "HOLD_THRESHOLD",
+					"type": "number",
+					"initialValue": "40",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": true,
+					"sid": 826334474071519
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "counter_base",
+							"sid": 669029867387747,
+							"parameters": {
+								"unique-id": "hold_base_uid"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "counter_arrow",
+							"sid": 385061512498994,
+							"parameters": {
+								"unique-id": "hold_arrow_uid"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 660004989463980,
+							"parameters": {
+								"first-value": "hold_counter",
+								"comparison": 5,
+								"second-value": "HOLD_THRESHOLD"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 320663106015630,
+							"parameters": {
+								"name": "\"updateCounter\"",
+								"parameter-n": [
+									"counter_arrow.base_uid",
+									" counter_arrow.value"
+								]
+							}
+						}
+					],
+					"sid": 300851502427684
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 126197454593833,
+							"parameters": {
+								"object": "counter_arrow"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 620586664945291,
+							"parameters": {
+								"variable": "hold_arrow_uid",
+								"value": "counter_arrow.UID"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 389943054444565,
+							"parameters": {
+								"variable": "hold_base_uid",
+								"value": "counter_arrow.base_uid"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 933009197468333,
+							"parameters": {
+								"variable": "hold_counter",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 131474322407430
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 366259496806900,
+							"parameters": {
+								"object": "counter_arrow"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 590898587712016,
+							"parameters": {
+								"variable": "hold_counter",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 317571798659849
+				}
+			],
+			"sid": 128687037992754
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Double tap gesture",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-double-tap-object",
+							"objectClass": "Touch",
+							"sid": 887918245045917,
+							"parameters": {
+								"object": "counter_base"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 374166687549423,
+							"parameters": {
+								"name": "\"updateCounter\"",
+								"parameter-n": [
+									"counter_base.UID",
+									"-counter_base.value"
+								]
+							}
+						}
+					],
+					"sid": 386719756445161
+				}
+			],
+			"sid": 714561120451261
+		}
+	],
+	"sid": 760945057372137
+}

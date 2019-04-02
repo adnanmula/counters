@@ -1,0 +1,33 @@
+{
+	"name": "main_menu_buttons",
+	"plugin-id": "Sprite",
+	"sid": 244541225659679,
+	"instanceVariables": [
+		{
+			"name": "layout",
+			"type": "string",
+			"desc": "",
+			"sid": 124016727009288
+		},
+		{
+			"name": "scroll_x",
+			"type": "number",
+			"desc": "",
+			"sid": 405276616270177
+		},
+		{
+			"name": "scroll_y",
+			"type": "number",
+			"desc": "",
+			"sid": 498890558553732
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"menu_coin",
+		"menu_counter_list",
+		"menu_counters",
+		"menu_dice"
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"name": "final_menu_buttons",
+	"plugin-id": "Sprite",
+	"sid": 942424887921889,
+	"instanceVariables": [
+		{
+			"name": "type",
+			"type": "string",
+			"desc": "",
+			"sid": 718996342012019
+		},
+		{
+			"name": "layout",
+			"type": "string",
+			"desc": "",
+			"sid": 225185002939114
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"menu_counter_one",
+		"menu_counter_ten",
+		"menu_counter_two",
+		"menu_dice_six_sided",
+		"Sprite2",
+		"Sprite3"
+	]
+}

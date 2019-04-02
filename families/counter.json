@@ -1,0 +1,17 @@
+{
+	"name": "counter",
+	"plugin-id": "Sprite",
+	"sid": 733230733472908,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"counter_base",
+		"counter_double_arrow_down",
+		"counter_double_arrow_up",
+		"counter_single_arrow_down",
+		"counter_single_arrow_up",
+		"counter_triple_arrow_down",
+		"counter_triple_arrow_up"
+	]
+}

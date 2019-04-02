@@ -1,0 +1,29 @@
+{
+	"name": "counter_arrow",
+	"plugin-id": "Sprite",
+	"sid": 793617758598548,
+	"instanceVariables": [
+		{
+			"name": "value",
+			"type": "number",
+			"desc": "",
+			"sid": 985750065033780
+		},
+		{
+			"name": "base_uid",
+			"type": "number",
+			"desc": "",
+			"sid": 814277735604018
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"counter_double_arrow_down",
+		"counter_double_arrow_up",
+		"counter_single_arrow_down",
+		"counter_single_arrow_up",
+		"counter_triple_arrow_down",
+		"counter_triple_arrow_up"
+	]
+}

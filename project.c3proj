@@ -1,0 +1,261 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 14202,
+	"name": "counters",
+	"runtime": "c3",
+	"useWorker": false,
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"version": "r142.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Function",
+			"name": "Function",
+			"author": "Scirra",
+			"version": "r142.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"version": "r142.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r142.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r142.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Dictionary",
+			"name": "Dictionary",
+			"author": "Scirra",
+			"version": "r142.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r142.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r142.2",
+			"bundled": false
+		}
+	],
+	"uniqueId": "lbsim9dqew5w",
+	"objectTypes": {
+		"items": [
+			"counter_base",
+			"counter_single_arrow_down",
+			"counter_single_arrow_up",
+			"counter_text",
+			"counter_double_arrow_up",
+			"counter_triple_arrow_up",
+			"settings",
+			"counter_double_arrow_down",
+			"counter_triple_arrow_down",
+			"menu_counters",
+			"menu_counter_list",
+			"menu_coin",
+			"menu_dice",
+			"dice",
+			"menu_dice_six_sided",
+			"Sprite2",
+			"Sprite3",
+			"menu_counter_ten",
+			"menu_counter_one",
+			"menu_counter_two",
+			"Keyboard"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"Browser",
+					"Function",
+					"Touch"
+				],
+				"subfolders": [],
+				"name": "system"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [
+		{
+			"members": [
+				"counter_base",
+				"counter_double_arrow_down",
+				"counter_double_arrow_up",
+				"counter_single_arrow_down",
+				"counter_single_arrow_up",
+				"counter_text",
+				"counter_triple_arrow_down",
+				"counter_triple_arrow_up"
+			],
+			"selectMode": "normal"
+		}
+	],
+	"families": {
+		"items": [
+			"counter",
+			"counter_arrow",
+			"main_menu_buttons",
+			"final_menu_buttons",
+			"object"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"main",
+			"menu",
+			"test"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"main",
+			"menu",
+			"settings",
+			"counter",
+			"dice"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-114.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png"
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png"
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [
+				{
+					"name": "settings.json",
+					"type": "application/json"
+				}
+			],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "dsfsdf",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "http://",
+		"appId": "com.demigrantsoft.ctrs",
+		"pixelRounding": false,
+		"useLoaderLayout": false,
+		"fullscreenMode": "scale-outer",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useHighDpi": true,
+		"orientations": "any",
+		"enableWebGL": true,
+		"gpuPreference": "high-performance",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "progress-logo",
+		"preloadSounds": true,
+		"clearBackground": true,
+		"enhancedAccelerationPrecision": true
+	},
+	"viewportWidth": 640,
+	"viewportHeight": 360,
+	"firstLayout": "menu"
+}

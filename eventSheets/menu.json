@@ -12,6 +12,16 @@
 			"sid": 574404449259334
 		},
 		{
+			"eventType": "variable",
+			"name": "layout",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 683602669975019
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "settings"
 		},
@@ -65,16 +75,24 @@
 				{
 					"id": "set-key",
 					"objectClass": "settings",
-					"sid": 491268012042437,
+					"sid": 478848243608072,
 					"parameters": {
 						"key": "\"layout\"",
 						"value": "final_menu_buttons.type&\"_\"&final_menu_buttons.layout"
 					}
 				},
 				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 810719196392639,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 845264038917363,
+					"sid": 422065042451309,
 					"parameters": {
 						"layout": "main"
 					}

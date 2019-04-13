@@ -156,6 +156,18 @@
 			"properties": {},
 			"uid": 20,
 			"instanceVariables": {}
+		},
+		{
+			"type": "layouts",
+			"properties": {},
+			"uid": 14,
+			"instanceVariables": {}
+		},
+		{
+			"type": "CountersInfo",
+			"properties": {},
+			"uid": 38,
+			"instanceVariables": {}
 		}
 	],
 	"effectTypes": [],

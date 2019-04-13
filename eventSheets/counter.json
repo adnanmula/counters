@@ -2,6 +2,10 @@
 	"name": "counter",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "settings"
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Creation",
@@ -1138,6 +1142,14 @@
 							"parameters": {
 								"value": "settings.Get(\"counter_text_size_default\")"
 							}
+						},
+						{
+							"id": "set-return-value",
+							"objectClass": "Function",
+							"sid": 805311342772023,
+							"parameters": {
+								"value": "layouts.Get(\"\")"
+							}
 						}
 					],
 					"sid": 261444759974014
@@ -1353,7 +1365,17 @@
 						{
 							"id": "set-size",
 							"objectClass": "counter_triple_arrow_up",
-							"sid": 289885043619607,
+							"sid": 823494906680327,
+							"disabled": true,
+							"parameters": {
+								"width": "Self.Width * layouts.Get(layout & \".\" & Function.Call(\"getScreenOrientation\") & \".counter_arrow_size_multiplier\")",
+								"height": "Self.Height *  layouts.Get(layout & \".\" & Function.Call(\"getScreenOrientation\") & \".counter_arrow_size_multiplier\")"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "counter_triple_arrow_up",
+							"sid": 836130418024093,
 							"parameters": {
 								"width": "Self.Width * settings.Get(\"counter_arrow_size_multiplier\")",
 								"height": "Self.Height * settings.Get(\"counter_arrow_size_multiplier\")"
@@ -1848,6 +1870,30 @@
 				}
 			],
 			"sid": 714561120451261
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 285858152334420,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "download",
+					"objectClass": "settings",
+					"sid": 873632791753317,
+					"parameters": {
+						"filename": "\"data.json\""
+					}
+				}
+			],
+			"sid": 139103861337024
 		}
 	],
 	"sid": 760945057372137

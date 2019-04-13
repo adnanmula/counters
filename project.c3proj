@@ -32,16 +32,16 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
+			"id": "Keyboard",
+			"name": "Keyboard",
 			"author": "Scirra",
 			"version": "r142.2",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Text",
-			"name": "Text",
+			"id": "AJAX",
+			"name": "AJAX",
 			"author": "Scirra",
 			"version": "r142.2",
 			"bundled": false
@@ -56,8 +56,24 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Keyboard",
-			"name": "Keyboard",
+			"id": "Json",
+			"name": "JSON",
+			"author": "Scirra",
+			"version": "r142.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r142.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
 			"author": "Scirra",
 			"version": "r142.2",
 			"bundled": false
@@ -80,7 +96,6 @@
 			"counter_text",
 			"counter_double_arrow_up",
 			"counter_triple_arrow_up",
-			"settings",
 			"counter_double_arrow_down",
 			"counter_triple_arrow_down",
 			"menu_counters",
@@ -94,17 +109,34 @@
 			"menu_counter_ten",
 			"menu_counter_one",
 			"menu_counter_two",
-			"Keyboard"
+			"test_1",
+			"test_2",
+			"test_3",
+			"test_4",
+			"test_c_add",
+			"test_c_sub",
+			"test_c_text",
+			"CountersInfo"
 		],
 		"subfolders": [
 			{
 				"items": [
 					"Browser",
 					"Function",
-					"Touch"
+					"Touch",
+					"Keyboard",
+					"AJAX"
 				],
 				"subfolders": [],
 				"name": "system"
+			},
+			{
+				"items": [
+					"settings",
+					"layouts"
+				],
+				"subfolders": [],
+				"name": "data"
 			}
 		]
 	},
@@ -120,6 +152,15 @@
 				"counter_text",
 				"counter_triple_arrow_down",
 				"counter_triple_arrow_up"
+			],
+			"selectMode": "normal"
+		},
+		{
+			"members": [
+				"test_1",
+				"test_c_add",
+				"test_c_sub",
+				"test_c_text"
 			],
 			"selectMode": "normal"
 		}
@@ -138,7 +179,9 @@
 		"items": [
 			"main",
 			"menu",
-			"test"
+			"test",
+			"newMain",
+			"default"
 		],
 		"subfolders": []
 	},
@@ -148,7 +191,8 @@
 			"menu",
 			"settings",
 			"counter",
-			"dice"
+			"dice",
+			"Event sheet 1"
 		],
 		"subfolders": []
 	},
@@ -201,7 +245,7 @@
 		"general": {
 			"items": [
 				{
-					"name": "settings.json",
+					"name": "counters-default.json",
 					"type": "application/json"
 				}
 			],
@@ -213,15 +257,15 @@
 		"subfolders": []
 	},
 	"properties": {
-		"description": "dsfsdf",
-		"version": "1.0.0.0",
+		"description": "counters",
+		"version": "0.1",
 		"author": "",
 		"authorEmail": "",
 		"authorWebsite": "http://",
-		"appId": "com.demigrantsoft.ctrs",
-		"pixelRounding": false,
+		"appId": "com.demigrantsoft.counters",
+		"pixelRounding": true,
 		"useLoaderLayout": false,
-		"fullscreenMode": "scale-outer",
+		"fullscreenMode": "letterbox-scale",
 		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
@@ -244,13 +288,13 @@
 			0
 		],
 		"useHighDpi": true,
-		"orientations": "any",
+		"orientations": "landscape",
 		"enableWebGL": true,
 		"gpuPreference": "high-performance",
 		"sampling": "nearest",
 		"downscaling": "medium",
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "progress-logo",
+		"loaderStyle": "progress",
 		"preloadSounds": true,
 		"clearBackground": true,
 		"enhancedAccelerationPrecision": true

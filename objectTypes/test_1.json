@@ -1,0 +1,177 @@
+{
+	"name": "test_1",
+	"plugin-id": "Sprite",
+	"sid": 278057384647014,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Variable1",
+			"type": "number",
+			"desc": "",
+			"sid": 682735202505053
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 23,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 753388701237089,
+				"name": "0",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 45,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 837498725197993,
+				"name": "1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 24,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 197183112604558,
+				"name": "2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 25,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 773585833535041,
+				"name": "3",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

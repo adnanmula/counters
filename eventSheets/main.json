@@ -7,6 +7,10 @@
 		},
 		{
 			"eventType": "include",
+			"includeSheet": "counterList"
+		},
+		{
+			"eventType": "include",
 			"includeSheet": "dice"
 		},
 		{
@@ -18,30 +22,7 @@
 					"sid": 561712492818190
 				}
 			],
-			"actions": [
-				{
-					"id": "log",
-					"objectClass": "Browser",
-					"sid": 455691940264972,
-					"parameters": {
-						"type": "log",
-						"message": "layout_type"
-					}
-				},
-				{
-					"id": "call-function",
-					"objectClass": "Function",
-					"sid": 566073513711030,
-					"disabled": true,
-					"parameters": {
-						"name": "\"setUpCounters\"",
-						"parameter-n": [
-							"4",
-							"\"landscape\""
-						]
-					}
-				}
-			],
+			"actions": [],
 			"sid": 444851424623725,
 			"children": [
 				{
@@ -60,15 +41,6 @@
 					],
 					"actions": [
 						{
-							"id": "log",
-							"objectClass": "Browser",
-							"sid": 488251585222868,
-							"parameters": {
-								"type": "log",
-								"message": "int(layout_amount)"
-							}
-						},
-						{
 							"id": "call-function",
 							"objectClass": "Function",
 							"sid": 706188276261750,
@@ -82,6 +54,36 @@
 						}
 					],
 					"sid": 845570702564323
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 187621041524583,
+							"parameters": {
+								"first-value": "layout_type",
+								"comparison": 0,
+								"second-value": "\"counter_list\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 544416081169840,
+							"parameters": {
+								"name": "\"setUpCountersList\"",
+								"parameter-n": [
+									"int(layout_amount)",
+									"\"landscape\""
+								]
+							}
+						}
+					],
+					"sid": 481954151600235
 				}
 			]
 		},
@@ -92,6 +94,14 @@
 					"id": "on-back-button",
 					"objectClass": "Browser",
 					"sid": 270480147357624
+				},
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 668720738368822,
+					"parameters": {
+						"key": 8
+					}
 				}
 			],
 			"actions": [
@@ -104,155 +114,8 @@
 					}
 				}
 			],
-			"sid": 299589574071426
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 905494699537962
-				}
-			],
-			"actions": [
-				{
-					"id": "call-function",
-					"objectClass": "Function",
-					"sid": 419436067771516,
-					"parameters": {
-						"name": "\"create_\"&settings.Get(\"layout\")&\"_\"&settings.Get(\"orientation\")",
-						"parameter-n": []
-					}
-				}
-			],
-			"sid": 871125277888069,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-function",
-					"objectClass": "Function",
-					"sid": 327381979963969,
-					"parameters": {
-						"name": "\"resizeElements\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "object",
-					"sid": 549311998476741
-				},
-				{
-					"id": "call-function",
-					"objectClass": "Function",
-					"sid": 527210419870004,
-					"parameters": {
-						"name": "\"create_\"&settings.Get(\"layout\")&\"_\"&settings.Get(\"orientation\")",
-						"parameter-n": []
-					}
-				}
-			],
-			"sid": 505767395972808,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-portraitlandscape",
-					"objectClass": "Browser",
-					"sid": 771392683723401,
-					"parameters": {
-						"orientation": "portrait"
-					}
-				},
-				{
-					"id": "compare-value",
-					"objectClass": "settings",
-					"sid": 783422158155769,
-					"parameters": {
-						"key": "\"orientation\"",
-						"comparison": 0,
-						"value": "\"landscape\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-key",
-					"objectClass": "settings",
-					"sid": 403414556350615,
-					"parameters": {
-						"key": "\"orientation\"",
-						"value": "\"portrait\""
-					}
-				},
-				{
-					"id": "call-function",
-					"objectClass": "Function",
-					"sid": 310824096383922,
-					"parameters": {
-						"name": "\"resizeElements\"",
-						"parameter-n": [
-							"\"portrait\""
-						]
-					}
-				}
-			],
-			"sid": 646978030290020,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-portraitlandscape",
-					"objectClass": "Browser",
-					"sid": 320772963830921,
-					"parameters": {
-						"orientation": "landscape"
-					}
-				},
-				{
-					"id": "compare-value",
-					"objectClass": "settings",
-					"sid": 632842209664406,
-					"parameters": {
-						"key": "\"orientation\"",
-						"comparison": 0,
-						"value": "\"portrait\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-key",
-					"objectClass": "settings",
-					"sid": 511334466287054,
-					"parameters": {
-						"key": "\"orientation\"",
-						"value": "\"landscape\""
-					}
-				},
-				{
-					"id": "call-function",
-					"objectClass": "Function",
-					"sid": 617976762034568,
-					"parameters": {
-						"name": "\"resizeElements\"",
-						"parameter-n": [
-							"\"landscape\""
-						]
-					}
-				}
-			],
-			"sid": 467302120092372,
-			"disabled": true
+			"sid": 299589574071426,
+			"isOrBlock": true
 		}
 	],
 	"sid": 681969915728584

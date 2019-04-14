@@ -77,50 +77,60 @@
 			"sid": 962014844672639
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Load default",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 298662937655239
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 146745285850893
+						}
+					],
+					"actions": [
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 252318304189867,
+							"parameters": {
+								"tag": "\"counters-default.json\"",
+								"file": "counters-default.json"
+							}
+						}
+					],
+					"sid": 762268523420878
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 826146682794565,
+							"parameters": {
+								"tag": "\"counters-default.json\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "CountersInfo",
+							"sid": 960317019286415,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						}
+					],
+					"sid": 653451376013008
 				}
 			],
-			"actions": [
-				{
-					"id": "request-project-file",
-					"objectClass": "AJAX",
-					"sid": 226656356593324,
-					"parameters": {
-						"tag": "\"counters-default.json\"",
-						"file": "counters-default.json"
-					}
-				}
-			],
-			"sid": 362725085119175
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-completed",
-					"objectClass": "AJAX",
-					"sid": 987192491524290,
-					"parameters": {
-						"tag": "\"counters-default.json\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "load",
-					"objectClass": "CountersInfo",
-					"sid": 560671858358434,
-					"parameters": {
-						"json": "AJAX.LastData"
-					}
-				}
-			],
-			"sid": 536982653235763
+			"sid": 956414361320213
 		}
 	],
 	"sid": 560295561596196

@@ -1,0 +1,112 @@
+{
+	"name": "counterList",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "counterCommon"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "counter_list_main",
+					"sid": 716844537031557
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "counter_list_main",
+					"sid": 507936538225001,
+					"parameters": {
+						"width": "CountersInfo.Get(str(counter_list_main.IID + 1) & \"width\")",
+						"height": "CountersInfo.Get(str(counter_list_main.IID + 1) & \"height\")"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "counter_list_main",
+					"sid": 610584009501501,
+					"parameters": {
+						"animation": "str(counter_list_main.IID)",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "test_c_add",
+					"sid": 550190518933885,
+					"parameters": {
+						"instance-variable": "base_uid",
+						"value": "counter_main.UID"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "test_c_sub",
+					"sid": 809310916196755,
+					"parameters": {
+						"instance-variable": "base_uid",
+						"value": "counter_main.UID"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "test_c_add",
+					"sid": 744379226665183,
+					"parameters": {
+						"instance-variable": "value",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "test_c_sub",
+					"sid": 162133109295103,
+					"parameters": {
+						"instance-variable": "value",
+						"value": "-1"
+					}
+				},
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "test_c_add",
+					"sid": 351253165220598,
+					"parameters": {
+						"object": "counter_list_main",
+						"image-point-optional": "COUNTER_CONTAINER_ADDITION"
+					}
+				},
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "test_c_sub",
+					"sid": 740089598381493,
+					"parameters": {
+						"object": "counter_list_main",
+						"image-point-optional": "COUNTER_CONTAINER_SUBSTRACTION"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "counter_text",
+					"sid": 611333216985625,
+					"parameters": {
+						"text": "counter_main.value"
+					}
+				},
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "counter_text",
+					"sid": 583125583775948,
+					"parameters": {
+						"object": "counter_list_main",
+						"image-point-optional": "COUNTER_CONTAINER_CENTER"
+					}
+				}
+			],
+			"sid": 463995308178574
+		}
+	],
+	"sid": 557004091970895
+}

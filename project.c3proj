@@ -90,10 +90,9 @@
 	"uniqueId": "lbsim9dqew5w",
 	"objectTypes": {
 		"items": [
-			"counter_base",
+			"counter_base_old",
 			"counter_single_arrow_down",
 			"counter_single_arrow_up",
-			"counter_text",
 			"counter_double_arrow_up",
 			"counter_triple_arrow_up",
 			"counter_double_arrow_down",
@@ -109,15 +108,13 @@
 			"menu_counter_ten",
 			"menu_counter_one",
 			"menu_counter_two",
-			"test_1",
-			"test_2",
-			"test_3",
-			"test_4",
+			"counter_main",
 			"test_c_add",
 			"test_c_sub",
-			"test_c_text",
+			"counter_text",
 			"CountersInfo",
-			"menu_counter_one2"
+			"menu_counter_one2",
+			"counter_list_main"
 		],
 		"subfolders": [
 			{
@@ -145,12 +142,11 @@
 	"containers": [
 		{
 			"members": [
-				"counter_base",
+				"counter_base_old",
 				"counter_double_arrow_down",
 				"counter_double_arrow_up",
 				"counter_single_arrow_down",
 				"counter_single_arrow_up",
-				"counter_text",
 				"counter_triple_arrow_down",
 				"counter_triple_arrow_up"
 			],
@@ -158,10 +154,10 @@
 		},
 		{
 			"members": [
-				"test_1",
+				"counter_main",
+				"counter_text",
 				"test_c_add",
-				"test_c_sub",
-				"test_c_text"
+				"test_c_sub"
 			],
 			"selectMode": "normal"
 		}
@@ -172,15 +168,14 @@
 			"counter_arrow",
 			"main_menu_buttons",
 			"final_menu_buttons",
-			"object"
+			"counter_base"
 		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"main",
 			"menu",
-			"newMain",
+			"main",
 			"default"
 		],
 		"subfolders": []
@@ -190,9 +185,10 @@
 			"main",
 			"menu",
 			"settings",
-			"counterOLD",
 			"dice",
-			"counter"
+			"counter",
+			"counterList",
+			"counterCommon"
 		],
 		"subfolders": []
 	},

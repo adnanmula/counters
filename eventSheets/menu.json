@@ -83,16 +83,6 @@
 			],
 			"actions": [
 				{
-					"id": "set-key",
-					"objectClass": "settings",
-					"sid": 478848243608072,
-					"disabled": true,
-					"parameters": {
-						"key": "\"layout\"",
-						"value": "final_menu_buttons.type&\"_\"&final_menu_buttons.layout"
-					}
-				},
-				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 701953456302656,
@@ -111,97 +101,107 @@
 					}
 				},
 				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 810719196392639,
-					"disabled": true,
-					"parameters": {
-						"seconds": "1.0"
-					}
-				},
-				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 657824175463623,
 					"parameters": {
-						"layout": "newMain"
+						"layout": "main"
 					}
 				}
 			],
 			"sid": 877744315136202
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-back-button",
-					"objectClass": "Browser",
-					"sid": 269548696094809
-				}
-			],
-			"actions": [],
-			"sid": 747242799746251,
+			"eventType": "group",
+			"disabled": false,
+			"title": "Menu navigation",
+			"description": "",
+			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 716577593106781,
-							"parameters": {
-								"variable": "current_menu",
-								"comparison": 0,
-								"value": "\"mode\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "close",
+							"id": "on-back-button",
 							"objectClass": "Browser",
-							"sid": 178027181404836
-						}
-					],
-					"sid": 817016558115568
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 438087693259625,
-							"parameters": {
-								"variable": "current_menu",
-								"comparison": 1,
-								"value": "\"mode\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "scroll-to-position",
-							"objectClass": "System",
-							"sid": 540105638268944,
-							"parameters": {
-								"x": "320",
-								"y": "180"
-							}
+							"sid": 834250805424224
 						},
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 603511317001572,
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 277926235847726,
 							"parameters": {
-								"variable": "current_menu",
-								"value": "\"mode\""
+								"key": 8
 							}
 						}
 					],
-					"sid": 279998330816984
+					"actions": [],
+					"sid": 999320527963253,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 235580758342327,
+									"parameters": {
+										"variable": "current_menu",
+										"comparison": 0,
+										"value": "\"mode\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "close",
+									"objectClass": "Browser",
+									"sid": 525030331027529
+								}
+							],
+							"sid": 919080437067205
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 428553371636507,
+									"parameters": {
+										"variable": "current_menu",
+										"comparison": 1,
+										"value": "\"mode\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "scroll-to-position",
+									"objectClass": "System",
+									"sid": 555096338157756,
+									"parameters": {
+										"x": "320",
+										"y": "180"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 610392791097041,
+									"parameters": {
+										"variable": "current_menu",
+										"value": "\"mode\""
+									}
+								}
+							],
+							"sid": 156727027111204
+						}
+					],
+					"isOrBlock": true
 				}
-			]
+			],
+			"sid": 345539293552260
 		}
 	],
 	"sid": 413805959310103

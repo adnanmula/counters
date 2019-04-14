@@ -1,0 +1,324 @@
+{
+	"name": "counterCommon",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 289003385623275,
+					"parameters": {
+						"name": "\"updateCounter\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 673032568598081,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "max_value",
+					"type": "number",
+					"initialValue": "9999999",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 206302335067263
+				},
+				{
+					"eventType": "variable",
+					"name": "min_value",
+					"type": "number",
+					"initialValue": "-999999",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 913766448235529
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "counter_main",
+							"sid": 796314831586408,
+							"parameters": {
+								"unique-id": "Function.Param(0)"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 313986132449651,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "counter_main",
+									"sid": 919930894104276,
+									"parameters": {
+										"instance-variable": "value",
+										"value": "counter_main.value + Function.Param(1) > max_value ? max_value : (counter_main.value + Function.Param(1) < min_value ? min_value : counter_main.value + Function.Param(1) )"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "counter_text",
+									"sid": 663796284326774,
+									"parameters": {
+										"text": "counter_main.value"
+									}
+								}
+							],
+							"sid": 391612345175856
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 535057314736575,
+					"parameters": {
+						"object": "counter_arrow"
+					}
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "counter_base",
+					"sid": 521178474215653,
+					"parameters": {
+						"unique-id": "counter_arrow.base_uid"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 835724377680352,
+					"parameters": {
+						"name": "\"updateCounter\"",
+						"parameter-n": [
+							"counter_arrow.base_uid",
+							"counter_arrow.value"
+						]
+					}
+				}
+			],
+			"sid": 660652448277866
+		},
+		{
+			"eventType": "variable",
+			"name": "hold_counter",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 891542033429594
+		},
+		{
+			"eventType": "variable",
+			"name": "hold_base_uid",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 846179082747845
+		},
+		{
+			"eventType": "variable",
+			"name": "hold_arrow_uid",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 312389163562869
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Hold gesture",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "HOLD_THRESHOLD",
+					"type": "number",
+					"initialValue": "40",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": true,
+					"sid": 182774689312896
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "counter_main",
+							"sid": 398997904386029,
+							"parameters": {
+								"unique-id": "hold_base_uid"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "counter_arrow",
+							"sid": 412161168562169,
+							"parameters": {
+								"unique-id": "hold_arrow_uid"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 949829604620591,
+							"parameters": {
+								"first-value": "hold_counter",
+								"comparison": 5,
+								"second-value": "HOLD_THRESHOLD"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 985517432954645,
+							"parameters": {
+								"name": "\"updateCounter\"",
+								"parameter-n": [
+									"counter_arrow.base_uid",
+									" counter_arrow.value"
+								]
+							}
+						}
+					],
+					"sid": 171895743234321
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 435835314955985,
+							"parameters": {
+								"object": "counter_arrow"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 260714663179856,
+							"parameters": {
+								"variable": "hold_arrow_uid",
+								"value": "counter_arrow.UID"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 585046724086924,
+							"parameters": {
+								"variable": "hold_base_uid",
+								"value": "counter_arrow.base_uid"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 429348499438179,
+							"parameters": {
+								"variable": "hold_counter",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 877264823808465
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 291152981878068,
+							"parameters": {
+								"object": "counter_arrow"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 358194324873606,
+							"parameters": {
+								"variable": "hold_counter",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 911408112863862
+				}
+			],
+			"sid": 114097843257256
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Reset on double tap",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-double-tap-object",
+							"objectClass": "Touch",
+							"sid": 554266606067834,
+							"parameters": {
+								"object": "counter_text"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 122293099495089,
+							"parameters": {
+								"name": "\"updateCounter\"",
+								"parameter-n": [
+									"counter_main.UID",
+									"-counter_main.value"
+								]
+							}
+						}
+					],
+					"sid": 576936116599224,
+					"isOrBlock": true
+				}
+			],
+			"sid": 436323772067294
+		}
+	],
+	"sid": 724543389463521
+}

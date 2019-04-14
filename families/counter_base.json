@@ -1,0 +1,13 @@
+{
+	"name": "counter_base",
+	"plugin-id": "Sprite",
+	"sid": 463104855520719,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"counter_main",
+		"counter_base_old",
+		"counter_list_main"
+	]
+}

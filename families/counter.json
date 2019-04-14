@@ -6,7 +6,7 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"counter_base",
+		"counter_base_old",
 		"counter_double_arrow_down",
 		"counter_double_arrow_up",
 		"counter_single_arrow_down",

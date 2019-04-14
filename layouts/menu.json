@@ -55,8 +55,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 221,
-						"y": -120,
+						"x": 253,
+						"y": 188,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,
@@ -388,7 +388,26 @@
 		}
 	],
 	"sid": 802840285617307,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "settings",
+			"properties": {},
+			"uid": 20,
+			"instanceVariables": {}
+		},
+		{
+			"type": "layouts",
+			"properties": {},
+			"uid": 14,
+			"instanceVariables": {}
+		},
+		{
+			"type": "CountersInfo",
+			"properties": {},
+			"uid": 38,
+			"instanceVariables": {}
+		}
+	],
 	"effectTypes": [],
 	"width": 1280,
 	"height": 1080,

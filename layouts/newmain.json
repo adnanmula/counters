@@ -124,5 +124,5 @@
 	"width": 640,
 	"height": 360,
 	"unboundedScrolling": false,
-	"eventSheet": "Event sheet 1"
+	"eventSheet": "main"
 }

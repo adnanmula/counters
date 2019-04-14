@@ -2,163 +2,6 @@
 	"name": "settings",
 	"events": [
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 352468621418635
-				}
-			],
-			"actions": [
-				{
-					"id": "add-key",
-					"objectClass": "settings",
-					"sid": 551056949021955,
-					"parameters": {
-						"key": "\"counter_base_width\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "settings",
-					"sid": 375159576824365,
-					"parameters": {
-						"key": "\"counter_base_height\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "settings",
-					"sid": 190966671865855,
-					"parameters": {
-						"key": "\"orientation\"",
-						"value": "Function.Call(\"getScreenOrientation\")"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "settings",
-					"sid": 168802116867451,
-					"parameters": {
-						"key": "\"single_arrow_value\"",
-						"value": "10"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "settings",
-					"sid": 762047605601784,
-					"parameters": {
-						"key": "\"double_arrow_value\"",
-						"value": "1000"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "settings",
-					"sid": 806113326267700,
-					"parameters": {
-						"key": "\"triple_arrow_value\"",
-						"value": "10000"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "settings",
-					"sid": 282788188491369,
-					"parameters": {
-						"key": "\"layout\"",
-						"value": "\"\""
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "settings",
-					"sid": 111042110025163,
-					"parameters": {
-						"key": "\"counter_arrow_offset_x\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "settings",
-					"sid": 977845011721680,
-					"parameters": {
-						"key": "\"counter_arrow_offset_y\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "settings",
-					"sid": 498178616751467,
-					"parameters": {
-						"key": "\"counter_arrow_offset_y_down\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "settings",
-					"sid": 259923230527893,
-					"parameters": {
-						"key": "\"counter_arrow_size_multiplier\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "settings",
-					"sid": 379567558707955,
-					"parameters": {
-						"key": "\"counter_text_size_default\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "settings",
-					"sid": 829578963402075,
-					"parameters": {
-						"key": "\"counter_text_size_four_chars\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "settings",
-					"sid": 130934036862851,
-					"parameters": {
-						"key": "\"counter_text_size_five_chars\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "settings",
-					"sid": 779719536271859,
-					"parameters": {
-						"key": "\"counter_text_size_six_chars\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "settings",
-					"sid": 911397544683101,
-					"parameters": {
-						"key": "\"counter_text_size_seven_chars\"",
-						"value": "0"
-					}
-				}
-			],
-			"sid": 402080968650695
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Screen orientation",
@@ -232,6 +75,52 @@
 				}
 			],
 			"sid": 962014844672639
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 298662937655239
+				}
+			],
+			"actions": [
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 226656356593324,
+					"parameters": {
+						"tag": "\"counters-default.json\"",
+						"file": "counters-default.json"
+					}
+				}
+			],
+			"sid": 362725085119175
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 987192491524290,
+					"parameters": {
+						"tag": "\"counters-default.json\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "CountersInfo",
+					"sid": 560671858358434,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
+				}
+			],
+			"sid": 536982653235763
 		}
 	],
 	"sid": 560295561596196

@@ -24,6 +24,8 @@
 		"counter_single_arrow_down",
 		"counter_single_arrow_up",
 		"counter_triple_arrow_down",
-		"counter_triple_arrow_up"
+		"counter_triple_arrow_up",
+		"test_c_add",
+		"test_c_sub"
 	]
 }

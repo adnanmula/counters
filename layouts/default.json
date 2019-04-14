@@ -16,12 +16,12 @@
 					},
 					"uid": 39,
 					"instanceVariables": {
-						"Variable1": 0
+						"value": 0
 					},
 					"behaviors": {},
 					"world": {
-						"x": 395,
-						"y": 161,
+						"x": 337,
+						"y": -8,
 						"width": 163.48332101484425,
 						"height": 90.28025640056393,
 						"originX": 0,
@@ -46,11 +46,14 @@
 						"live-preview": false
 					},
 					"uid": 40,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"value": 0,
+						"base_uid": 0
+					},
 					"behaviors": {},
 					"world": {
-						"x": 603,
-						"y": 71,
+						"x": 490,
+						"y": 19,
 						"width": 10,
 						"height": 10,
 						"originX": 0.5,
@@ -75,11 +78,14 @@
 						"live-preview": false
 					},
 					"uid": 41,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"value": 0,
+						"base_uid": 0
+					},
 					"behaviors": {},
 					"world": {
-						"x": 470,
-						"y": 76,
+						"x": 357,
+						"y": 24,
 						"width": 10,
 						"height": 10,
 						"originX": 0.5,
@@ -120,8 +126,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 508,
-						"y": 81,
+						"x": 395,
+						"y": 29,
 						"width": 45.1133440581512,
 						"height": 22.57884646955594,
 						"originX": 0.5,
@@ -165,8 +171,8 @@
 	"sid": 487276129283582,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 1280,
-	"height": 720,
+	"width": 300,
+	"height": 200,
 	"unboundedScrolling": false,
 	"eventSheet": null
 }

@@ -13,13 +13,23 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "layout",
+			"name": "layout_type",
 			"type": "string",
 			"initialValue": "",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 683602669975019
+		},
+		{
+			"eventType": "variable",
+			"name": "layout_amount",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 873836329886631
 		},
 		{
 			"eventType": "include",
@@ -29,9 +39,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-touched-object",
+					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 781224380659023,
+					"sid": 363093335821402,
 					"parameters": {
 						"object": "main_menu_buttons"
 					}
@@ -76,15 +86,35 @@
 					"id": "set-key",
 					"objectClass": "settings",
 					"sid": 478848243608072,
+					"disabled": true,
 					"parameters": {
 						"key": "\"layout\"",
 						"value": "final_menu_buttons.type&\"_\"&final_menu_buttons.layout"
 					}
 				},
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 701953456302656,
+					"parameters": {
+						"variable": "layout_type",
+						"value": "final_menu_buttons.type"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 960991010965891,
+					"parameters": {
+						"variable": "layout_amount",
+						"value": "final_menu_buttons.layout"
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 810719196392639,
+					"disabled": true,
 					"parameters": {
 						"seconds": "1.0"
 					}
@@ -92,9 +122,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 422065042451309,
+					"sid": 657824175463623,
 					"parameters": {
-						"layout": "main"
+						"layout": "newMain"
 					}
 				}
 			],

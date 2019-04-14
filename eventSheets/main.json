@@ -15,6 +15,103 @@
 				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
+					"sid": 561712492818190
+				}
+			],
+			"actions": [
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 455691940264972,
+					"parameters": {
+						"type": "log",
+						"message": "layout_type"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 566073513711030,
+					"disabled": true,
+					"parameters": {
+						"name": "\"setUpCounters\"",
+						"parameter-n": [
+							"4",
+							"\"landscape\""
+						]
+					}
+				}
+			],
+			"sid": 444851424623725,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 167317787774838,
+							"parameters": {
+								"first-value": "layout_type",
+								"comparison": 0,
+								"second-value": "\"counter\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "log",
+							"objectClass": "Browser",
+							"sid": 488251585222868,
+							"parameters": {
+								"type": "log",
+								"message": "int(layout_amount)"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 706188276261750,
+							"parameters": {
+								"name": "\"setUpCounters\"",
+								"parameter-n": [
+									"int(layout_amount)",
+									"\"landscape\""
+								]
+							}
+						}
+					],
+					"sid": 845570702564323
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-back-button",
+					"objectClass": "Browser",
+					"sid": 270480147357624
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 673290693767464,
+					"parameters": {
+						"layout": "menu"
+					}
+				}
+			],
+			"sid": 299589574071426
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
 					"sid": 905494699537962
 				}
 			],
@@ -29,7 +126,8 @@
 					}
 				}
 			],
-			"sid": 871125277888069
+			"sid": 871125277888069,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -59,7 +157,8 @@
 					}
 				}
 			],
-			"sid": 505767395972808
+			"sid": 505767395972808,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -105,7 +204,8 @@
 					}
 				}
 			],
-			"sid": 646978030290020
+			"sid": 646978030290020,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -151,28 +251,8 @@
 					}
 				}
 			],
-			"sid": 467302120092372
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-back-button",
-					"objectClass": "Browser",
-					"sid": 944011348253473
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 232994772823029,
-					"parameters": {
-						"layout": "menu"
-					}
-				}
-			],
-			"sid": 606581138999998
+			"sid": 467302120092372,
+			"disabled": true
 		}
 	],
 	"sid": 681969915728584

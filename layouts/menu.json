@@ -22,8 +22,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 129.5,
-						"y": 203.851287842,
+						"x": 132,
+						"y": 188,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,
@@ -55,8 +55,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 256.5,
-						"y": 204.851287842,
+						"x": 221,
+						"y": -120,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,
@@ -88,8 +88,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 383.5,
-						"y": 204.851287842,
+						"x": 346,
+						"y": -122,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,
@@ -121,8 +121,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 510.5,
-						"y": 204.851287842,
+						"x": 473,
+						"y": -122,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,
@@ -245,7 +245,7 @@
 					"uid": 18,
 					"instanceVariables": {
 						"type": "counter",
-						"layout": "ten"
+						"layout": "4"
 					},
 					"behaviors": {},
 					"world": {
@@ -277,12 +277,12 @@
 					"uid": 32,
 					"instanceVariables": {
 						"type": "counter",
-						"layout": "one"
+						"layout": "2"
 					},
 					"behaviors": {},
 					"world": {
-						"x": 258,
-						"y": 523,
+						"x": 254,
+						"y": 524,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,
@@ -309,12 +309,44 @@
 					"uid": 7,
 					"instanceVariables": {
 						"type": "counter",
-						"layout": "two"
+						"layout": "3"
 					},
 					"behaviors": {},
 					"world": {
 						"x": 368,
 						"y": 524,
+						"width": 100,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "menu_counter_one2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 22,
+					"instanceVariables": {
+						"type": "counter",
+						"layout": "1"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 122,
+						"y": 525,
 						"width": 100,
 						"height": 100,
 						"originX": 0.5,

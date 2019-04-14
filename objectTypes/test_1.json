@@ -5,7 +5,7 @@
 	"isGlobal": false,
 	"instanceVariables": [
 		{
-			"name": "Variable1",
+			"name": "value",
 			"type": "number",
 			"desc": "",
 			"sid": 682735202505053

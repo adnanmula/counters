@@ -116,7 +116,8 @@
 			"test_c_add",
 			"test_c_sub",
 			"test_c_text",
-			"CountersInfo"
+			"CountersInfo",
+			"menu_counter_one2"
 		],
 		"subfolders": [
 			{
@@ -179,7 +180,6 @@
 		"items": [
 			"main",
 			"menu",
-			"test",
 			"newMain",
 			"default"
 		],
@@ -190,9 +190,9 @@
 			"main",
 			"menu",
 			"settings",
-			"counter",
+			"counterOLD",
 			"dice",
-			"Event sheet 1"
+			"counter"
 		],
 		"subfolders": []
 	},

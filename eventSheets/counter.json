@@ -440,7 +440,7 @@
 				},
 				{
 					"id": "set-instvar-value",
-					"objectClass": "test_c_add",
+					"objectClass": "counter_arrow_add",
 					"sid": 507343987197355,
 					"parameters": {
 						"instance-variable": "base_uid",
@@ -449,7 +449,7 @@
 				},
 				{
 					"id": "set-instvar-value",
-					"objectClass": "test_c_sub",
+					"objectClass": "counter_arrow_sub",
 					"sid": 314528950777135,
 					"parameters": {
 						"instance-variable": "base_uid",
@@ -458,7 +458,7 @@
 				},
 				{
 					"id": "set-instvar-value",
-					"objectClass": "test_c_add",
+					"objectClass": "counter_arrow_add",
 					"sid": 340845983188295,
 					"parameters": {
 						"instance-variable": "value",
@@ -467,7 +467,7 @@
 				},
 				{
 					"id": "set-instvar-value",
-					"objectClass": "test_c_sub",
+					"objectClass": "counter_arrow_sub",
 					"sid": 890170447866360,
 					"parameters": {
 						"instance-variable": "value",
@@ -476,7 +476,7 @@
 				},
 				{
 					"id": "set-position-to-another-object",
-					"objectClass": "test_c_add",
+					"objectClass": "counter_arrow_add",
 					"sid": 206434489070538,
 					"parameters": {
 						"object": "counter_main",
@@ -485,7 +485,7 @@
 				},
 				{
 					"id": "set-position-to-another-object",
-					"objectClass": "test_c_sub",
+					"objectClass": "counter_arrow_sub",
 					"sid": 303075576757426,
 					"parameters": {
 						"object": "counter_main",
@@ -494,19 +494,37 @@
 				},
 				{
 					"id": "set-text",
-					"objectClass": "counter_text",
-					"sid": 181217460144942,
+					"objectClass": "counter_default_text",
+					"sid": 913790243017796,
 					"parameters": {
 						"text": "counter_main.value"
 					}
 				},
 				{
 					"id": "set-position-to-another-object",
-					"objectClass": "counter_text",
+					"objectClass": "counter_default_text",
 					"sid": 995302888001107,
 					"parameters": {
 						"object": "counter_main",
 						"image-point-optional": "COUNTER_CONTAINER_CENTER"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "counter_main",
+					"sid": 997869042120126,
+					"parameters": {
+						"instance-variable": "text_uid",
+						"value": "counter_default_text.UID"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "counter_default_text",
+					"sid": 538591224659495,
+					"parameters": {
+						"instance-variable": "base_uid",
+						"value": "counter_main.UID"
 					}
 				}
 			],

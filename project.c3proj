@@ -89,33 +89,7 @@
 	],
 	"uniqueId": "lbsim9dqew5w",
 	"objectTypes": {
-		"items": [
-			"counter_base_old",
-			"counter_single_arrow_down",
-			"counter_single_arrow_up",
-			"counter_double_arrow_up",
-			"counter_triple_arrow_up",
-			"counter_double_arrow_down",
-			"counter_triple_arrow_down",
-			"menu_counters",
-			"menu_counter_list",
-			"menu_coin",
-			"menu_dice",
-			"dice",
-			"menu_dice_six_sided",
-			"Sprite2",
-			"Sprite3",
-			"menu_counter_ten",
-			"menu_counter_one",
-			"menu_counter_two",
-			"counter_main",
-			"test_c_add",
-			"test_c_sub",
-			"counter_text",
-			"CountersInfo",
-			"menu_counter_one2",
-			"counter_list_main"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -131,10 +105,44 @@
 			{
 				"items": [
 					"settings",
-					"layouts"
+					"layouts",
+					"CountersInfo"
 				],
 				"subfolders": [],
 				"name": "data"
+			},
+			{
+				"items": [
+					"menu_coin",
+					"menu_counter_list",
+					"menu_counters",
+					"menu_dice",
+					"menu_final"
+				],
+				"subfolders": [],
+				"name": "menu"
+			},
+			{
+				"items": [
+					"counter_arrow_add",
+					"counter_arrow_sub",
+					"counter_base_old",
+					"counter_default_text",
+					"counter_double_arrow_down",
+					"counter_double_arrow_up",
+					"counter_list_arrow_add",
+					"counter_list_arrow_sub",
+					"counter_list_main",
+					"counter_list_text",
+					"counter_main",
+					"counter_single_arrow_down",
+					"counter_single_arrow_up",
+					"counter_triple_arrow_down",
+					"counter_triple_arrow_up",
+					"dice"
+				],
+				"subfolders": [],
+				"name": "counters"
 			}
 		]
 	},
@@ -154,10 +162,19 @@
 		},
 		{
 			"members": [
-				"counter_main",
-				"counter_text",
-				"test_c_add",
-				"test_c_sub"
+				"counter_arrow_add",
+				"counter_arrow_sub",
+				"counter_default_text",
+				"counter_main"
+			],
+			"selectMode": "normal"
+		},
+		{
+			"members": [
+				"counter_list_arrow_add",
+				"counter_list_arrow_sub",
+				"counter_list_main",
+				"counter_list_text"
 			],
 			"selectMode": "normal"
 		}
@@ -168,7 +185,8 @@
 			"counter_arrow",
 			"main_menu_buttons",
 			"final_menu_buttons",
-			"counter_base"
+			"counter_base",
+			"counter_text"
 		],
 		"subfolders": []
 	},
@@ -185,12 +203,19 @@
 			"main",
 			"menu",
 			"settings",
-			"dice",
-			"counter",
-			"counterList",
-			"counterCommon"
+			"dice"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"counter",
+					"counterCommon",
+					"counterList"
+				],
+				"subfolders": [],
+				"name": "counter"
+			}
+		]
 	},
 	"rootFileFolders": {
 		"sound": {

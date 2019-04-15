@@ -1,7 +1,7 @@
 {
-	"name": "test_c_add",
+	"name": "counter_list_arrow_add",
 	"plugin-id": "Sprite",
-	"sid": 705673933528879,
+	"sid": 488635653490899,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,11 +18,11 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 29,
+						"imageSpriteId": 38,
 						"duration": 1
 					}
 				],
-				"sid": 941550861826736,
+				"sid": 649961008020265,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

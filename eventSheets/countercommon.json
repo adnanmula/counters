@@ -41,7 +41,7 @@
 					"conditions": [
 						{
 							"id": "pick-by-unique-id",
-							"objectClass": "counter_main",
+							"objectClass": "counter_base",
 							"sid": 796314831586408,
 							"parameters": {
 								"unique-id": "Function.Param(0)"
@@ -57,23 +57,41 @@
 							"actions": [
 								{
 									"id": "set-instvar-value",
-									"objectClass": "counter_main",
-									"sid": 919930894104276,
+									"objectClass": "counter_base",
+									"sid": 362608821154294,
 									"parameters": {
 										"instance-variable": "value",
-										"value": "counter_main.value + Function.Param(1) > max_value ? max_value : (counter_main.value + Function.Param(1) < min_value ? min_value : counter_main.value + Function.Param(1) )"
-									}
-								},
-								{
-									"id": "set-text",
-									"objectClass": "counter_text",
-									"sid": 663796284326774,
-									"parameters": {
-										"text": "counter_main.value"
+										"value": "counter_base.value + Function.Param(1) > max_value ? max_value : (counter_base.value + Function.Param(1) < min_value ? min_value : counter_base.value + Function.Param(1) )"
 									}
 								}
 							],
-							"sid": 391612345175856
+							"sid": 391612345175856,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "counter_text",
+											"sid": 466343562219730,
+											"parameters": {
+												"unique-id": "counter_base.text_uid"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-text",
+											"objectClass": "counter_text",
+											"sid": 818221433253652,
+											"parameters": {
+												"text": "counter_base.value"
+											}
+										}
+									],
+									"sid": 817899658237166
+								}
+							]
 						}
 					]
 				}
@@ -167,7 +185,7 @@
 					"conditions": [
 						{
 							"id": "pick-by-unique-id",
-							"objectClass": "counter_main",
+							"objectClass": "counter_base",
 							"sid": 398997904386029,
 							"parameters": {
 								"unique-id": "hold_base_uid"
@@ -293,27 +311,44 @@
 						{
 							"id": "on-double-tap-object",
 							"objectClass": "Touch",
-							"sid": 554266606067834,
+							"sid": 413688860063815,
 							"parameters": {
 								"object": "counter_text"
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 576936116599224,
+					"children": [
 						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 122293099495089,
-							"parameters": {
-								"name": "\"updateCounter\"",
-								"parameter-n": [
-									"counter_main.UID",
-									"-counter_main.value"
-								]
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "counter_base",
+									"sid": 325799638147386,
+									"parameters": {
+										"unique-id": "counter_text.base_uid"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 770849269836558,
+									"parameters": {
+										"name": "\"updateCounter\"",
+										"parameter-n": [
+											"counter_base.UID",
+											"-counter_base.value"
+										]
+									}
+								}
+							],
+							"sid": 567279407303624
 						}
 					],
-					"sid": 576936116599224,
 					"isOrBlock": true
 				}
 			],

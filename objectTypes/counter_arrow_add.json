@@ -1,7 +1,7 @@
 {
-	"name": "menu_counter_two",
+	"name": "counter_arrow_add",
 	"plugin-id": "Sprite",
-	"sid": 698736806906181,
+	"sid": 705673933528879,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,19 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 100,
-						"height": 100,
+						"width": 20,
+						"height": 20,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 19,
+						"imageSpriteId": 29,
 						"duration": 1
 					}
 				],
-				"sid": 351379074331841,
-				"name": "Default",
+				"sid": 941550861826736,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

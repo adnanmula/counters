@@ -1,7 +1,7 @@
 {
-	"name": "menu_dice_six_sided",
+	"name": "menu_final",
 	"plugin-id": "Sprite",
-	"sid": 911012827108288,
+	"sid": 463437310250052,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,11 +18,11 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 14,
+						"imageSpriteId": 27,
 						"duration": 1
 					}
 				],
-				"sid": 689072997078315,
+				"sid": 709762757244530,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

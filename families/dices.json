@@ -1,0 +1,18 @@
+{
+	"name": "dices",
+	"plugin-id": "Sprite",
+	"sid": 421056381560046,
+	"instanceVariables": [
+		{
+			"name": "sides",
+			"type": "number",
+			"desc": "",
+			"sid": 418448419698556
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"6_sided_dice"
+	]
+}

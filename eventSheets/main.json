@@ -84,6 +84,36 @@
 						}
 					],
 					"sid": 481954151600235
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 299131206251027,
+							"parameters": {
+								"first-value": "layout_type",
+								"comparison": 0,
+								"second-value": "\"dice\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 397640124255360,
+							"parameters": {
+								"name": "\"setUpDices\"",
+								"parameter-n": [
+									"int(layout_amount)",
+									"\"landscape\""
+								]
+							}
+						}
+					],
+					"sid": 229282722511047
 				}
 			]
 		},

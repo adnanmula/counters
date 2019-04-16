@@ -139,7 +139,7 @@
 					"counter_single_arrow_up",
 					"counter_triple_arrow_down",
 					"counter_triple_arrow_up",
-					"dice"
+					"6_sided_dice"
 				],
 				"subfolders": [],
 				"name": "counters"
@@ -186,7 +186,8 @@
 			"main_menu_buttons",
 			"final_menu_buttons",
 			"counter_base",
-			"counter_text"
+			"counter_text",
+			"dices"
 		],
 		"subfolders": []
 	},

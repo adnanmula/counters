@@ -90,7 +90,7 @@
 	"uniqueId": "lbsim9dqew5w",
 	"objectTypes": {
 		"items": [
-			"8_sided_dice"
+			"2_sided_dice"
 		],
 		"subfolders": [
 			{
@@ -115,10 +115,7 @@
 			},
 			{
 				"items": [
-					"menu_coin",
-					"menu_counter_list",
 					"menu_counters",
-					"menu_dice",
 					"menu_final"
 				],
 				"subfolders": [],
@@ -141,7 +138,8 @@
 					"counter_single_arrow_up",
 					"counter_triple_arrow_down",
 					"counter_triple_arrow_up",
-					"6_sided_dice"
+					"6_sided_dice",
+					"8_sided_dice"
 				],
 				"subfolders": [],
 				"name": "counters"

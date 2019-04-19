@@ -1,7 +1,7 @@
 {
-	"name": "menu_coin",
+	"name": "2_sided_dice",
 	"plugin-id": "Sprite",
-	"sid": 531971825277665,
+	"sid": 342133949858555,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,24 +11,35 @@
 			{
 				"frames": [
 					{
-						"width": 100,
-						"height": 100,
+						"width": 80,
+						"height": 80,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7,
+						"imageSpriteId": 40,
+						"duration": 1
+					},
+					{
+						"width": 80,
+						"height": 80,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 37,
 						"duration": 1
 					}
 				],
-				"sid": 352410115826643,
+				"sid": 492720578523196,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			}
 		],
 		"subfolders": []

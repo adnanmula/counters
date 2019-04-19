@@ -11,25 +11,25 @@
 			{
 				"frames": [
 					{
-						"width": 80,
-						"height": 80,
+						"width": 256,
+						"height": 256,
 						"originX": 0.5,
 						"originY": 0.5,
-						"originalSource": "",
+						"originalSource": "C:\\Projects\\counters\\build\\coin_heads.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 40,
+						"imageSpriteId": 79,
 						"duration": 1
 					},
 					{
-						"width": 80,
-						"height": 80,
+						"width": 256,
+						"height": 256,
 						"originX": 0.5,
 						"originY": 0.5,
-						"originalSource": "",
+						"originalSource": "C:\\Projects\\counters\\build\\coin_tails.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 37,
+						"imageSpriteId": 80,
 						"duration": 1
 					}
 				],

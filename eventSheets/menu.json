@@ -73,6 +73,40 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 574225950421031,
+					"parameters": {
+						"object": "main_menu_text_buttons"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 301821354921218,
+					"parameters": {
+						"variable": "current_menu",
+						"value": "main_menu_text_buttons.layout"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 419123381440792,
+					"parameters": {
+						"x": "main_menu_text_buttons.scroll_x",
+						"y": "main_menu_text_buttons.scroll_y"
+					}
+				}
+			],
+			"sid": 312738272080152
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-touched-object",
 					"objectClass": "Touch",
 					"sid": 442644270696402,

@@ -79,6 +79,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"version": "r142.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Pin",
 			"name": "Pin",
@@ -90,7 +98,10 @@
 	"uniqueId": "lbsim9dqew5w",
 	"objectTypes": {
 		"items": [
-			"2_sided_dice"
+			"2_sided_dice",
+			"Sprite",
+			"menu_texts",
+			"menu_text_background"
 		],
 		"subfolders": [
 			{
@@ -187,7 +198,8 @@
 			"final_menu_buttons",
 			"counter_base",
 			"counter_text",
-			"dices"
+			"dices",
+			"main_menu_text_buttons"
 		],
 		"subfolders": []
 	},

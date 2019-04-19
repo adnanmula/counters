@@ -1,31 +1,30 @@
 {
-	"name": "main_menu_buttons",
-	"plugin-id": "Sprite",
-	"sid": 244541225659679,
+	"name": "main_menu_text_buttons",
+	"plugin-id": "Spritefont2",
+	"sid": 285392067626124,
 	"instanceVariables": [
 		{
 			"name": "layout",
 			"type": "string",
 			"desc": "",
-			"sid": 124016727009288
+			"sid": 612414532684476
 		},
 		{
 			"name": "scroll_x",
 			"type": "number",
 			"desc": "",
-			"sid": 405276616270177
+			"sid": 151760760080388
 		},
 		{
 			"name": "scroll_y",
 			"type": "number",
 			"desc": "",
-			"sid": 498890558553732
+			"sid": 226868340380894
 		}
 	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"menu_counters",
-		"menu_text_background"
+		"menu_texts"
 	]
 }

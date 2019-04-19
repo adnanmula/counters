@@ -142,9 +142,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-tap-object",
+					"id": "on-touched-object",
 					"objectClass": "Touch",
-					"sid": 715432840690304,
+					"sid": 127009896840830,
 					"parameters": {
 						"object": "dices"
 					}
@@ -154,7 +154,7 @@
 				{
 					"id": "call-function",
 					"objectClass": "Function",
-					"sid": 597268082808286,
+					"sid": 161155279458852,
 					"parameters": {
 						"name": "\"rollDice\"",
 						"parameter-n": [
@@ -163,7 +163,7 @@
 					}
 				}
 			],
-			"sid": 206513132910972
+			"sid": 294987088709318
 		},
 		{
 			"eventType": "block",
@@ -199,6 +199,15 @@
 							"sid": 256156829049450,
 							"parameters": {
 								"frame-number": "floor(random(0, 1) * dices.sides)"
+							}
+						},
+						{
+							"id": "log",
+							"objectClass": "Browser",
+							"sid": 646840704936712,
+							"parameters": {
+								"type": "log",
+								"message": "\"Roll: \" & dices.AnimationFrame + 1"
 							}
 						}
 					],

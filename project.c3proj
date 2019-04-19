@@ -89,7 +89,9 @@
 	],
 	"uniqueId": "lbsim9dqew5w",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"8_sided_dice"
+		],
 		"subfolders": [
 			{
 				"items": [

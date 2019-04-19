@@ -55,6 +55,46 @@
 						}
 					],
 					"sid": 540135380128955
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-parameter",
+							"objectClass": "Function",
+							"sid": 141426784886927,
+							"parameters": {
+								"index": "0",
+								"comparison": 0,
+								"value": "8"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 654208793632085,
+							"parameters": {
+								"object-to-create": "8_sided_dice",
+								"layer": "\"main\"",
+								"x": "LayoutWidth/2",
+								"y": "LayoutHeight/2"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 952418068548796,
+							"parameters": {
+								"name": "\"rollDice\"",
+								"parameter-n": [
+									"8_sided_dice.UID"
+								]
+							}
+						}
+					],
+					"sid": 797864950725607
 				}
 			]
 		},
@@ -116,9 +156,9 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "dices",
-							"sid": 654365009108889,
+							"sid": 256156829049450,
 							"parameters": {
-								"frame-number": "random(0, dices.sides-1)"
+								"frame-number": "floor(random(0, 1) * dices.sides)"
 							}
 						}
 					],

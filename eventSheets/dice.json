@@ -181,6 +181,16 @@
 			"sid": 567864151760208,
 			"children": [
 				{
+					"eventType": "variable",
+					"name": "result",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 847445391408148
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -194,26 +204,107 @@
 					],
 					"actions": [
 						{
-							"id": "set-animation-frame",
-							"objectClass": "dices",
-							"sid": 256156829049450,
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 297082533056842,
 							"parameters": {
-								"frame-number": "floor(random(0, 1) * dices.sides)"
+								"variable": "result",
+								"value": "floor(random(0, 1) * dices.sides)"
 							}
 						},
 						{
-							"id": "log",
-							"objectClass": "Browser",
-							"sid": 646840704936712,
+							"id": "set-animation-frame",
+							"objectClass": "dices",
+							"sid": 242335728239265,
 							"parameters": {
-								"type": "log",
-								"message": "\"Roll: \" & dices.AnimationFrame + 1"
+								"frame-number": "result"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 924220156825650,
+							"parameters": {
+								"name": "\"addLog\"",
+								"parameter-n": [
+									"result + 1"
+								]
 							}
 						}
 					],
 					"sid": 305635895928064
 				}
 			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Logging",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 774457165903904,
+							"parameters": {
+								"name": "\"setUpLog\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 786951841753411,
+							"parameters": {
+								"object-to-create": "log",
+								"layer": "\"main\"",
+								"x": "9",
+								"y": "6"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "log",
+							"sid": 566032752271413,
+							"parameters": {
+								"width": "98",
+								"height": "349"
+							}
+						}
+					],
+					"sid": 358842163804364
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 490250673601249,
+							"parameters": {
+								"name": "\"addLog\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "append-text",
+							"objectClass": "log",
+							"sid": 273689788755768,
+							"parameters": {
+								"text": "newline & Function.Param(0)"
+							}
+						}
+					],
+					"sid": 392690959252249
+				}
+			],
+			"sid": 772273118635116
 		}
 	],
 	"sid": 188861042059464

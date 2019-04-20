@@ -64,5 +64,5 @@
 	"width": 640,
 	"height": 360,
 	"unboundedScrolling": false,
-	"eventSheet": "main"
+	"eventSheet": "entry_point"
 }

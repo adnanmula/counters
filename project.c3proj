@@ -101,7 +101,8 @@
 			"2_sided_dice",
 			"Sprite",
 			"menu_texts",
-			"menu_text_background"
+			"menu_text_background",
+			"log"
 		],
 		"subfolders": [
 			{
@@ -213,10 +214,7 @@
 	},
 	"eventSheets": {
 		"items": [
-			"main",
-			"menu",
-			"settings",
-			"dice"
+			"settings"
 		],
 		"subfolders": [
 			{
@@ -227,6 +225,21 @@
 				],
 				"subfolders": [],
 				"name": "counter"
+			},
+			{
+				"items": [
+					"dice"
+				],
+				"subfolders": [],
+				"name": "dice"
+			},
+			{
+				"items": [
+					"entry_point",
+					"menu"
+				],
+				"subfolders": [],
+				"name": "menu"
 			}
 		]
 	},

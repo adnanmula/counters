@@ -1,5 +1,5 @@
 {
-	"name": "main",
+	"name": "entry_point",
 	"events": [
 		{
 			"eventType": "include",
@@ -100,6 +100,23 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 491395374584402,
+							"parameters": {
+								"name": "\"setUpLog\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 693886362589460,
+							"parameters": {
+								"seconds": "0"
+							}
+						},
 						{
 							"id": "call-function",
 							"objectClass": "Function",

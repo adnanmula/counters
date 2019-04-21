@@ -137,7 +137,7 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 657824175463623,
+					"sid": 545891943851984,
 					"parameters": {
 						"layout": "main"
 					}

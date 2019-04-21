@@ -99,7 +99,6 @@
 	"objectTypes": {
 		"items": [
 			"2_sided_dice",
-			"Sprite",
 			"menu_texts",
 			"menu_text_background",
 			"log"
@@ -207,8 +206,8 @@
 	"layouts": {
 		"items": [
 			"menu",
-			"main",
-			"default"
+			"default",
+			"main"
 		],
 		"subfolders": []
 	},
@@ -335,7 +334,7 @@
 			0
 		],
 		"useHighDpi": true,
-		"orientations": "landscape",
+		"orientations": "portrait",
 		"enableWebGL": true,
 		"gpuPreference": "high-performance",
 		"sampling": "nearest",
@@ -346,7 +345,7 @@
 		"clearBackground": true,
 		"enhancedAccelerationPrecision": true
 	},
-	"viewportWidth": 640,
-	"viewportHeight": 360,
+	"viewportWidth": 360,
+	"viewportHeight": 640,
 	"firstLayout": "menu"
 }

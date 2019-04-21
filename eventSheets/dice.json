@@ -259,21 +259,21 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 786951841753411,
+							"sid": 731122588653492,
 							"parameters": {
 								"object-to-create": "log",
 								"layer": "\"main\"",
-								"x": "9",
-								"y": "6"
+								"x": "5",
+								"y": "4"
 							}
 						},
 						{
 							"id": "set-size",
 							"objectClass": "log",
-							"sid": 566032752271413,
+							"sid": 797562112720384,
 							"parameters": {
-								"width": "98",
-								"height": "349"
+								"width": "93",
+								"height": "630"
 							}
 						}
 					],

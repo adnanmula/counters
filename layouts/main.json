@@ -5,7 +5,7 @@
 			"name": "Layer 0",
 			"overriden": 0,
 			"instances": [],
-			"sid": 760440741772120,
+			"sid": 819802747949832,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -33,7 +33,7 @@
 			"name": "main",
 			"overriden": 0,
 			"instances": [],
-			"sid": 547593555690598,
+			"sid": 873326115128471,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -58,11 +58,11 @@
 			"global": false
 		}
 	],
-	"sid": 354065707527008,
+	"sid": 456974334801813,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 640,
-	"height": 360,
+	"width": 360,
+	"height": 640,
 	"unboundedScrolling": false,
 	"eventSheet": "entry_point"
 }

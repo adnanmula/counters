@@ -326,7 +326,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 83,
+						"imageSpriteId": 3,
 						"imagePoints": [
 							{
 								"name": "center",
@@ -354,7 +354,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 82,
+						"imageSpriteId": 2,
 						"imagePoints": [
 							{
 								"name": "center",
@@ -382,7 +382,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 81,
+						"imageSpriteId": 0,
 						"imagePoints": [
 							{
 								"name": "center",
@@ -410,7 +410,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 96,
+						"imageSpriteId": 1,
 						"imagePoints": [
 							{
 								"name": "center",
@@ -438,7 +438,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 97,
+						"imageSpriteId": 4,
 						"imagePoints": [
 							{
 								"name": "center",
@@ -466,7 +466,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 95,
+						"imageSpriteId": 5,
 						"imagePoints": [
 							{
 								"name": "center",
@@ -494,7 +494,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 94,
+						"imageSpriteId": 6,
 						"imagePoints": [
 							{
 								"name": "center",
@@ -522,7 +522,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 93,
+						"imageSpriteId": 14,
 						"imagePoints": [
 							{
 								"name": "center",
@@ -550,7 +550,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 74,
+						"imageSpriteId": 15,
 						"imagePoints": [
 							{
 								"name": "center",

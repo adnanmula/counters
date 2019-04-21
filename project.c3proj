@@ -80,16 +80,8 @@
 		},
 		{
 			"type": "plugin",
-			"id": "sliderbar",
-			"name": "Slider bar",
-			"author": "Scirra",
-			"version": "r142.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "List",
-			"name": "List",
+			"id": "Arr",
+			"name": "Array",
 			"author": "Scirra",
 			"version": "r142.2",
 			"bundled": false
@@ -99,8 +91,7 @@
 	"objectTypes": {
 		"items": [
 			"log",
-			"SliderBar",
-			"List"
+			"logMessages"
 		],
 		"subfolders": [
 			{

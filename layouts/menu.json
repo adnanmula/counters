@@ -546,6 +546,16 @@
 			"properties": {},
 			"uid": 38,
 			"instanceVariables": {}
+		},
+		{
+			"type": "logMessages",
+			"properties": {
+				"width": 0,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 20,
+			"instanceVariables": {}
 		}
 	],
 	"effectTypes": [],

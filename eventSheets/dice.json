@@ -223,11 +223,11 @@
 						{
 							"id": "call-function",
 							"objectClass": "Function",
-							"sid": 924220156825650,
+							"sid": 947685410964616,
 							"parameters": {
 								"name": "\"addLog\"",
 								"parameter-n": [
-									"result + 1"
+									"\"d\" & dices.sides & \": \" & result + 1"
 								]
 							}
 						}
@@ -293,15 +293,88 @@
 					],
 					"actions": [
 						{
-							"id": "append-text",
-							"objectClass": "log",
-							"sid": 273689788755768,
+							"id": "push",
+							"objectClass": "logMessages",
+							"sid": 439270894639779,
 							"parameters": {
-								"text": "newline & Function.Param(0)"
+								"where": "back",
+								"value": "Function.Param(0)",
+								"axis": "x"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "log",
+							"sid": 340402388998035,
+							"parameters": {
+								"text": "\"Log\" & newline"
 							}
 						}
 					],
-					"sid": 392690959252249
+					"sid": 392690959252249,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "max_lines",
+							"type": "number",
+							"initialValue": "38",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": true,
+							"sid": 613410778092097
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 465373917447080,
+									"parameters": {
+										"first-value": "logMessages.Width",
+										"comparison": 4,
+										"second-value": "max_lines"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "pop",
+									"objectClass": "logMessages",
+									"sid": 376008088532472,
+									"parameters": {
+										"where": "front",
+										"axis": "x"
+									}
+								}
+							],
+							"sid": 788724428955063
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each-element",
+									"objectClass": "logMessages",
+									"sid": 939443382985196,
+									"parameters": {
+										"axes": "x"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "append-text",
+									"objectClass": "log",
+									"sid": 693853837402402,
+									"parameters": {
+										"text": "logMessages.CurValue & newline"
+									}
+								}
+							],
+							"sid": 859544722801861
+						}
+					]
 				}
 			],
 			"sid": 772273118635116

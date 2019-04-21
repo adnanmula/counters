@@ -16,8 +16,6 @@
 					},
 					"uid": 39,
 					"instanceVariables": {
-						"value_corrupt": 0,
-						"text_uid_corrupt": 0,
 						"value": 0,
 						"text_uid": 0
 					},
@@ -50,8 +48,6 @@
 					},
 					"uid": 40,
 					"instanceVariables": {
-						"value_corrupt": 0,
-						"base_uid_corrupt": 0,
 						"value": 0,
 						"base_uid": 0
 					},
@@ -84,8 +80,6 @@
 					},
 					"uid": 41,
 					"instanceVariables": {
-						"value_corrupt": 0,
-						"base_uid_corrupt": 0,
 						"value": 0,
 						"base_uid": 0
 					},
@@ -162,8 +156,6 @@
 					},
 					"uid": 4,
 					"instanceVariables": {
-						"value_corrupt": 0,
-						"text_uid_corrupt": 0,
 						"value": 0,
 						"text_uid": 0
 					},
@@ -196,8 +188,6 @@
 					},
 					"uid": 24,
 					"instanceVariables": {
-						"value_corrupt": 1,
-						"base_uid_corrupt": 0,
 						"value": 0,
 						"base_uid": 0
 					},
@@ -230,8 +220,6 @@
 					},
 					"uid": 25,
 					"instanceVariables": {
-						"value_corrupt": -1,
-						"base_uid_corrupt": 0,
 						"value": 0,
 						"base_uid": 0
 					},

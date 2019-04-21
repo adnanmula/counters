@@ -77,14 +77,6 @@
 			"author": "Scirra",
 			"version": "r142.2",
 			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Pin",
-			"name": "Pin",
-			"author": "Scirra",
-			"version": "r142.2",
-			"bundled": false
 		}
 	],
 	"uniqueId": "lbsim9dqew5w",
@@ -122,19 +114,12 @@
 				"items": [
 					"counter_arrow_add",
 					"counter_arrow_sub",
-					"counter_base_old",
 					"counter_default_text",
-					"counter_double_arrow_down",
-					"counter_double_arrow_up",
 					"counter_list_arrow_add",
 					"counter_list_arrow_sub",
 					"counter_list_main",
 					"counter_list_text",
-					"counter_main",
-					"counter_single_arrow_down",
-					"counter_single_arrow_up",
-					"counter_triple_arrow_down",
-					"counter_triple_arrow_up"
+					"counter_main"
 				],
 				"subfolders": [],
 				"name": "counter"
@@ -152,18 +137,6 @@
 	},
 	"autosaveData": null,
 	"containers": [
-		{
-			"members": [
-				"counter_base_old",
-				"counter_double_arrow_down",
-				"counter_double_arrow_up",
-				"counter_single_arrow_down",
-				"counter_single_arrow_up",
-				"counter_triple_arrow_down",
-				"counter_triple_arrow_up"
-			],
-			"selectMode": "normal"
-		},
 		{
 			"members": [
 				"counter_arrow_add",
@@ -185,10 +158,7 @@
 	],
 	"families": {
 		"items": [
-			"counter",
-			"counter_arrow_corrupt",
 			"menu_button",
-			"counter_base_corrupt",
 			"counter_text",
 			"dices",
 			"counter_arrow",

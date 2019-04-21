@@ -149,7 +149,7 @@
 					"type": "counter_list_main",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "1",
+						"initial-animation": "default",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -161,8 +161,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 337,
-						"y": 104,
+						"x": 331,
+						"y": 102,
 						"width": 163.48332101484425,
 						"height": 90.28025640056393,
 						"originX": 0,

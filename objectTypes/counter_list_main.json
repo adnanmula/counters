@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 26,
+						"imageSpriteId": 37,
 						"imagePoints": [
 							{
 								"name": "center",
@@ -37,18 +37,7 @@
 							}
 						],
 						"duration": 1
-					}
-				],
-				"sid": 197767545604019,
-				"name": "0",
-				"isLooping": false,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 5
-			},
-			{
-				"frames": [
+					},
 					{
 						"width": 32,
 						"height": 18,
@@ -57,7 +46,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 28,
+						"imageSpriteId": 98,
 						"imagePoints": [
 							{
 								"name": "center",
@@ -76,18 +65,7 @@
 							}
 						],
 						"duration": 1
-					}
-				],
-				"sid": 145191674163742,
-				"name": "1",
-				"isLooping": false,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 5
-			},
-			{
-				"frames": [
+					},
 					{
 						"width": 32,
 						"height": 18,
@@ -96,7 +74,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 30,
+						"imageSpriteId": 99,
 						"imagePoints": [
 							{
 								"name": "center",
@@ -115,18 +93,7 @@
 							}
 						],
 						"duration": 1
-					}
-				],
-				"sid": 601428245867708,
-				"name": "2",
-				"isLooping": false,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 5
-			},
-			{
-				"frames": [
+					},
 					{
 						"width": 32,
 						"height": 18,
@@ -135,7 +102,455 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 32,
+						"imageSpriteId": 100,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 101,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 102,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 103,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 104,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 105,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 106,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 107,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 83,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 82,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 81,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 96,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 97,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 95,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 94,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 93,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 74,
 						"imagePoints": [
 							{
 								"name": "center",
@@ -156,13 +571,13 @@
 						"duration": 1
 					}
 				],
-				"sid": 570325077278550,
-				"name": "3",
+				"sid": 445049648693094,
+				"name": "default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			}
 		],
 		"subfolders": []

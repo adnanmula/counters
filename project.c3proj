@@ -77,12 +77,30 @@
 			"author": "Scirra",
 			"version": "r142.2",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "sliderbar",
+			"name": "Slider bar",
+			"author": "Scirra",
+			"version": "r142.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "List",
+			"name": "List",
+			"author": "Scirra",
+			"version": "r142.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "lbsim9dqew5w",
 	"objectTypes": {
 		"items": [
-			"log"
+			"log",
+			"SliderBar",
+			"List"
 		],
 		"subfolders": [
 			{

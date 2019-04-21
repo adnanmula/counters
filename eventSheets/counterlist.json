@@ -24,13 +24,11 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-parameter",
-							"objectClass": "Function",
-							"sid": 422335705274759,
+							"id": "repeat",
+							"objectClass": "System",
+							"sid": 800263552420082,
 							"parameters": {
-								"index": "0",
-								"comparison": 0,
-								"value": "1"
+								"count": "int(Function.Param(0))"
 							}
 						}
 					],
@@ -38,209 +36,20 @@
 						{
 							"id": "call-function",
 							"objectClass": "Function",
-							"sid": 906801359954923,
+							"sid": 357111882309621,
 							"parameters": {
 								"name": "\"createCounterListContainer\"",
 								"parameter-n": [
-									"1",
+									"loopindex + 1",
 									"0",
-									"0",
+									"(LayoutHeight/int(Function.Param(0)) * (loopindex))",
 									"LayoutWidth",
-									"LayoutHeight"
+									"LayoutHeight/int(Function.Param(0))"
 								]
 							}
 						}
 					],
 					"sid": 590759200690073
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-parameter",
-							"objectClass": "Function",
-							"sid": 245705045950406,
-							"parameters": {
-								"index": "0",
-								"comparison": 0,
-								"value": "2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 304699246733669,
-							"parameters": {
-								"name": "\"createCounterListContainer\"",
-								"parameter-n": [
-									"1",
-									"0",
-									"0",
-									"LayoutWidth",
-									"LayoutHeight/2"
-								]
-							}
-						},
-						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 174153217122755,
-							"parameters": {
-								"name": "\"createCounterListContainer\"",
-								"parameter-n": [
-									"2",
-									"0",
-									"LayoutHeight/2",
-									"LayoutWidth",
-									"LayoutHeight/2"
-								]
-							}
-						}
-					],
-					"sid": 427351436257219
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-parameter",
-							"objectClass": "Function",
-							"sid": 239375618774275,
-							"parameters": {
-								"index": "0",
-								"comparison": 0,
-								"value": "3"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 620221647121897,
-							"parameters": {
-								"name": "\"createCounterListContainer\"",
-								"parameter-n": [
-									"1",
-									"0",
-									"0",
-									"LayoutWidth",
-									"LayoutHeight/3"
-								]
-							}
-						},
-						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 464098509579801,
-							"parameters": {
-								"name": "\"createCounterListContainer\"",
-								"parameter-n": [
-									"2",
-									"0",
-									"LayoutHeight/3",
-									"LayoutWidth",
-									"LayoutHeight/3"
-								]
-							}
-						},
-						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 946917067425693,
-							"parameters": {
-								"name": "\"createCounterListContainer\"",
-								"parameter-n": [
-									"3",
-									"0",
-									"LayoutHeight/3 * 2",
-									"LayoutWidth",
-									"LayoutHeight/3"
-								]
-							}
-						}
-					],
-					"sid": 645959447257648
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-parameter",
-							"objectClass": "Function",
-							"sid": 265208068761096,
-							"parameters": {
-								"index": "0",
-								"comparison": 0,
-								"value": "4"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 525715946244298,
-							"parameters": {
-								"name": "\"createCounterListContainer\"",
-								"parameter-n": [
-									"1",
-									"0",
-									"0",
-									"LayoutWidth",
-									"LayoutHeight/4"
-								]
-							}
-						},
-						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 187541243439184,
-							"parameters": {
-								"name": "\"createCounterListContainer\"",
-								"parameter-n": [
-									"2",
-									"0",
-									"LayoutHeight/4",
-									"LayoutWidth",
-									"LayoutHeight/4"
-								]
-							}
-						},
-						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 232448538117830,
-							"parameters": {
-								"name": "\"createCounterListContainer\"",
-								"parameter-n": [
-									"3",
-									"0",
-									"LayoutHeight/4 * 2",
-									"LayoutWidth",
-									"LayoutHeight/4"
-								]
-							}
-						},
-						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 718964365940174,
-							"parameters": {
-								"name": "\"createCounterListContainer\"",
-								"parameter-n": [
-									"4",
-									"0",
-									"LayoutHeight/4 * 3",
-									"LayoutWidth",
-									"LayoutHeight/4"
-								]
-							}
-						}
-					],
-					"sid": 495395710032429
 				}
 			]
 		},
@@ -285,36 +94,18 @@
 						"x": "Function.Param(1)",
 						"y": "Function.Param(2)"
 					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "counter_list_main",
+					"sid": 685768555647710,
+					"parameters": {
+						"width": "LayoutWidth",
+						"height": "LayoutHeight/int(Function.Param(0))"
+					}
 				}
 			],
-			"sid": 235034558791129,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "pick-last-created",
-							"objectClass": "System",
-							"sid": 864899707671918,
-							"parameters": {
-								"object": "counter_list_main"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-size",
-							"objectClass": "counter_list_main",
-							"sid": 836935307305511,
-							"parameters": {
-								"width": "LayoutWidth",
-								"height": "LayoutHeight/int(Function.Param(0))"
-							}
-						}
-					],
-					"sid": 617751987239341
-				}
-			]
+			"sid": 235034558791129
 		},
 		{
 			"eventType": "block",
@@ -336,12 +127,11 @@
 					}
 				},
 				{
-					"id": "set-animation",
+					"id": "set-animation-frame",
 					"objectClass": "counter_list_main",
-					"sid": 109604616997566,
+					"sid": 724687781621824,
 					"parameters": {
-						"animation": "str(counter_list_main.IID)",
-						"from": "beginning"
+						"frame-number": "counter_list_main.IID"
 					}
 				},
 				{

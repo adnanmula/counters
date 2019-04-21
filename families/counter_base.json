@@ -1,26 +1,25 @@
 {
 	"name": "counter_base",
 	"plugin-id": "Sprite",
-	"sid": 463104855520719,
+	"sid": 526593500692731,
 	"instanceVariables": [
 		{
 			"name": "value",
 			"type": "number",
 			"desc": "",
-			"sid": 720653305704647
+			"sid": 928839282847622
 		},
 		{
 			"name": "text_uid",
 			"type": "number",
 			"desc": "",
-			"sid": 106229430012419
+			"sid": 598525384336492
 		}
 	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"counter_main",
-		"counter_base_old",
-		"counter_list_main"
+		"counter_list_main",
+		"counter_main"
 	]
 }

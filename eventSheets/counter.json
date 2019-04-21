@@ -441,7 +441,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "counter_arrow_add",
-					"sid": 507343987197355,
+					"sid": 765334847095306,
 					"parameters": {
 						"instance-variable": "base_uid",
 						"value": "counter_main.UID"
@@ -450,7 +450,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "counter_arrow_sub",
-					"sid": 314528950777135,
+					"sid": 634800649642860,
 					"parameters": {
 						"instance-variable": "base_uid",
 						"value": "counter_main.UID"
@@ -459,7 +459,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "counter_arrow_add",
-					"sid": 340845983188295,
+					"sid": 319320139506951,
 					"parameters": {
 						"instance-variable": "value",
 						"value": "1"
@@ -468,7 +468,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "counter_arrow_sub",
-					"sid": 890170447866360,
+					"sid": 810763400134574,
 					"parameters": {
 						"instance-variable": "value",
 						"value": "-1"
@@ -495,7 +495,7 @@
 				{
 					"id": "set-text",
 					"objectClass": "counter_default_text",
-					"sid": 913790243017796,
+					"sid": 709796757870790,
 					"parameters": {
 						"text": "counter_main.value"
 					}
@@ -512,7 +512,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "counter_main",
-					"sid": 997869042120126,
+					"sid": 121101621393213,
 					"parameters": {
 						"instance-variable": "text_uid",
 						"value": "counter_default_text.UID"

@@ -1,0 +1,26 @@
+{
+	"name": "counter_base_corrupt",
+	"plugin-id": "Sprite",
+	"sid": 463104855520719,
+	"instanceVariables": [
+		{
+			"name": "value_corrupt",
+			"type": "number",
+			"desc": "",
+			"sid": 720653305704647
+		},
+		{
+			"name": "text_uid_corrupt",
+			"type": "number",
+			"desc": "",
+			"sid": 106229430012419
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"counter_main",
+		"counter_base_old",
+		"counter_list_main"
+	]
+}

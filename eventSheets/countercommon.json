@@ -58,7 +58,7 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "counter_base",
-									"sid": 362608821154294,
+									"sid": 487768958888954,
 									"parameters": {
 										"instance-variable": "value",
 										"value": "counter_base.value + Function.Param(1) > max_value ? max_value : (counter_base.value + Function.Param(1) < min_value ? min_value : counter_base.value + Function.Param(1) )"
@@ -73,7 +73,7 @@
 										{
 											"id": "pick-by-unique-id",
 											"objectClass": "counter_text",
-											"sid": 466343562219730,
+											"sid": 992519388592026,
 											"parameters": {
 												"unique-id": "counter_base.text_uid"
 											}
@@ -83,7 +83,7 @@
 										{
 											"id": "set-text",
 											"objectClass": "counter_text",
-											"sid": 818221433253652,
+											"sid": 451642876889863,
 											"parameters": {
 												"text": "counter_base.value"
 											}
@@ -111,7 +111,7 @@
 				{
 					"id": "pick-by-unique-id",
 					"objectClass": "counter_base",
-					"sid": 521178474215653,
+					"sid": 386538468240101,
 					"parameters": {
 						"unique-id": "counter_arrow.base_uid"
 					}
@@ -121,7 +121,7 @@
 				{
 					"id": "call-function",
 					"objectClass": "Function",
-					"sid": 835724377680352,
+					"sid": 682570703573377,
 					"parameters": {
 						"name": "\"updateCounter\"",
 						"parameter-n": [
@@ -186,7 +186,7 @@
 						{
 							"id": "pick-by-unique-id",
 							"objectClass": "counter_base",
-							"sid": 398997904386029,
+							"sid": 858643595706783,
 							"parameters": {
 								"unique-id": "hold_base_uid"
 							}
@@ -214,7 +214,7 @@
 						{
 							"id": "call-function",
 							"objectClass": "Function",
-							"sid": 985517432954645,
+							"sid": 418345864764172,
 							"parameters": {
 								"name": "\"updateCounter\"",
 								"parameter-n": [
@@ -232,7 +232,7 @@
 						{
 							"id": "is-touching-object",
 							"objectClass": "Touch",
-							"sid": 435835314955985,
+							"sid": 509582771861313,
 							"parameters": {
 								"object": "counter_arrow"
 							}
@@ -242,7 +242,7 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 260714663179856,
+							"sid": 723939602203602,
 							"parameters": {
 								"variable": "hold_arrow_uid",
 								"value": "counter_arrow.UID"
@@ -251,7 +251,7 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 585046724086924,
+							"sid": 911730188308333,
 							"parameters": {
 								"variable": "hold_base_uid",
 								"value": "counter_arrow.base_uid"
@@ -275,7 +275,7 @@
 						{
 							"id": "is-touching-object",
 							"objectClass": "Touch",
-							"sid": 291152981878068,
+							"sid": 360743233687462,
 							"parameters": {
 								"object": "counter_arrow"
 							},
@@ -336,7 +336,7 @@
 								{
 									"id": "call-function",
 									"objectClass": "Function",
-									"sid": 770849269836558,
+									"sid": 714594803692240,
 									"parameters": {
 										"name": "\"updateCounter\"",
 										"parameter-n": [

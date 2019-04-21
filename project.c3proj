@@ -186,11 +186,13 @@
 	"families": {
 		"items": [
 			"counter",
-			"counter_arrow",
+			"counter_arrow_corrupt",
 			"menu_button",
-			"counter_base",
+			"counter_base_corrupt",
 			"counter_text",
-			"dices"
+			"dices",
+			"counter_arrow",
+			"counter_base"
 		],
 		"subfolders": []
 	},

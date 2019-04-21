@@ -257,6 +257,17 @@
 					],
 					"actions": [
 						{
+							"id": "set-size",
+							"objectClass": "logMessages",
+							"sid": 294005784666073,
+							"disabled": true,
+							"parameters": {
+								"width": "0",
+								"height": "1",
+								"depth": "1"
+							}
+						},
+						{
 							"id": "create-object",
 							"objectClass": "System",
 							"sid": 731122588653492,

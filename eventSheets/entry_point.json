@@ -22,18 +22,7 @@
 					"sid": 561712492818190
 				}
 			],
-			"actions": [
-				{
-					"id": "set-size",
-					"objectClass": "logMessages",
-					"sid": 784257696448020,
-					"parameters": {
-						"width": "0",
-						"height": "1",
-						"depth": "1"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 444851424623725,
 			"children": [
 				{

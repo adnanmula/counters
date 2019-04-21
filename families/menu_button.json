@@ -1,5 +1,5 @@
 {
-	"name": "final_menu_buttons",
+	"name": "menu_button",
 	"plugin-id": "Sprite",
 	"sid": 942424887921889,
 	"instanceVariables": [
@@ -19,6 +19,6 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"menu_final"
+		"menu_button_type"
 	]
 }

@@ -3,16 +3,6 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "current_menu",
-			"type": "string",
-			"initialValue": "mode",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 574404449259334
-		},
-		{
-			"eventType": "variable",
 			"name": "layout_type",
 			"type": "string",
 			"initialValue": "",
@@ -39,79 +29,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 363093335821402,
-					"parameters": {
-						"object": "main_menu_buttons"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 709357134226855,
-					"parameters": {
-						"variable": "current_menu",
-						"value": "main_menu_buttons.layout"
-					}
-				},
-				{
-					"id": "scroll-to-position",
-					"objectClass": "System",
-					"sid": 885817512371458,
-					"parameters": {
-						"x": "main_menu_buttons.scroll_x",
-						"y": "main_menu_buttons.scroll_y"
-					}
-				}
-			],
-			"sid": 893470295847282
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 574225950421031,
-					"parameters": {
-						"object": "main_menu_text_buttons"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 301821354921218,
-					"parameters": {
-						"variable": "current_menu",
-						"value": "main_menu_text_buttons.layout"
-					}
-				},
-				{
-					"id": "scroll-to-position",
-					"objectClass": "System",
-					"sid": 419123381440792,
-					"parameters": {
-						"x": "main_menu_text_buttons.scroll_x",
-						"y": "main_menu_text_buttons.scroll_y"
-					}
-				}
-			],
-			"sid": 312738272080152
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-touched-object",
 					"objectClass": "Touch",
 					"sid": 442644270696402,
 					"parameters": {
-						"object": "final_menu_buttons"
+						"object": "menu_button"
 					}
 				}
 			],
@@ -122,7 +44,7 @@
 					"sid": 701953456302656,
 					"parameters": {
 						"variable": "layout_type",
-						"value": "final_menu_buttons.type"
+						"value": "menu_button.type"
 					}
 				},
 				{
@@ -131,7 +53,7 @@
 					"sid": 960991010965891,
 					"parameters": {
 						"variable": "layout_amount",
-						"value": "final_menu_buttons.layout"
+						"value": "menu_button.layout"
 					}
 				},
 				{
@@ -146,96 +68,31 @@
 			"sid": 877744315136202
 		},
 		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Menu navigation",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
+			"eventType": "block",
+			"conditions": [
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-back-button",
-							"objectClass": "Browser",
-							"sid": 834250805424224
-						},
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 277926235847726,
-							"parameters": {
-								"key": 8
-							}
-						}
-					],
-					"actions": [],
-					"sid": 999320527963253,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 235580758342327,
-									"parameters": {
-										"variable": "current_menu",
-										"comparison": 0,
-										"value": "\"mode\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "close",
-									"objectClass": "Browser",
-									"sid": 525030331027529
-								}
-							],
-							"sid": 919080437067205
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 428553371636507,
-									"parameters": {
-										"variable": "current_menu",
-										"comparison": 1,
-										"value": "\"mode\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "scroll-to-position",
-									"objectClass": "System",
-									"sid": 555096338157756,
-									"parameters": {
-										"x": "320",
-										"y": "180"
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 610392791097041,
-									"parameters": {
-										"variable": "current_menu",
-										"value": "\"mode\""
-									}
-								}
-							],
-							"sid": 156727027111204
-						}
-					],
-					"isOrBlock": true
+					"id": "on-back-button",
+					"objectClass": "Browser",
+					"sid": 432859586770842
+				},
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 698769221505415,
+					"parameters": {
+						"key": 8
+					}
 				}
 			],
-			"sid": 345539293552260
+			"actions": [
+				{
+					"id": "close",
+					"objectClass": "Browser",
+					"sid": 347442966863452
+				}
+			],
+			"sid": 248627161760942,
+			"isOrBlock": true
 		}
 	],
 	"sid": 413805959310103

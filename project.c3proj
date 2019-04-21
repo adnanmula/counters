@@ -56,14 +56,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Json",
-			"name": "JSON",
-			"author": "Scirra",
-			"version": "r142.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -98,9 +90,6 @@
 	"uniqueId": "lbsim9dqew5w",
 	"objectTypes": {
 		"items": [
-			"2_sided_dice",
-			"menu_texts",
-			"menu_text_background",
 			"log"
 		],
 		"subfolders": [
@@ -117,8 +106,6 @@
 			},
 			{
 				"items": [
-					"settings",
-					"layouts",
 					"CountersInfo"
 				],
 				"subfolders": [],
@@ -126,8 +113,7 @@
 			},
 			{
 				"items": [
-					"menu_counters",
-					"menu_final"
+					"menu_button_type"
 				],
 				"subfolders": [],
 				"name": "menu"
@@ -148,12 +134,19 @@
 					"counter_single_arrow_down",
 					"counter_single_arrow_up",
 					"counter_triple_arrow_down",
-					"counter_triple_arrow_up",
-					"6_sided_dice",
-					"8_sided_dice"
+					"counter_triple_arrow_up"
 				],
 				"subfolders": [],
-				"name": "counters"
+				"name": "counter"
+			},
+			{
+				"items": [
+					"6_sided_dice",
+					"8_sided_dice",
+					"2_sided_dice"
+				],
+				"subfolders": [],
+				"name": "dice"
 			}
 		]
 	},
@@ -194,12 +187,10 @@
 		"items": [
 			"counter",
 			"counter_arrow",
-			"main_menu_buttons",
-			"final_menu_buttons",
+			"menu_button",
 			"counter_base",
 			"counter_text",
-			"dices",
-			"main_menu_text_buttons"
+			"dices"
 		],
 		"subfolders": []
 	},

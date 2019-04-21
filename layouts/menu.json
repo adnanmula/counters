@@ -34,139 +34,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "menu_text_background",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 33,
-					"instanceVariables": {
-						"layout": "counter",
-						"scroll_x": 320,
-						"scroll_y": 500
-					},
-					"behaviors": {},
-					"world": {
-						"x": 545,
-						"y": 49,
-						"width": 252.30868234885185,
-						"height": 27.124413291745043,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_text_background",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 34,
-					"instanceVariables": {
-						"layout": "counter_list",
-						"scroll_x": 320,
-						"scroll_y": 860
-					},
-					"behaviors": {},
-					"world": {
-						"x": 545,
-						"y": 87,
-						"width": 252.30868234885185,
-						"height": 27.124413291745043,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_text_background",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 32,
-					"instanceVariables": {
-						"layout": "dice",
-						"scroll_x": 960,
-						"scroll_y": 180
-					},
-					"behaviors": {},
-					"world": {
-						"x": 545,
-						"y": 125,
-						"width": 252.30868234885185,
-						"height": 27.124413291745043,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_counters",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "counter",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3,
-					"instanceVariables": {
-						"layout": "counter",
-						"scroll_x": 320,
-						"scroll_y": 500
-					},
-					"behaviors": {},
-					"world": {
-						"x": 465,
-						"y": 220,
-						"width": 94.86712336757701,
-						"height": 94.86712336757701,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_final",
+					"type": "menu_button_type",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "1counter",
@@ -198,7 +66,7 @@
 					}
 				},
 				{
-					"type": "menu_final",
+					"type": "menu_button_type",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "2counter",
@@ -230,7 +98,7 @@
 					}
 				},
 				{
-					"type": "menu_final",
+					"type": "menu_button_type",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "3counter",
@@ -262,7 +130,7 @@
 					}
 				},
 				{
-					"type": "menu_final",
+					"type": "menu_button_type",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "4counter",
@@ -294,7 +162,7 @@
 					}
 				},
 				{
-					"type": "menu_final",
+					"type": "menu_button_type",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "2counterlist",
@@ -326,7 +194,7 @@
 					}
 				},
 				{
-					"type": "menu_final",
+					"type": "menu_button_type",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "3counterlist",
@@ -358,7 +226,7 @@
 					}
 				},
 				{
-					"type": "menu_final",
+					"type": "menu_button_type",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "4counterlist",
@@ -390,7 +258,7 @@
 					}
 				},
 				{
-					"type": "menu_final",
+					"type": "menu_button_type",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "6dice",
@@ -422,7 +290,7 @@
 					}
 				},
 				{
-					"type": "menu_final",
+					"type": "menu_button_type",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "8dice",
@@ -454,73 +322,7 @@
 					}
 				},
 				{
-					"type": "menu_counters",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "counter_list",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 29,
-					"instanceVariables": {
-						"layout": "counter_list",
-						"scroll_x": 320,
-						"scroll_y": 860
-					},
-					"behaviors": {},
-					"world": {
-						"x": 605,
-						"y": 219,
-						"width": 94.86712336757701,
-						"height": 94.86712336757701,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_counters",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "dices_coins",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 30,
-					"instanceVariables": {
-						"layout": "dice",
-						"scroll_x": 960,
-						"scroll_y": 180
-					},
-					"behaviors": {},
-					"world": {
-						"x": 737,
-						"y": 215,
-						"width": 94.86712336757701,
-						"height": 94.86712336757701,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_final",
+					"type": "menu_button_type",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "2dice",
@@ -541,132 +343,6 @@
 						"height": 66.57684657250684,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_texts",
-					"properties": {
-						"text": "Counters",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 10,
-					"instanceVariables": {
-						"layout": "counter",
-						"scroll_x": 320,
-						"scroll_y": 500
-					},
-					"behaviors": {},
-					"world": {
-						"x": 420,
-						"y": 42,
-						"width": 150.08371031755848,
-						"height": 16.93779335412745,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_texts",
-					"properties": {
-						"text": "Counters as list",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 16,
-					"instanceVariables": {
-						"layout": "counter_list",
-						"scroll_x": 320,
-						"scroll_y": 860
-					},
-					"behaviors": {},
-					"world": {
-						"x": 420,
-						"y": 80,
-						"width": 271.84213655229894,
-						"height": 16.93779335412745,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_texts",
-					"properties": {
-						"text": "Coins and dices",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 31,
-					"instanceVariables": {
-						"layout": "dice",
-						"scroll_x": 960,
-						"scroll_y": 180
-					},
-					"behaviors": {},
-					"world": {
-						"x": 420,
-						"y": 118,
-						"width": 271.84213655229894,
-						"height": 16.93779335412745,
-						"originX": 0,
-						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -705,18 +381,6 @@
 	],
 	"sid": 802840285617307,
 	"nonworld-instances": [
-		{
-			"type": "settings",
-			"properties": {},
-			"uid": 20,
-			"instanceVariables": {}
-		},
-		{
-			"type": "layouts",
-			"properties": {},
-			"uid": 14,
-			"instanceVariables": {}
-		},
 		{
 			"type": "CountersInfo",
 			"properties": {},

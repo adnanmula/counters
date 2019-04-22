@@ -37,230 +37,6 @@
 					"type": "menu_button_type",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "1counter",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 22,
-					"instanceVariables": {
-						"type": "counter_list",
-						"layout": "1"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 73.5,
-						"y": 108.62180665958968,
-						"width": 90.39730646419306,
-						"height": 90.39730646419306,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_button_type",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "2counter",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 11,
-					"instanceVariables": {
-						"type": "counter",
-						"layout": "2"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 179.86363636363643,
-						"y": 534,
-						"width": 90.39730646419306,
-						"height": 90.39730646419306,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_button_type",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "3counter",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 12,
-					"instanceVariables": {
-						"type": "counter",
-						"layout": "3"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 287.68181818181824,
-						"y": 534,
-						"width": 90.39730646419306,
-						"height": 90.39730646419306,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_button_type",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "4counter",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 13,
-					"instanceVariables": {
-						"type": "counter",
-						"layout": "4"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 73.5,
-						"y": 534,
-						"width": 90.39730646419306,
-						"height": 90.39730646419306,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_button_type",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "2counterlist",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 18,
-					"instanceVariables": {
-						"type": "counter_list",
-						"layout": "2"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 179.86363636363643,
-						"y": 108.62180665958968,
-						"width": 90.39730646419306,
-						"height": 90.39730646419306,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_button_type",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "3counterlist",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 19,
-					"instanceVariables": {
-						"type": "counter_list",
-						"layout": "3"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 287.68181818181824,
-						"y": 108.62180665958968,
-						"width": 90.39730646419306,
-						"height": 90.39730646419306,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_button_type",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "4counterlist",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 23,
-					"instanceVariables": {
-						"type": "counter_list",
-						"layout": "4"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 73.5,
-						"y": 218.36363636363632,
-						"width": 90.39730646419306,
-						"height": 90.39730646419306,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_button_type",
-					"properties": {
-						"initially-visible": true,
 						"initial-animation": "6dice",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -274,7 +50,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 179.8636363636364,
-						"y": 428.5454545454546,
+						"y": 88.54545454545462,
 						"width": 90.39730646419306,
 						"height": 90.39730646419306,
 						"originX": 0.5,
@@ -306,7 +82,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 287.68181818181824,
-						"y": 428.5454545454546,
+						"y": 88.54545454545462,
 						"width": 90.39730646419306,
 						"height": 90.39730646419306,
 						"originX": 0.5,
@@ -338,7 +114,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 73.5,
-						"y": 428.5454545454546,
+						"y": 88.54545454545462,
 						"width": 90.39730646419306,
 						"height": 90.39730646419306,
 						"originX": 0.5,
@@ -365,140 +141,12 @@
 					"uid": 3,
 					"instanceVariables": {
 						"type": "counter_list",
-						"layout": "5"
+						"layout": "1"
 					},
 					"behaviors": {},
 					"world": {
-						"x": 179.86363636363643,
-						"y": 218.36363636363632,
-						"width": 90.39730646419306,
-						"height": 90.39730646419306,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_button_type",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "4counterlist",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 7,
-					"instanceVariables": {
-						"type": "counter_list",
-						"layout": "6"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 287.68181818181824,
-						"y": 218.36363636363632,
-						"width": 90.39730646419306,
-						"height": 90.39730646419306,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_button_type",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "4counterlist",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 10,
-					"instanceVariables": {
-						"type": "counter_list",
-						"layout": "10"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 73.5,
-						"y": 324.27272727272725,
-						"width": 90.39730646419306,
-						"height": 90.39730646419306,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_button_type",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "4counterlist",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 14,
-					"instanceVariables": {
-						"type": "counter_list",
-						"layout": "12"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 179.8636363636364,
-						"y": 324.27272727272725,
-						"width": 90.39730646419306,
-						"height": 90.39730646419306,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "menu_button_type",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "4counterlist",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 16,
-					"instanceVariables": {
-						"type": "counter_list",
-						"layout": "20"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 287.68181818181824,
-						"y": 324.27272727272725,
+						"x": 73.50000000000001,
+						"y": 198.36363636363632,
 						"width": 90.39730646419306,
 						"height": 90.39730646419306,
 						"originX": 0.5,

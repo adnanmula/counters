@@ -9,6 +9,28 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 350846524941816
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 139110355229646,
+					"parameters": {
+						"variable": "color",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 772587744555967
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-function",
 					"objectClass": "Function",
 					"sid": 365102301250517,
@@ -108,6 +130,16 @@
 			"sid": 235034558791129
 		},
 		{
+			"eventType": "variable",
+			"name": "color",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 360147327791563
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -129,9 +161,9 @@
 				{
 					"id": "set-animation-frame",
 					"objectClass": "counter_list_main",
-					"sid": 724687781621824,
+					"sid": 106416429354293,
 					"parameters": {
-						"frame-number": "counter_list_main.IID"
+						"frame-number": "color ? 1 : 0"
 					}
 				},
 				{
@@ -221,6 +253,14 @@
 					"parameters": {
 						"instance-variable": "base_uid",
 						"value": "counter_list_main.UID"
+					}
+				},
+				{
+					"id": "toggle-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 819446313004246,
+					"parameters": {
+						"variable": "color"
 					}
 				}
 			],

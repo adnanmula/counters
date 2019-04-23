@@ -91,7 +91,8 @@
 	"objectTypes": {
 		"items": [
 			"log",
-			"logMessages"
+			"logMessages",
+			"pixel_text"
 		],
 		"subfolders": [
 			{

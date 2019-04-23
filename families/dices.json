@@ -8,13 +8,18 @@
 			"type": "number",
 			"desc": "",
 			"sid": 418448419698556
+		},
+		{
+			"name": "text_uid",
+			"type": "number",
+			"desc": "",
+			"sid": 641261143540931
 		}
 	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
 		"6_sided_dice",
-		"8_sided_dice",
-		"2_sided_dice"
+		"8_sided_dice"
 	]
 }

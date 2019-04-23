@@ -11,91 +11,14 @@
 			{
 				"frames": [
 					{
-						"width": 80,
-						"height": 80,
+						"width": 50,
+						"height": 50,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 46,
-						"duration": 1
-					},
-					{
-						"width": 80,
-						"height": 80,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 42,
-						"duration": 1
-					},
-					{
-						"width": 80,
-						"height": 80,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 43,
-						"duration": 1
-					},
-					{
-						"width": 80,
-						"height": 80,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 44,
-						"duration": 1
-					},
-					{
-						"width": 80,
-						"height": 80,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 47,
-						"duration": 1
-					},
-					{
-						"width": 80,
-						"height": 80,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 48,
-						"duration": 1
-					},
-					{
-						"width": 80,
-						"height": 80,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 49,
-						"duration": 1
-					},
-					{
-						"width": 80,
-						"height": 80,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 50,
+						"imageSpriteId": 2,
 						"duration": 1
 					}
 				],

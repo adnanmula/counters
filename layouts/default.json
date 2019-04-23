@@ -193,10 +193,10 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 466,
-						"y": 122,
-						"width": 20,
-						"height": 20,
+						"x": 498.5959326517695,
+						"y": 106.92876232230012,
+						"width": 30,
+						"height": 30,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -227,8 +227,8 @@
 					"world": {
 						"x": 371,
 						"y": 176,
-						"width": 20,
-						"height": 20,
+						"width": 30,
+						"height": 30,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -296,14 +296,15 @@
 					},
 					"uid": 17,
 					"instanceVariables": {
-						"sides": 6
+						"sides": 6,
+						"text_uid": 0
 					},
 					"behaviors": {},
 					"world": {
-						"x": 50,
-						"y": 44,
-						"width": 80,
-						"height": 80,
+						"x": 59.94604713484602,
+						"y": 46.761833479616165,
+						"width": 70.13423895230302,
+						"height": 70.13423895230302,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -327,14 +328,15 @@
 					},
 					"uid": 27,
 					"instanceVariables": {
-						"sides": 8
+						"sides": 8,
+						"text_uid": 0
 					},
 					"behaviors": {},
 					"world": {
-						"x": 141,
-						"y": 48,
-						"width": 80,
-						"height": 80,
+						"x": 146.32762407076973,
+						"y": 44.09077794261699,
+						"width": 70.13423895230302,
+						"height": 70.13423895230302,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -357,9 +359,7 @@
 						"live-preview": false
 					},
 					"uid": 8,
-					"instanceVariables": {
-						"sides": 2
-					},
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
 						"x": 46.547109471250465,
@@ -406,6 +406,44 @@
 						"height": 76.72932900486472,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "pixel_text",
+					"properties": {
+						"text": "0",
+						"enable-bbcode": true,
+						"character-width": 22,
+						"character-height": 22,
+						"character-set": "0123456789",
+						"spacing-data": "",
+						"scale": 1,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "character",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 14,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 212.09213230591547,
+						"y": 110.50658330549876,
+						"width": 23.986765446867594,
+						"height": 21.789470108308706,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

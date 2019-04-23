@@ -19,7 +19,6 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"counter_list_main",
-		"counter_main"
+		"counter_list_main"
 	]
 }

@@ -19,7 +19,6 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"6_sided_dice",
-		"8_sided_dice"
+		"generic_dice"
 	]
 }

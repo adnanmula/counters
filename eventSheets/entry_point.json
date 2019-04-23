@@ -3,10 +3,6 @@
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "counter"
-		},
-		{
-			"eventType": "include",
 			"includeSheet": "counterList"
 		},
 		{
@@ -25,36 +21,6 @@
 			"actions": [],
 			"sid": 444851424623725,
 			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 167317787774838,
-							"parameters": {
-								"first-value": "layout_type",
-								"comparison": 0,
-								"second-value": "\"counter\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 706188276261750,
-							"parameters": {
-								"name": "\"setUpCounters\"",
-								"parameter-n": [
-									"int(layout_amount)",
-									"\"landscape\""
-								]
-							}
-						}
-					],
-					"sid": 845570702564323
-				},
 				{
 					"eventType": "block",
 					"conditions": [

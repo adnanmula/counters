@@ -56,16 +56,16 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
+			"id": "Arr",
+			"name": "Array",
 			"author": "Scirra",
 			"version": "r142.2",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Text",
-			"name": "Text",
+			"id": "Sprite",
+			"name": "Sprite",
 			"author": "Scirra",
 			"version": "r142.2",
 			"bundled": false
@@ -77,23 +77,11 @@
 			"author": "Scirra",
 			"version": "r142.2",
 			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Arr",
-			"name": "Array",
-			"author": "Scirra",
-			"version": "r142.2",
-			"bundled": false
 		}
 	],
 	"uniqueId": "lbsim9dqew5w",
 	"objectTypes": {
-		"items": [
-			"log",
-			"logMessages",
-			"pixel_text"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -108,7 +96,8 @@
 			},
 			{
 				"items": [
-					"CountersInfo"
+					"CountersInfo",
+					"logMessages"
 				],
 				"subfolders": [],
 				"name": "data"
@@ -122,40 +111,21 @@
 			},
 			{
 				"items": [
-					"counter_arrow_add",
-					"counter_arrow_sub",
-					"counter_default_text",
 					"counter_list_arrow_add",
 					"counter_list_arrow_sub",
 					"counter_list_main",
-					"counter_list_text",
-					"counter_main"
+					"log",
+					"pixel_text",
+					"2_sided_dice",
+					"generic_dice"
 				],
 				"subfolders": [],
 				"name": "counter"
-			},
-			{
-				"items": [
-					"6_sided_dice",
-					"8_sided_dice",
-					"2_sided_dice"
-				],
-				"subfolders": [],
-				"name": "dice"
 			}
 		]
 	},
 	"autosaveData": null,
 	"containers": [
-		{
-			"members": [
-				"counter_arrow_add",
-				"counter_arrow_sub",
-				"counter_default_text",
-				"counter_main"
-			],
-			"selectMode": "normal"
-		},
 		{
 			"members": [
 				"counter_list_arrow_add",
@@ -168,7 +138,6 @@
 	"families": {
 		"items": [
 			"menu_button",
-			"counter_text",
 			"dices",
 			"counter_arrow",
 			"counter_base"
@@ -190,7 +159,6 @@
 		"subfolders": [
 			{
 				"items": [
-					"counter",
 					"counterCommon",
 					"counterList"
 				],

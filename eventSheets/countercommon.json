@@ -2,145 +2,44 @@
 	"name": "counterCommon",
 	"events": [
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-function",
-					"objectClass": "Function",
-					"sid": 289003385623275,
-					"parameters": {
-						"name": "\"updateCounter\""
-					}
-				}
-			],
-			"actions": [],
-			"sid": 673032568598081,
-			"children": [
-				{
-					"eventType": "variable",
-					"name": "max_value",
-					"type": "number",
-					"initialValue": "9999999",
-					"comment": "",
-					"isStatic": false,
-					"isConstant": false,
-					"sid": 206302335067263
-				},
-				{
-					"eventType": "variable",
-					"name": "min_value",
-					"type": "number",
-					"initialValue": "-999999",
-					"comment": "",
-					"isStatic": false,
-					"isConstant": false,
-					"sid": 913766448235529
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "pick-by-unique-id",
-							"objectClass": "counter_base",
-							"sid": 796314831586408,
-							"parameters": {
-								"unique-id": "Function.Param(0)"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 313986132449651,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"id": "set-instvar-value",
-									"objectClass": "counter_base",
-									"sid": 487768958888954,
-									"parameters": {
-										"instance-variable": "value",
-										"value": "counter_base.value + Function.Param(1) > max_value ? max_value : (counter_base.value + Function.Param(1) < min_value ? min_value : counter_base.value + Function.Param(1) )"
-									}
-								},
-								{
-									"id": "log",
-									"objectClass": "Browser",
-									"sid": 702035765350479,
-									"parameters": {
-										"type": "log",
-										"message": "counter_base.value"
-									}
-								}
-							],
-							"sid": 391612345175856,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "pick-by-unique-id",
-											"objectClass": "pixel_text",
-											"sid": 746228326328464,
-											"parameters": {
-												"unique-id": "counter_base.text_uid"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-text",
-											"objectClass": "pixel_text",
-											"sid": 134234937402175,
-											"parameters": {
-												"text": "counter_base.value"
-											}
-										}
-									],
-									"sid": 716367517751802
-								}
-							]
-						}
-					]
-				}
-			]
+			"eventType": "variable",
+			"name": "COUNTER_CONTAINER_ORIGIN",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 267398100606184
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-touched-object",
-					"objectClass": "Touch",
-					"sid": 535057314736575,
-					"parameters": {
-						"object": "counter_arrow"
-					}
-				},
-				{
-					"id": "pick-by-unique-id",
-					"objectClass": "counter_base",
-					"sid": 386538468240101,
-					"parameters": {
-						"unique-id": "counter_arrow.base_uid"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "call-function",
-					"objectClass": "Function",
-					"sid": 682570703573377,
-					"parameters": {
-						"name": "\"updateCounter\"",
-						"parameter-n": [
-							"counter_arrow.base_uid",
-							"counter_arrow.value"
-						]
-					}
-				}
-			],
-			"sid": 660652448277866
+			"eventType": "variable",
+			"name": "COUNTER_CONTAINER_CENTER",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 125641068079582
+		},
+		{
+			"eventType": "variable",
+			"name": "COUNTER_CONTAINER_ADDITION",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 944541085179033
+		},
+		{
+			"eventType": "variable",
+			"name": "COUNTER_CONTAINER_SUBSTRACTION",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 694268764550428
 		},
 		{
 			"eventType": "variable",
@@ -372,6 +271,157 @@
 				}
 			],
 			"sid": 436323772067294
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "UpdateCounter",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 276994722068662,
+							"parameters": {
+								"name": "\"updateCounter\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 224146897987813,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "max_value",
+							"type": "number",
+							"initialValue": "9999999",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 946091969693268
+						},
+						{
+							"eventType": "variable",
+							"name": "min_value",
+							"type": "number",
+							"initialValue": "-999999",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 256967722403789
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "counter_base",
+									"sid": 198434327818322,
+									"parameters": {
+										"unique-id": "Function.Param(0)"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 271605244064690,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "counter_base",
+											"sid": 965364803956470,
+											"parameters": {
+												"instance-variable": "value",
+												"value": "counter_base.value + Function.Param(1) > max_value ? max_value : (counter_base.value + Function.Param(1) < min_value ? min_value : counter_base.value + Function.Param(1) )"
+											}
+										},
+										{
+											"id": "log",
+											"objectClass": "Browser",
+											"sid": 403697999241343,
+											"parameters": {
+												"type": "log",
+												"message": "counter_base.value"
+											}
+										}
+									],
+									"sid": 955684856284599,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "pixel_text",
+													"sid": 413906193401675,
+													"parameters": {
+														"unique-id": "counter_base.text_uid"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-text",
+													"objectClass": "pixel_text",
+													"sid": 722174689754800,
+													"parameters": {
+														"text": "counter_base.value"
+													}
+												}
+											],
+											"sid": 624676091892193
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 243058253142805,
+							"parameters": {
+								"object": "counter_arrow"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "counter_base",
+							"sid": 822877298217653,
+							"parameters": {
+								"unique-id": "counter_arrow.base_uid"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 714620836379087,
+							"parameters": {
+								"name": "\"updateCounter\"",
+								"parameter-n": [
+									"counter_arrow.base_uid",
+									"counter_arrow.value"
+								]
+							}
+						}
+					],
+					"sid": 261920158933893
+				}
+			],
+			"sid": 982046265698808
 		}
 	],
 	"sid": 724543389463521

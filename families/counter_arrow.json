@@ -19,8 +19,6 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"counter_arrow_add",
-		"counter_arrow_sub",
 		"counter_list_arrow_add",
 		"counter_list_arrow_sub"
 	]

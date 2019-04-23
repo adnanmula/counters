@@ -21,28 +21,6 @@
 								"originalSource": "",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 60,
-								"duration": 1
-							}
-						],
-						"sid": 766599876305974,
-						"name": "8dice",
-						"isLooping": false,
-						"isPingPong": false,
-						"repeatCount": 1,
-						"repeatTo": 0,
-						"speed": 5
-					},
-					{
-						"frames": [
-							{
-								"width": 50,
-								"height": 50,
-								"originX": 0.5,
-								"originY": 0.5,
-								"originalSource": "",
-								"exportFormat": "png",
-								"exportQuality": 0.8,
 								"imageSpriteId": 61,
 								"duration": 1
 							}
@@ -65,12 +43,122 @@
 								"originalSource": "",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
+								"imageSpriteId": 16,
+								"duration": 1
+							}
+						],
+						"sid": 420707495374883,
+						"name": "4dice",
+						"isLooping": false,
+						"isPingPong": false,
+						"repeatCount": 1,
+						"repeatTo": 0,
+						"speed": 5
+					},
+					{
+						"frames": [
+							{
+								"width": 50,
+								"height": 50,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
 								"imageSpriteId": 62,
 								"duration": 1
 							}
 						],
 						"sid": 440665245028460,
 						"name": "6dice",
+						"isLooping": false,
+						"isPingPong": false,
+						"repeatCount": 1,
+						"repeatTo": 0,
+						"speed": 5
+					},
+					{
+						"frames": [
+							{
+								"width": 50,
+								"height": 50,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 60,
+								"duration": 1
+							}
+						],
+						"sid": 766599876305974,
+						"name": "8dice",
+						"isLooping": false,
+						"isPingPong": false,
+						"repeatCount": 1,
+						"repeatTo": 0,
+						"speed": 5
+					},
+					{
+						"frames": [
+							{
+								"width": 50,
+								"height": 50,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 19,
+								"duration": 1
+							}
+						],
+						"sid": 571555388243166,
+						"name": "10dice",
+						"isLooping": false,
+						"isPingPong": false,
+						"repeatCount": 1,
+						"repeatTo": 0,
+						"speed": 5
+					},
+					{
+						"frames": [
+							{
+								"width": 50,
+								"height": 50,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 20,
+								"duration": 1
+							}
+						],
+						"sid": 497791766643619,
+						"name": "12dice",
+						"isLooping": false,
+						"isPingPong": false,
+						"repeatCount": 1,
+						"repeatTo": 0,
+						"speed": 5
+					},
+					{
+						"frames": [
+							{
+								"width": 50,
+								"height": 50,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 15,
+								"duration": 1
+							}
+						],
+						"sid": 446961261646777,
+						"name": "20dice",
 						"isLooping": false,
 						"isPingPong": false,
 						"repeatCount": 1,

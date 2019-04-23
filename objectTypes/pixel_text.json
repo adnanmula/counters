@@ -3,17 +3,24 @@
 	"plugin-id": "Spritefont2",
 	"sid": 137952271893482,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "base_uid",
+			"type": "number",
+			"desc": "",
+			"sid": 875238499641158
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
 		"width": 128,
-		"height": 64,
+		"height": 128,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 6
+		"imageSpriteId": 5
 	}
 }

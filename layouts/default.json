@@ -423,7 +423,7 @@
 						"enable-bbcode": true,
 						"character-width": 22,
 						"character-height": 22,
-						"character-set": "0123456789",
+						"character-set": "0123456789-+*/",
 						"spacing-data": "",
 						"scale": 1,
 						"character-spacing": 0,
@@ -435,11 +435,13 @@
 						"origin": "center"
 					},
 					"uid": 14,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"base_uid": 0
+					},
 					"behaviors": {},
 					"world": {
-						"x": 212.09213230591547,
-						"y": 110.50658330549876,
+						"x": 281.1394305037498,
+						"y": 119.26893079253355,
 						"width": 23.986765446867594,
 						"height": 21.789470108308706,
 						"originX": 0.5,

@@ -63,6 +63,15 @@
 										"instance-variable": "value",
 										"value": "counter_base.value + Function.Param(1) > max_value ? max_value : (counter_base.value + Function.Param(1) < min_value ? min_value : counter_base.value + Function.Param(1) )"
 									}
+								},
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 702035765350479,
+									"parameters": {
+										"type": "log",
+										"message": "counter_base.value"
+									}
 								}
 							],
 							"sid": 391612345175856,
@@ -72,8 +81,8 @@
 									"conditions": [
 										{
 											"id": "pick-by-unique-id",
-											"objectClass": "counter_text",
-											"sid": 992519388592026,
+											"objectClass": "pixel_text",
+											"sid": 746228326328464,
 											"parameters": {
 												"unique-id": "counter_base.text_uid"
 											}
@@ -82,14 +91,14 @@
 									"actions": [
 										{
 											"id": "set-text",
-											"objectClass": "counter_text",
-											"sid": 451642876889863,
+											"objectClass": "pixel_text",
+											"sid": 134234937402175,
 											"parameters": {
 												"text": "counter_base.value"
 											}
 										}
 									],
-									"sid": 817899658237166
+									"sid": 716367517751802
 								}
 							]
 						}
@@ -311,14 +320,14 @@
 						{
 							"id": "on-double-tap-object",
 							"objectClass": "Touch",
-							"sid": 413688860063815,
+							"sid": 434090683203479,
 							"parameters": {
-								"object": "counter_text"
+								"object": "pixel_text"
 							}
 						}
 					],
 					"actions": [],
-					"sid": 576936116599224,
+					"sid": 560201945519528,
 					"children": [
 						{
 							"eventType": "block",
@@ -326,9 +335,9 @@
 								{
 									"id": "pick-by-unique-id",
 									"objectClass": "counter_base",
-									"sid": 325799638147386,
+									"sid": 375317966248696,
 									"parameters": {
-										"unique-id": "counter_text.base_uid"
+										"unique-id": "pixel_text.base_uid"
 									}
 								}
 							],
@@ -336,17 +345,27 @@
 								{
 									"id": "call-function",
 									"objectClass": "Function",
-									"sid": 714594803692240,
+									"sid": 321720062853463,
 									"parameters": {
 										"name": "\"updateCounter\"",
 										"parameter-n": [
-											"counter_base.UID",
+											"pixel_text.base_uid",
 											"-counter_base.value"
 										]
 									}
+								},
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 357611030211121,
+									"parameters": {
+										"type": "log",
+										"message": "pixel_text.base_uid"
+									}
 								}
 							],
-							"sid": 567279407303624
+							"sid": 137435913804047,
+							"isOrBlock": true
 						}
 					],
 					"isOrBlock": true

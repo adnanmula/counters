@@ -130,10 +130,6 @@
 			"sid": 235034558791129
 		},
 		{
-			"eventType": "comment",
-			"text": ""
-		},
-		{
 			"eventType": "variable",
 			"name": "color_theme",
 			"type": "string",
@@ -244,38 +240,49 @@
 					}
 				},
 				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 447172106519218,
+					"parameters": {
+						"object-to-create": "pixel_text",
+						"layer": "counter_list_main.LayerName",
+						"x": "counter_list_main.ImagePointX(COUNTER_CONTAINER_CENTER)",
+						"y": "counter_list_main.ImagePointY(COUNTER_CONTAINER_CENTER)"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "pixel_text",
+					"sid": 698602503640632,
+					"parameters": {
+						"width": "150",
+						"height": "30"
+					}
+				},
+				{
 					"id": "set-text",
-					"objectClass": "counter_list_text",
-					"sid": 255895445122745,
+					"objectClass": "pixel_text",
+					"sid": 740857153355199,
 					"parameters": {
 						"text": "counter_list_main.value"
 					}
 				},
 				{
-					"id": "set-position-to-another-object",
-					"objectClass": "counter_list_text",
-					"sid": 832301498554735,
+					"id": "set-instvar-value",
+					"objectClass": "pixel_text",
+					"sid": 595553415066076,
 					"parameters": {
-						"object": "counter_list_main",
-						"image-point-optional": "COUNTER_CONTAINER_CENTER"
+						"instance-variable": "base_uid",
+						"value": "counter_list_main.UID"
 					}
 				},
 				{
 					"id": "set-instvar-value",
 					"objectClass": "counter_list_main",
-					"sid": 981114220133987,
+					"sid": 977551852474459,
 					"parameters": {
 						"instance-variable": "text_uid",
-						"value": "counter_list_text.UID"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "counter_list_text",
-					"sid": 568632521872506,
-					"parameters": {
-						"instance-variable": "base_uid",
-						"value": "counter_list_main.UID"
+						"value": "pixel_text.UID"
 					}
 				},
 				{

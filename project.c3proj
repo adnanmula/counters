@@ -160,8 +160,7 @@
 			"members": [
 				"counter_list_arrow_add",
 				"counter_list_arrow_sub",
-				"counter_list_main",
-				"counter_list_text"
+				"counter_list_main"
 			],
 			"selectMode": "normal"
 		}

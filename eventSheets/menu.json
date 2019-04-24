@@ -22,8 +22,40 @@
 			"sid": 873836329886631
 		},
 		{
+			"eventType": "variable",
+			"name": "counter_amount",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 739050291189968
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "settings"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 557303850962904
+				}
+			],
+			"actions": [
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 920552632884626,
+					"parameters": {
+						"name": "\"updateCounterMenuAmount\"",
+						"parameter-n": []
+					}
+				}
+			],
+			"sid": 693256163057008
 		},
 		{
 			"eventType": "block",
@@ -50,10 +82,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 960991010965891,
+					"sid": 482473404065948,
 					"parameters": {
 						"variable": "layout_amount",
-						"value": "menu_button.layout"
+						"value": "layout_type = \"counter_list\" ? counter_amount : menu_button.layout"
 					}
 				},
 				{
@@ -93,6 +125,148 @@
 			],
 			"sid": 248627161760942,
 			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 786419557790353,
+					"parameters": {
+						"object": "menu_counter_amount_arrow"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 451711558338742,
+					"parameters": {
+						"variable": "counter_amount",
+						"value": "counter_amount + int(menu_counter_amount_arrow.action)"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 252098580966392,
+					"parameters": {
+						"name": "\"updateCounterMenuAmount\"",
+						"parameter-n": []
+					}
+				}
+			],
+			"sid": 322059767139768,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "counter_max",
+					"type": "number",
+					"initialValue": "20",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 475986642276762
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 795625438323507,
+							"parameters": {
+								"first-value": "counter_amount",
+								"comparison": 4,
+								"second-value": "counter_max"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 566053646535879,
+							"parameters": {
+								"variable": "counter_amount",
+								"value": "1"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 554910353930107,
+							"parameters": {
+								"name": "\"updateCounterMenuAmount\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 410626292330805
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 188970217406652,
+							"parameters": {
+								"first-value": "counter_amount",
+								"comparison": 2,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 232245136989816,
+							"parameters": {
+								"variable": "counter_amount",
+								"value": "counter_max"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 441275766176568,
+							"parameters": {
+								"name": "\"updateCounterMenuAmount\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 575358237210810
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 823700360221395,
+					"parameters": {
+						"name": "\"updateCounterMenuAmount\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "menu_counter_amount_text",
+					"sid": 558343057139178,
+					"parameters": {
+						"text": "counter_amount"
+					}
+				}
+			],
+			"sid": 943571288752075
 		}
 	],
 	"sid": 413805959310103

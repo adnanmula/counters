@@ -104,7 +104,9 @@
 			},
 			{
 				"items": [
-					"menu_button_type"
+					"menu_button_type",
+					"menu_counter_amount_arrow",
+					"menu_counter_amount_text"
 				],
 				"subfolders": [],
 				"name": "menu"

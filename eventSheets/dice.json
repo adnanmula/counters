@@ -32,10 +32,19 @@
 						{
 							"id": "set-size",
 							"objectClass": "pixel_text",
-							"sid": 997793022661726,
+							"sid": 560269230091482,
 							"parameters": {
-								"width": "200",
-								"height": "200"
+								"width": "400",
+								"height": "400"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "pixel_text",
+							"sid": 188582615587846,
+							"parameters": {
+								"instance-variable": "base_uid",
+								"value": "dices.UID"
 							}
 						},
 						{
@@ -194,6 +203,33 @@
 						{
 							"id": "on-touched-object",
 							"objectClass": "Touch",
+							"sid": 196056291530361,
+							"parameters": {
+								"object": "pixel_text"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 487732084654401,
+							"parameters": {
+								"name": "\"rollDice\"",
+								"parameter-n": [
+									"pixel_text.base_uid"
+								]
+							}
+						}
+					],
+					"sid": 186045617461969
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
 							"sid": 807912932626980,
 							"parameters": {
 								"object": "2_sided_dice"
@@ -289,11 +325,11 @@
 										{
 											"id": "call-function",
 											"objectClass": "Function",
-											"sid": 545637337007500,
+											"sid": 261356165295295,
 											"parameters": {
 												"name": "\"addLog\"",
 												"parameter-n": [
-													"\"d\" & dices.sides & \": \" & result"
+													"\"d\" & dices.sides & \":\" & (len(str(dices.sides)) > 1 ? \"\" : \" \") & result"
 												]
 											}
 										}

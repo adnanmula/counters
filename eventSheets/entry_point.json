@@ -109,6 +109,14 @@
 					"sid": 270480147357624
 				},
 				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 648787470640136,
+					"parameters": {
+						"object": "main_back_button"
+					}
+				},
+				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
 					"sid": 668720738368822,

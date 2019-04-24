@@ -1,5 +1,5 @@
 {
-	"name": "menu_counter_amount_arrow",
+	"name": "menu_amount_arrow",
 	"plugin-id": "Sprite",
 	"sid": 390905270607296,
 	"isGlobal": false,
@@ -9,6 +9,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 484650319432031
+		},
+		{
+			"name": "type",
+			"type": "string",
+			"desc": "",
+			"sid": 129565103714917
 		}
 	],
 	"behaviorTypes": [],

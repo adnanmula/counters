@@ -1,19 +1,19 @@
 {
-	"name": "menu_counter_amount_text",
-	"plugin-id": "Spritefont2",
-	"sid": 382535158963074,
+	"name": "menu_square_bg",
+	"plugin-id": "NinePatch",
+	"sid": 494174972016185,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 128,
-		"height": 128,
+		"width": 9,
+		"height": 9,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 9
+		"imageSpriteId": 27
 	}
 }

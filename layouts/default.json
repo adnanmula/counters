@@ -53,8 +53,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 266,
-						"y": 31,
+						"x": 284.12053460318805,
+						"y": 16.734898291107335,
 						"width": 30,
 						"height": 30,
 						"originX": 0.5,
@@ -85,8 +85,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 266,
-						"y": 73,
+						"x": 283.7349913137584,
+						"y": 48.325229476509975,
 						"width": 30,
 						"height": 30,
 						"originX": 0.5,
@@ -192,8 +192,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 224,
-						"y": 70,
+						"x": 282.98812328271845,
+						"y": 76.93977920973158,
 						"width": 23.986765446867594,
 						"height": 21.789470108308706,
 						"originX": 0.5,
@@ -228,6 +228,64 @@
 						"y": 45,
 						"width": 70.13423895230302,
 						"height": 70.13423895230302,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "clean_log_button",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 29,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 213.31723532432213,
+						"y": 43.995693680923296,
+						"width": 100,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "main_back_button",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 32,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 58.933468760486235,
+						"y": 161.99415466401032,
+						"width": 100,
+						"height": 50,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

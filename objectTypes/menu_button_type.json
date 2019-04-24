@@ -164,6 +164,72 @@
 						"repeatCount": 1,
 						"repeatTo": 0,
 						"speed": 5
+					},
+					{
+						"frames": [
+							{
+								"width": 50,
+								"height": 50,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 14,
+								"duration": 1
+							}
+						],
+						"sid": 732202220205588,
+						"name": "100d",
+						"isLooping": false,
+						"isPingPong": false,
+						"repeatCount": 1,
+						"repeatTo": 0,
+						"speed": 5
+					},
+					{
+						"frames": [
+							{
+								"width": 50,
+								"height": 50,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 19,
+								"duration": 1
+							}
+						],
+						"sid": 584626781968524,
+						"name": "customd",
+						"isLooping": false,
+						"isPingPong": false,
+						"repeatCount": 1,
+						"repeatTo": 0,
+						"speed": 5
+					},
+					{
+						"frames": [
+							{
+								"width": 50,
+								"height": 50,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 21,
+								"duration": 1
+							}
+						],
+						"sid": 616693648395909,
+						"name": "66d",
+						"isLooping": false,
+						"isPingPong": false,
+						"repeatCount": 1,
+						"repeatTo": 0,
+						"speed": 5
 					}
 				],
 				"subfolders": [],

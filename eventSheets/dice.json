@@ -32,10 +32,10 @@
 						{
 							"id": "set-size",
 							"objectClass": "pixel_text",
-							"sid": 560269230091482,
+							"sid": 988545294675055,
 							"parameters": {
-								"width": "400",
-								"height": "400"
+								"width": "450",
+								"height": "450"
 							}
 						},
 						{
@@ -176,33 +176,6 @@
 						{
 							"id": "on-touched-object",
 							"objectClass": "Touch",
-							"sid": 112382014646812,
-							"parameters": {
-								"object": "dices"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 829285051106794,
-							"parameters": {
-								"name": "\"rollDice\"",
-								"parameter-n": [
-									"dices.UID"
-								]
-							}
-						}
-					],
-					"sid": 853304115741803
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-touched-object",
-							"objectClass": "Touch",
 							"sid": 196056291530361,
 							"parameters": {
 								"object": "pixel_text"
@@ -321,20 +294,108 @@
 											"parameters": {
 												"text": "result"
 											}
-										},
-										{
-											"id": "call-function",
-											"objectClass": "Function",
-											"sid": 261356165295295,
-											"parameters": {
-												"name": "\"addLog\"",
-												"parameter-n": [
-													"\"d\" & dices.sides & \":\" & (len(str(dices.sides)) > 1 ? \"\" : \" \") & result"
-												]
-											}
 										}
 									],
-									"sid": 460366413920586
+									"sid": 460366413920586,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 122855074279237,
+													"parameters": {
+														"first-value": "len(str(dices.sides))",
+														"comparison": 0,
+														"second-value": "1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 704474419106363,
+													"parameters": {
+														"name": "\"addLog\"",
+														"parameter-n": [
+															"\"d\" & dices.sides & \":\" &  \"  \" & result"
+														]
+													}
+												}
+											],
+											"sid": 103931352285300
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 353151972835266,
+													"parameters": {
+														"first-value": "len(str(dices.sides))",
+														"comparison": 0,
+														"second-value": "2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 698093152865987,
+													"parameters": {
+														"name": "\"addLog\"",
+														"parameter-n": [
+															"\"d\" & dices.sides & \":\" &  \" \" & result"
+														]
+													}
+												}
+											],
+											"sid": 173336228975875
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 838325956306428,
+													"parameters": {
+														"first-value": "len(str(dices.sides))",
+														"comparison": 1,
+														"second-value": "1"
+													}
+												},
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 926659196607756,
+													"parameters": {
+														"first-value": "len(str(dices.sides))",
+														"comparison": 1,
+														"second-value": "2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "call-function",
+													"objectClass": "Function",
+													"sid": 182605313759840,
+													"parameters": {
+														"name": "\"addLog\"",
+														"parameter-n": [
+															"\"d\" & dices.sides & \":\" &  \"\" & result"
+														]
+													}
+												}
+											],
+											"sid": 628096479888478
+										}
+									]
 								}
 							]
 						}
@@ -398,21 +459,12 @@
 								{
 									"id": "call-function",
 									"objectClass": "Function",
-									"sid": 459305813088955,
+									"sid": 464559484013869,
 									"parameters": {
 										"name": "\"addLog\"",
 										"parameter-n": [
-											"\"d2: \"& (result ? \"tail\" : \"head\")"
+											"\"d2:  \"& (result ? \"tail\" : \"head\")"
 										]
-									}
-								},
-								{
-									"id": "log",
-									"objectClass": "Browser",
-									"sid": 369482128970616,
-									"parameters": {
-										"type": "log",
-										"message": "result"
 									}
 								}
 							],
@@ -452,6 +504,28 @@
 								"layer": "\"main\"",
 								"x": "5",
 								"y": "4"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 266784074354914,
+							"parameters": {
+								"object-to-create": "clean_log_button",
+								"layer": "\"main\"",
+								"x": "60",
+								"y": "605"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 182918416077790,
+							"parameters": {
+								"object-to-create": "main_back_button",
+								"layer": "\"main\"",
+								"x": "300",
+								"y": "605"
 							}
 						},
 						{
@@ -504,7 +578,7 @@
 							"eventType": "variable",
 							"name": "max_lines",
 							"type": "number",
-							"initialValue": "38",
+							"initialValue": "35",
 							"comment": "",
 							"isStatic": false,
 							"isConstant": true,
@@ -562,6 +636,46 @@
 							"sid": 859544722801861
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 747910344402636,
+							"parameters": {
+								"object": "clean_log_button"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "log",
+							"sid": 452353760047095
+						},
+						{
+							"id": "set-size",
+							"objectClass": "logMessages",
+							"sid": 898399511431008,
+							"parameters": {
+								"width": "0",
+								"height": "1",
+								"depth": "1"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 530712488850743,
+							"parameters": {
+								"name": "\"setUpLog\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 586413732920710
 				}
 			],
 			"sid": 772273118635116

@@ -252,15 +252,6 @@
 											"-counter_base.value"
 										]
 									}
-								},
-								{
-									"id": "log",
-									"objectClass": "Browser",
-									"sid": 357611030211121,
-									"parameters": {
-										"type": "log",
-										"message": "pixel_text.base_uid"
-									}
 								}
 							],
 							"sid": 137435913804047,
@@ -340,15 +331,6 @@
 											"parameters": {
 												"instance-variable": "value",
 												"value": "counter_base.value + Function.Param(1) > max_value ? max_value : (counter_base.value + Function.Param(1) < min_value ? min_value : counter_base.value + Function.Param(1) )"
-											}
-										},
-										{
-											"id": "log",
-											"objectClass": "Browser",
-											"sid": 403697999241343,
-											"parameters": {
-												"type": "log",
-												"message": "counter_base.value"
 											}
 										}
 									],

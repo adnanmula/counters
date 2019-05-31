@@ -297,6 +297,38 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "starter_touch_marker",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "0",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 46,
+					"instanceVariables": {
+						"touchIndex": 0,
+						"touchId": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 31.873870262244367,
+						"y": 236.33827739704512,
+						"width": 56.28942250404261,
+						"height": 56.28942250404261,
+						"originX": 0.5172413793103449,
+						"originY": 0.5172413793103449,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 809769742902764,

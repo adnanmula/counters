@@ -1,0 +1,115 @@
+{
+	"name": "starter_touch_marker",
+	"plugin-id": "Sprite",
+	"sid": 189446617775992,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "touchIndex",
+			"type": "number",
+			"desc": "",
+			"sid": 270120518577050
+		},
+		{
+			"name": "touchId",
+			"type": "number",
+			"desc": "",
+			"sid": 882017802363682
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 29,
+						"height": 29,
+						"originX": 0.5172413793103449,
+						"originY": 0.5172413793103449,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 38,
+						"duration": 1
+					}
+				],
+				"sid": 727269732746882,
+				"name": "0",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 29,
+						"height": 29,
+						"originX": 0.5172413793103449,
+						"originY": 0.5172413793103449,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 37,
+						"duration": 1
+					}
+				],
+				"sid": 421754703081093,
+				"name": "1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 29,
+						"height": 29,
+						"originX": 0.5172413793103449,
+						"originY": 0.5172413793103449,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 45,
+						"duration": 1
+					}
+				],
+				"sid": 241668716837825,
+				"name": "2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 29,
+						"height": 29,
+						"originX": 0.5172413793103449,
+						"originY": 0.5172413793103449,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 46,
+						"duration": 1
+					}
+				],
+				"sid": 611574110506538,
+				"name": "3",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

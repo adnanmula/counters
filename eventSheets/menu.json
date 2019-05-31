@@ -66,6 +66,10 @@
 			"includeSheet": "settings"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "starter"
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Update counter/dice text",
@@ -603,6 +607,29 @@
 						{
 							"id": "on-touched-object",
 							"objectClass": "Touch",
+							"sid": 411090230120254,
+							"parameters": {
+								"object": "menu_tab"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "menuScrollTo",
+							"sid": 568265184055647,
+							"parameters": [
+								"menu_tab.tab"
+							]
+						}
+					],
+					"sid": 593148352920121
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
 							"sid": 862737013286403,
 							"parameters": {
 								"object": "menu_button"
@@ -741,6 +768,138 @@
 					],
 					"sid": 119604270739381,
 					"isOrBlock": true
+				},
+				{
+					"functionName": "menuScrollTo",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionParameters": [
+						{
+							"name": "view",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 690645306665213
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 741060463913252,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "diceView",
+							"type": "string",
+							"initialValue": "dice",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 366840753733455
+						},
+						{
+							"eventType": "variable",
+							"name": "countersView",
+							"type": "string",
+							"initialValue": "counters",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 743463221312552
+						},
+						{
+							"eventType": "variable",
+							"name": "starterView",
+							"type": "string",
+							"initialValue": "starter",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 406590241295645
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 325873789235364,
+									"parameters": {
+										"first-value": "view",
+										"comparison": 0,
+										"second-value": "diceView"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "scroll-to-position",
+									"objectClass": "System",
+									"sid": 162577711027676,
+									"parameters": {
+										"x": "180",
+										"y": "320"
+									}
+								}
+							],
+							"sid": 679833362574880
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 817560147058783,
+									"parameters": {
+										"first-value": "view",
+										"comparison": 0,
+										"second-value": "countersView"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "scroll-to-position",
+									"objectClass": "System",
+									"sid": 978803846369497,
+									"parameters": {
+										"x": "540",
+										"y": "320"
+									}
+								}
+							],
+							"sid": 516637270791338
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 888440041404435,
+									"parameters": {
+										"first-value": "view",
+										"comparison": 0,
+										"second-value": "starterView"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "scroll-to-position",
+									"objectClass": "System",
+									"sid": 107853776447626,
+									"parameters": {
+										"x": "900",
+										"y": "320"
+									}
+								}
+							],
+							"sid": 608092095745277
+						}
+					]
 				}
 			],
 			"sid": 137628029255649

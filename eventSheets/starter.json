@@ -1,0 +1,480 @@
+{
+	"name": "starter",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 816154554347039,
+					"parameters": {
+						"object": "starter_bg_helper"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 176005287486426,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-nth-touch",
+							"objectClass": "Touch",
+							"sid": 495223521748809,
+							"parameters": {
+								"touch-number": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 625177106924175,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "index",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 818387415844690
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 475916433866851,
+									"parameters": {
+										"object-to-create": "starter_touch_marker",
+										"layer": "\"Layer 0\"",
+										"x": "Touch.XAt(index)",
+										"y": "Touch.YAt(index)"
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "starter_touch_marker",
+									"sid": 540635930305158
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "starter_touch_marker",
+									"sid": 378938841702540,
+									"parameters": {
+										"animation": "str(index)",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "starter_touch_marker",
+									"sid": 288546346057452,
+									"parameters": {
+										"instance-variable": "touchId",
+										"value": "Touch.TouchID"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "starter_touch_marker",
+									"sid": 837015185888855,
+									"parameters": {
+										"instance-variable": "touchIndex",
+										"value": "Touch.TouchIndex"
+									}
+								}
+							],
+							"sid": 952504296966802
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-nth-touch",
+							"objectClass": "Touch",
+							"sid": 844837786344985,
+							"parameters": {
+								"touch-number": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 638168191123456,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "index",
+							"type": "number",
+							"initialValue": "1",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 408761600158406
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 557502145782026,
+									"parameters": {
+										"object-to-create": "starter_touch_marker",
+										"layer": "\"Layer 0\"",
+										"x": "Touch.XAt(index)",
+										"y": "Touch.YAt(index)"
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "starter_touch_marker",
+									"sid": 777789454468000
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "starter_touch_marker",
+									"sid": 164309263487518,
+									"parameters": {
+										"animation": "str(index)",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "starter_touch_marker",
+									"sid": 584348895876035,
+									"parameters": {
+										"instance-variable": "touchId",
+										"value": "Touch.TouchID"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "starter_touch_marker",
+									"sid": 224821135422473,
+									"parameters": {
+										"instance-variable": "touchIndex",
+										"value": "Touch.TouchIndex"
+									}
+								}
+							],
+							"sid": 570581011576254
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-nth-touch",
+							"objectClass": "Touch",
+							"sid": 885652116927898,
+							"parameters": {
+								"touch-number": "2"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 885956327670743,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "index",
+							"type": "number",
+							"initialValue": "2",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 963271998435919
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 544529842561248,
+									"parameters": {
+										"object-to-create": "starter_touch_marker",
+										"layer": "\"Layer 0\"",
+										"x": "Touch.XAt(index)",
+										"y": "Touch.YAt(index)"
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "starter_touch_marker",
+									"sid": 820066964283008
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "starter_touch_marker",
+									"sid": 221155432665482,
+									"parameters": {
+										"animation": "str(index)",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "starter_touch_marker",
+									"sid": 768977341902891,
+									"parameters": {
+										"instance-variable": "touchId",
+										"value": "Touch.TouchID"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "starter_touch_marker",
+									"sid": 706888469207164,
+									"parameters": {
+										"instance-variable": "touchIndex",
+										"value": "Touch.TouchIndex"
+									}
+								}
+							],
+							"sid": 690282649385753
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-nth-touch",
+							"objectClass": "Touch",
+							"sid": 223810078064117,
+							"parameters": {
+								"touch-number": "3"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 435264492601557,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "index",
+							"type": "number",
+							"initialValue": "3",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 642899834908868
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 577591560866564,
+									"parameters": {
+										"object-to-create": "starter_touch_marker",
+										"layer": "\"Layer 0\"",
+										"x": "Touch.XAt(index)",
+										"y": "Touch.YAt(index)"
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "starter_touch_marker",
+									"sid": 207742047825503
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "starter_touch_marker",
+									"sid": 551937077558903,
+									"parameters": {
+										"animation": "str(index)",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "starter_touch_marker",
+									"sid": 169688714089007,
+									"parameters": {
+										"instance-variable": "touchId",
+										"value": "Touch.TouchID"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "starter_touch_marker",
+									"sid": 312717227754732,
+									"parameters": {
+										"instance-variable": "touchIndex",
+										"value": "Touch.TouchIndex"
+									}
+								}
+							],
+							"sid": 292332301947190
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 901327282390975
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "starter_touch_marker",
+					"sid": 393931608486169,
+					"parameters": {
+						"x": "Touch.XForID(starter_touch_marker.touchId)",
+						"y": "Touch.YForID(starter_touch_marker.touchId)"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "starter_touch_marker",
+					"sid": 201707723572176,
+					"parameters": {
+						"animation": "str(starter_touch_marker.touchIndex)",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 242714845513002
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 721715940237725,
+					"parameters": {
+						"first-value": "Touch.TouchCount",
+						"comparison": 5,
+						"second-value": "2"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 898379233280009
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 478322983859916,
+					"parameters": {
+						"seconds": "2"
+					}
+				}
+			],
+			"sid": 469382172307877,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 455372897338714,
+							"parameters": {
+								"first-value": "Touch.TouchCount",
+								"comparison": 5,
+								"second-value": "2"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 905095368983831
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "starterSelectPlayer",
+							"sid": 755136548978976,
+							"parameters": [
+								"Touch.TouchCount"
+							]
+						}
+					],
+					"sid": 185516268535529
+				}
+			]
+		},
+		{
+			"functionName": "starterSelectPlayer",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionParameters": [
+				{
+					"name": "numPlayers",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 266269553315626
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 627726891615134,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "result",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 759888308087705
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 857630973840433,
+							"parameters": {
+								"variable": "result",
+								"value": "(floor(random(0, 1) * numPlayers)) + 1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "starter_bg_text",
+							"sid": 772242487568499,
+							"parameters": {
+								"text": "\"Player \" & result"
+							}
+						}
+					],
+					"sid": 131141561754203
+				}
+			]
+		}
+	],
+	"sid": 882946691407867
+}

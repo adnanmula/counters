@@ -115,7 +115,9 @@
 			{
 				"items": [
 					"CountersInfo",
-					"logMessages"
+					"logMessages",
+					"TouchStore",
+					"touchPlayerColors"
 				],
 				"subfolders": [],
 				"name": "data"
@@ -272,6 +274,10 @@
 			"items": [
 				{
 					"name": "counters-default.json",
+					"type": "application/json"
+				},
+				{
+					"name": "touchPlayerColors.json",
 					"type": "application/json"
 				}
 			],

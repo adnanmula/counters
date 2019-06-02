@@ -903,6 +903,62 @@
 				}
 			],
 			"sid": 137628029255649
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Starter - SetUp",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 946589182979560
+						}
+					],
+					"actions": [
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 900000025836068,
+							"parameters": {
+								"tag": "\"touchPlayersColors.json\"",
+								"file": "touchPlayerColors.json"
+							}
+						}
+					],
+					"sid": 994205841734783
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 770882173291316,
+							"parameters": {
+								"tag": "\"touchPlayersColors.json\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "touchPlayerColors",
+							"sid": 998412215985716,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						}
+					],
+					"sid": 415191116392309
+				}
+			],
+			"sid": 435737456530504
 		}
 	],
 	"sid": 413805959310103

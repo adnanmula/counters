@@ -602,27 +602,318 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "Tabs - Menu navigation",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "on-touched-object",
-							"objectClass": "Touch",
-							"sid": 411090230120254,
-							"parameters": {
-								"object": "menu_tab"
-							}
-						}
-					],
-					"actions": [
+							"eventType": "variable",
+							"name": "currentTab",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 474870653592608
+						},
 						{
-							"callFunction": "menuScrollTo",
-							"sid": 568265184055647,
-							"parameters": [
-								"menu_tab.tab"
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 284513597459892,
+									"parameters": {
+										"object": "menu_tab"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "menuScrollTo",
+									"sid": 975699105009984,
+									"parameters": [
+										"menu_tab.tab"
+									]
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 875437535600110,
+									"parameters": {
+										"variable": "currentTab",
+										"value": "menu_tab.tab"
+									}
+								}
+							],
+							"sid": 956477926742835,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 692604612632825,
+											"parameters": {
+												"object": "menu_tab"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "menu_tab",
+											"sid": 312735737957243,
+											"parameters": {
+												"frame-number": "0"
+											}
+										}
+									],
+									"sid": 237373886725453
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"callFunction": "highlightCurrentTab",
+											"sid": 706942436253573,
+											"parameters": [
+												"currentTab"
+											]
+										}
+									],
+									"sid": 738080335681537
+								}
+							]
+						},
+						{
+							"functionName": "menuScrollTo",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionParameters": [
+								{
+									"name": "view",
+									"type": "string",
+									"initialValue": "",
+									"comment": "",
+									"sid": 690645306665213
+								}
+							],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 622408606683352,
+							"children": [
+								{
+									"eventType": "variable",
+									"name": "diceView",
+									"type": "string",
+									"initialValue": "dice",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 723480689406663
+								},
+								{
+									"eventType": "variable",
+									"name": "countersView",
+									"type": "string",
+									"initialValue": "counters",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 167134168692922
+								},
+								{
+									"eventType": "variable",
+									"name": "starterView",
+									"type": "string",
+									"initialValue": "starter",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 379207495460746
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 242719236116467,
+											"parameters": {
+												"first-value": "view",
+												"comparison": 0,
+												"second-value": "diceView"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "scroll-to-position",
+											"objectClass": "System",
+											"sid": 984736151879901,
+											"parameters": {
+												"x": "180",
+												"y": "320"
+											}
+										}
+									],
+									"sid": 782918075949225
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 374821282293719,
+											"parameters": {
+												"first-value": "view",
+												"comparison": 0,
+												"second-value": "countersView"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "scroll-to-position",
+											"objectClass": "System",
+											"sid": 308952586167737,
+											"parameters": {
+												"x": "540",
+												"y": "320"
+											}
+										}
+									],
+									"sid": 557402277435861
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 748798890649949,
+											"parameters": {
+												"first-value": "view",
+												"comparison": 0,
+												"second-value": "starterView"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "scroll-to-position",
+											"objectClass": "System",
+											"sid": 765177453519770,
+											"parameters": {
+												"x": "900",
+												"y": "320"
+											}
+										}
+									],
+									"sid": 646633220058725
+								}
+							]
+						},
+						{
+							"functionName": "highlightCurrentTab",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionParameters": [
+								{
+									"name": "tab",
+									"type": "string",
+									"initialValue": "",
+									"comment": "",
+									"sid": 744471728111552
+								}
+							],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 122409314672562,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 467238393621485,
+											"parameters": {
+												"object": "menu_tab"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 334055322995408,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "menu_tab",
+													"sid": 286689303900652,
+													"parameters": {
+														"instance-variable": "tab",
+														"comparison": 1,
+														"value": "tab"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation-frame",
+													"objectClass": "menu_tab",
+													"sid": 974141695457808,
+													"parameters": {
+														"frame-number": "0"
+													}
+												}
+											],
+											"sid": 625605821450684
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "menu_tab",
+													"sid": 536613262619736,
+													"parameters": {
+														"instance-variable": "tab",
+														"comparison": 0,
+														"value": "tab"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation-frame",
+													"objectClass": "menu_tab",
+													"sid": 294975281653999,
+													"parameters": {
+														"frame-number": "1"
+													}
+												}
+											],
+											"sid": 488513266797706
+										}
+									]
+								}
 							]
 						}
 					],
-					"sid": 593148352920121
+					"sid": 457296015587379
 				},
 				{
 					"eventType": "block",
@@ -768,138 +1059,6 @@
 					],
 					"sid": 119604270739381,
 					"isOrBlock": true
-				},
-				{
-					"functionName": "menuScrollTo",
-					"functionDescription": "",
-					"functionCategory": "",
-					"functionReturnType": "none",
-					"functionParameters": [
-						{
-							"name": "view",
-							"type": "string",
-							"initialValue": "",
-							"comment": "",
-							"sid": 690645306665213
-						}
-					],
-					"eventType": "function-block",
-					"conditions": [],
-					"actions": [],
-					"sid": 741060463913252,
-					"children": [
-						{
-							"eventType": "variable",
-							"name": "diceView",
-							"type": "string",
-							"initialValue": "dice",
-							"comment": "",
-							"isStatic": false,
-							"isConstant": false,
-							"sid": 366840753733455
-						},
-						{
-							"eventType": "variable",
-							"name": "countersView",
-							"type": "string",
-							"initialValue": "counters",
-							"comment": "",
-							"isStatic": false,
-							"isConstant": false,
-							"sid": 743463221312552
-						},
-						{
-							"eventType": "variable",
-							"name": "starterView",
-							"type": "string",
-							"initialValue": "starter",
-							"comment": "",
-							"isStatic": false,
-							"isConstant": false,
-							"sid": 406590241295645
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 325873789235364,
-									"parameters": {
-										"first-value": "view",
-										"comparison": 0,
-										"second-value": "diceView"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "scroll-to-position",
-									"objectClass": "System",
-									"sid": 162577711027676,
-									"parameters": {
-										"x": "180",
-										"y": "320"
-									}
-								}
-							],
-							"sid": 679833362574880
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 817560147058783,
-									"parameters": {
-										"first-value": "view",
-										"comparison": 0,
-										"second-value": "countersView"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "scroll-to-position",
-									"objectClass": "System",
-									"sid": 978803846369497,
-									"parameters": {
-										"x": "540",
-										"y": "320"
-									}
-								}
-							],
-							"sid": 516637270791338
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 888440041404435,
-									"parameters": {
-										"first-value": "view",
-										"comparison": 0,
-										"second-value": "starterView"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "scroll-to-position",
-									"objectClass": "System",
-									"sid": 107853776447626,
-									"parameters": {
-										"x": "900",
-										"y": "320"
-									}
-								}
-							],
-							"sid": 608092095745277
-						}
-					]
 				}
 			],
 			"sid": 137628029255649

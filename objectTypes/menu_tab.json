@@ -18,14 +18,25 @@
 			{
 				"frames": [
 					{
-						"width": 20,
+						"width": 40,
 						"height": 20,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 31,
+						"imageSpriteId": 28,
+						"duration": 1
+					},
+					{
+						"width": 40,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 35,
 						"duration": 1
 					}
 				],
@@ -35,12 +46,12 @@
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			},
 			{
 				"frames": [
 					{
-						"width": 20,
+						"width": 40,
 						"height": 20,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -48,6 +59,17 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 33,
+						"duration": 1
+					},
+					{
+						"width": 40,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 34,
 						"duration": 1
 					}
 				],
@@ -57,12 +79,12 @@
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			},
 			{
 				"frames": [
 					{
-						"width": 20,
+						"width": 40,
 						"height": 20,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -70,6 +92,17 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 32,
+						"duration": 1
+					},
+					{
+						"width": 40,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 36,
 						"duration": 1
 					}
 				],
@@ -79,7 +112,7 @@
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			}
 		],
 		"subfolders": []

@@ -1005,6 +1005,70 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "menu_button_type",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "2countersA",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 50,
+					"instanceVariables": {
+						"type": "counters",
+						"layout": "2A"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 422.8785206640954,
+						"y": 132.631282490565,
+						"width": 90.39730646419306,
+						"height": 90.39730646419306,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "menu_button_type",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "2countersB",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 52,
+					"instanceVariables": {
+						"type": "counters",
+						"layout": "2B"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 538.1058435758997,
+						"y": 131.69826773014555,
+						"width": 90.39730646419306,
+						"height": 90.39730646419306,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 723305017716120,

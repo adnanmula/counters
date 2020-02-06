@@ -273,6 +273,7 @@
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
+			"functionIsAsync": false,
 			"functionParameters": [
 				{
 					"name": "numPlayers",

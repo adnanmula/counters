@@ -14,6 +14,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 27
+		"imageSpriteId": 27,
+		"useCollisionPoly": true
 	}
 }

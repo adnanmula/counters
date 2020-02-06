@@ -3,6 +3,10 @@
 	"events": [
 		{
 			"eventType": "include",
+			"includeSheet": "counters"
+		},
+		{
+			"eventType": "include",
 			"includeSheet": "counterList"
 		},
 		{
@@ -97,6 +101,64 @@
 						}
 					],
 					"sid": 229282722511047
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 861020441250082,
+							"parameters": {
+								"first-value": "layout_type",
+								"comparison": 0,
+								"second-value": "\"counters\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 771450044649833,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 302422455078546,
+									"parameters": {
+										"first-value": "layout_amount",
+										"comparison": 0,
+										"second-value": "\"2A\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "setUp2CountersA",
+									"sid": 291243432712458
+								}
+							],
+							"sid": 503774615597721
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 836770860127468,
+									"parameters": {
+										"first-value": "layout_amount",
+										"comparison": 0,
+										"second-value": "\"2B\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 251972502251371
+						}
+					]
 				}
 			]
 		},

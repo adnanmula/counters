@@ -695,6 +695,7 @@
 							"functionDescription": "",
 							"functionCategory": "",
 							"functionReturnType": "none",
+							"functionIsAsync": false,
 							"functionParameters": [
 								{
 									"name": "view",
@@ -827,6 +828,7 @@
 							"functionDescription": "",
 							"functionCategory": "",
 							"functionReturnType": "none",
+							"functionIsAsync": false,
 							"functionParameters": [
 								{
 									"name": "tab",

@@ -19,6 +19,7 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 17,
+						"useCollisionPoly": true,
 						"imagePoints": [
 							{
 								"name": "center",
@@ -47,6 +48,7 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 18,
+						"useCollisionPoly": true,
 						"imagePoints": [
 							{
 								"name": "center",

@@ -32,6 +32,7 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 50,
+						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
@@ -54,6 +55,7 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 52,
+						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
@@ -76,6 +78,7 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 51,
+						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
@@ -98,6 +101,7 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 53,
+						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
@@ -120,6 +124,7 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 54,
+						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
@@ -142,6 +147,7 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 55,
+						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
@@ -164,6 +170,7 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 56,
+						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
@@ -186,6 +193,7 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 57,
+						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
@@ -208,6 +216,7 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 59,
+						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
@@ -230,6 +239,7 @@
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 58,
+						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],

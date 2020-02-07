@@ -98,7 +98,10 @@
 	"uniqueId": "lbsim9dqew5w",
 	"objectTypes": {
 		"items": [
-			"starter_bg_text"
+			"starter_bg_text",
+			"counter_main",
+			"counter_arrow_add",
+			"counter_arrow_sub"
 		],
 		"subfolders": [
 			{
@@ -166,6 +169,14 @@
 				"counter_list_arrow_add",
 				"counter_list_arrow_sub",
 				"counter_list_main"
+			],
+			"selectMode": "normal"
+		},
+		{
+			"members": [
+				"counter_arrow_add",
+				"counter_arrow_sub",
+				"counter_main"
 			],
 			"selectMode": "normal"
 		}

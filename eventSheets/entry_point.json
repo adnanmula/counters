@@ -125,17 +125,39 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 302422455078546,
+									"sid": 764393566222037,
 									"parameters": {
 										"first-value": "layout_amount",
 										"comparison": 0,
-										"second-value": "\"2A\""
+										"second-value": "\"3A\""
 									}
 								}
 							],
 							"actions": [
 								{
-									"callFunction": "setUp2CountersA",
+									"callFunction": "setUp3CountersA",
+									"sid": 615863061991974
+								}
+							],
+							"sid": 636858355835312
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 449202833551104,
+									"parameters": {
+										"first-value": "layout_amount",
+										"comparison": 0,
+										"second-value": "\"4A\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "setUp4CountersA",
 									"sid": 291243432712458
 								}
 							],
@@ -147,16 +169,65 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 836770860127468,
+									"sid": 571288196527355,
 									"parameters": {
 										"first-value": "layout_amount",
 										"comparison": 0,
-										"second-value": "\"2B\""
+										"second-value": "\"4B\""
 									}
 								}
 							],
-							"actions": [],
-							"sid": 251972502251371
+							"actions": [
+								{
+									"callFunction": "setUp4CountersB",
+									"sid": 623745386657399
+								}
+							],
+							"sid": 843903904071389
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 224862932000610,
+									"parameters": {
+										"first-value": "layout_amount",
+										"comparison": 0,
+										"second-value": "\"5A\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "setUp5CountersA",
+									"sid": 794479041416015
+								}
+							],
+							"sid": 267585042406478
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 695135492114786,
+									"parameters": {
+										"first-value": "layout_amount",
+										"comparison": 0,
+										"second-value": "\"6A\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "setUp6CountersA",
+									"sid": 998841541638954
+								}
+							],
+							"sid": 636992159948943
 						}
 					]
 				}

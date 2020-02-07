@@ -223,6 +223,24 @@
 							"parameters": {
 								"object": "pixel_text"
 							}
+						},
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 739626458979901,
+							"parameters": {
+								"object": "counter_arrow_add"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 409055853466378,
+							"parameters": {
+								"object": "counter_arrow_sub"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [],
@@ -257,8 +275,7 @@
 							"sid": 137435913804047,
 							"isOrBlock": true
 						}
-					],
-					"isOrBlock": true
+					]
 				}
 			],
 			"sid": 436323772067294

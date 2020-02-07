@@ -1,0 +1,83 @@
+{
+	"name": "counter_main",
+	"plugin-id": "Sprite",
+	"sid": 480316285374485,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 11,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.3333333333333333
+							},
+							{
+								"name": "addition_button",
+								"x": 0.71875,
+								"y": 0.6666666666666666
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.28125,
+								"y": 0.6666666666666666
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 18,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 47,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "center",
+								"x": 0.5,
+								"y": 0.5
+							},
+							{
+								"name": "addition_button",
+								"x": 0.78125,
+								"y": 0.5
+							},
+							{
+								"name": "substraction_button",
+								"x": 0.25,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 498777352945030,
+				"name": "default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

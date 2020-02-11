@@ -71,17 +71,7 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "log",
-							"objectClass": "Browser",
-							"sid": 642720726398410,
-							"parameters": {
-								"type": "log",
-								"message": "Function.Param(0)"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 599825379728419,
 					"children": [
 						{
@@ -237,15 +227,6 @@
 											"generic_dice.UID"
 										]
 									}
-								},
-								{
-									"id": "log",
-									"objectClass": "Browser",
-									"sid": 742427169869697,
-									"parameters": {
-										"type": "log",
-										"message": "\"22222222\""
-									}
 								}
 							],
 							"sid": 604306695417673
@@ -328,17 +309,7 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "log",
-							"objectClass": "Browser",
-							"sid": 494938175524275,
-							"parameters": {
-								"type": "log",
-								"message": "Function.Param(0)"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 631819958757639,
 					"children": [
 						{

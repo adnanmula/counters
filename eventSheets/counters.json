@@ -109,15 +109,6 @@
 							}
 						},
 						{
-							"id": "set-animation-frame",
-							"objectClass": "counter_main",
-							"sid": 406861514809771,
-							"disabled": true,
-							"parameters": {
-								"frame-number": "color_tracker ? 1 : 0"
-							}
-						},
-						{
 							"id": "set-instvar-value",
 							"objectClass": "counter_arrow_add",
 							"sid": 604033520298882,
@@ -414,50 +405,50 @@
 			"actions": [
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 139300488016641,
+					"sid": 947239131081231,
 					"parameters": [
 						"1",
-						"0",
-						"0",
 						"LayoutWidth/2",
+						"0",
 						"LayoutHeight/3",
-						"0"
+						"LayoutWidth/2",
+						"90"
 					]
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 336750461739098,
+					"sid": 861238935294387,
 					"parameters": [
 						"2",
 						"LayoutWidth/2",
-						"0",
-						"LayoutWidth/2",
 						"LayoutHeight/3",
-						"0"
+						"LayoutHeight/3",
+						"LayoutWidth/2",
+						"-90"
 					]
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 736984229095780,
+					"sid": 161535352683167,
 					"parameters": [
 						"3",
-						"0",
-						"LayoutHeight/3",
 						"LayoutWidth/2",
 						"LayoutHeight/3",
-						"0"
+						"LayoutHeight/3",
+						"LayoutWidth/2",
+						"90"
 					]
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 984527560108087,
+					"sid": 104734286540635,
 					"parameters": [
 						"4",
 						"LayoutWidth/2",
+						"LayoutHeight/3*2",
 						"LayoutHeight/3",
 						"LayoutWidth/2",
-						"LayoutHeight/3",
-						"0"
+						"-90"
 					]
 				},
 				{
@@ -487,74 +478,74 @@
 			"actions": [
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 994452160071067,
+					"sid": 499810195061341,
 					"parameters": [
 						"1",
-						"0",
-						"0",
 						"LayoutWidth/2",
+						"0",
 						"LayoutHeight/3",
-						"0"
+						"LayoutWidth/2",
+						"90"
 					]
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 288785955436619,
+					"sid": 647191585918910,
 					"parameters": [
 						"2",
 						"LayoutWidth/2",
-						"0",
-						"LayoutWidth/2",
 						"LayoutHeight/3",
-						"0"
+						"LayoutHeight/3",
+						"LayoutWidth/2",
+						"-90"
 					]
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 587413773717837,
+					"sid": 323519116456664,
 					"parameters": [
 						"3",
-						"0",
-						"LayoutHeight/3",
 						"LayoutWidth/2",
 						"LayoutHeight/3",
-						"0"
+						"LayoutHeight/3",
+						"LayoutWidth/2",
+						"90"
 					]
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 573974294266269,
+					"sid": 592890471485793,
 					"parameters": [
 						"4",
 						"LayoutWidth/2",
+						"LayoutHeight/3*2",
 						"LayoutHeight/3",
 						"LayoutWidth/2",
-						"LayoutHeight/3",
-						"0"
+						"-90"
 					]
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 741518650211249,
+					"sid": 621435122373918,
 					"parameters": [
 						"5",
-						"0",
-						"(LayoutHeight/3) * 2",
 						"LayoutWidth/2",
+						"LayoutHeight / 3 * 2",
 						"LayoutHeight/3",
-						"0"
+						"LayoutWidth/2",
+						"90"
 					]
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 115722572980054,
+					"sid": 931932545289120,
 					"parameters": [
 						"6",
 						"LayoutWidth/2",
-						"(LayoutHeight/3) * 2",
-						"LayoutWidth/2",
+						"LayoutHeight",
 						"LayoutHeight/3",
-						"0"
+						"LayoutWidth/2",
+						"-90"
 					]
 				}
 			],

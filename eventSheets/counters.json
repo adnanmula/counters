@@ -292,50 +292,50 @@
 			"actions": [
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 547932727231075,
+					"sid": 218704948003388,
 					"parameters": [
 						"1",
-						"0",
-						"0",
 						"LayoutWidth/2",
+						"0",
 						"LayoutHeight/2",
-						"0"
+						"LayoutWidth/2",
+						"90"
 					]
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 591153178860419,
+					"sid": 878260727575702,
 					"parameters": [
 						"2",
 						"LayoutWidth/2",
-						"0",
-						"LayoutWidth/2",
 						"LayoutHeight/2",
-						"0"
+						"LayoutHeight/2",
+						"LayoutWidth/2",
+						"-90"
 					]
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 806587645266236,
+					"sid": 851116882221206,
 					"parameters": [
 						"3",
-						"0",
-						"LayoutHeight/2",
 						"LayoutWidth/2",
 						"LayoutHeight/2",
-						"0"
+						"LayoutHeight/2",
+						"LayoutWidth/2",
+						"90"
 					]
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 513720108243734,
+					"sid": 902680832787719,
 					"parameters": [
 						"4",
 						"LayoutWidth/2",
+						"LayoutHeight",
 						"LayoutHeight/2",
 						"LayoutWidth/2",
-						"LayoutHeight/2",
-						"0"
+						"-90"
 					]
 				}
 			],
@@ -353,43 +353,43 @@
 			"actions": [
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 485465599333103,
+					"sid": 333591107313270,
 					"parameters": [
 						"1",
-						"0",
-						"0",
 						"LayoutWidth",
 						"LayoutHeight/3",
-						"0"
+						"LayoutWidth",
+						"LayoutHeight/3",
+						"-180"
 					]
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 706669277293965,
+					"sid": 555513349019100,
 					"parameters": [
 						"2",
-						"0",
+						"LayoutWidth/2",
+						"LayoutHeight / 3 * 2",
 						"LayoutHeight/3",
 						"LayoutWidth/2",
-						"LayoutHeight/3",
-						"0"
+						"-90"
 					]
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 950712344855847,
+					"sid": 996501069969820,
 					"parameters": [
 						"3",
 						"LayoutWidth/2",
+						"LayoutHeight / 3",
 						"LayoutHeight/3",
 						"LayoutWidth/2",
-						"LayoutHeight/3",
-						"0"
+						"90"
 					]
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 387763221505220,
+					"sid": 782800028327680,
 					"parameters": [
 						"4",
 						"0",

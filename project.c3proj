@@ -319,7 +319,7 @@
 	},
 	"properties": {
 		"description": "Helper app for board and card games, keep track of points, throw dice and coins.",
-		"version": "1.0",
+		"version": "1.0.0.1",
 		"author": "demigrantsoft.com",
 		"authorEmail": "demigrantsoft@gmail.com",
 		"authorWebsite": "http://demigrantsoft.com",

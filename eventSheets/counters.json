@@ -6,18 +6,6 @@
 			"includeSheet": "counterCommon"
 		},
 		{
-			"functionName": "setUpCounters",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [],
-			"sid": 489679952281672
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Set up counters",
@@ -160,6 +148,22 @@
 							"parameters": {
 								"object": "counter_main",
 								"image-point-optional": "COUNTER_CONTAINER_SUBSTRACTION"
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "counter_arrow_add",
+							"sid": 532493956413076,
+							"parameters": {
+								"angle": "CountersInfo.Get(str(counter_main.IID + 1) & \"rotation\")"
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "counter_arrow_sub",
+							"sid": 801307302902269,
+							"parameters": {
+								"angle": "CountersInfo.Get(str(counter_main.IID + 1) & \"rotation\")"
 							}
 						},
 						{

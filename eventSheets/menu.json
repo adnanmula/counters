@@ -609,16 +609,6 @@
 					"isActiveOnStart": true,
 					"children": [
 						{
-							"eventType": "variable",
-							"name": "currentTab",
-							"type": "string",
-							"initialValue": "",
-							"comment": "",
-							"isStatic": false,
-							"isConstant": false,
-							"sid": 474870653592608
-						},
-						{
 							"eventType": "block",
 							"conditions": [
 								{
@@ -643,7 +633,7 @@
 									"objectClass": "System",
 									"sid": 875437535600110,
 									"parameters": {
-										"variable": "currentTab",
+										"variable": "last_tab",
 										"value": "menu_tab.tab"
 									}
 								}
@@ -682,7 +672,7 @@
 											"callFunction": "highlightCurrentTab",
 											"sid": 706942436253573,
 											"parameters": [
-												"currentTab"
+												"last_tab"
 											]
 										}
 									],
@@ -711,46 +701,16 @@
 							"sid": 622408606683352,
 							"children": [
 								{
-									"eventType": "variable",
-									"name": "diceView",
-									"type": "string",
-									"initialValue": "dice",
-									"comment": "",
-									"isStatic": false,
-									"isConstant": false,
-									"sid": 723480689406663
-								},
-								{
-									"eventType": "variable",
-									"name": "countersView",
-									"type": "string",
-									"initialValue": "counters",
-									"comment": "",
-									"isStatic": false,
-									"isConstant": false,
-									"sid": 167134168692922
-								},
-								{
-									"eventType": "variable",
-									"name": "starterView",
-									"type": "string",
-									"initialValue": "starter",
-									"comment": "",
-									"isStatic": false,
-									"isConstant": false,
-									"sid": 379207495460746
-								},
-								{
 									"eventType": "block",
 									"conditions": [
 										{
 											"id": "compare-two-values",
 											"objectClass": "System",
-											"sid": 242719236116467,
+											"sid": 517778811181692,
 											"parameters": {
 												"first-value": "view",
 												"comparison": 0,
-												"second-value": "diceView"
+												"second-value": "MENU_DICE"
 											}
 										}
 									],
@@ -773,11 +733,11 @@
 										{
 											"id": "compare-two-values",
 											"objectClass": "System",
-											"sid": 374821282293719,
+											"sid": 672256064892618,
 											"parameters": {
 												"first-value": "view",
 												"comparison": 0,
-												"second-value": "countersView"
+												"second-value": "MENU_COUNTERS"
 											}
 										}
 									],
@@ -800,11 +760,11 @@
 										{
 											"id": "compare-two-values",
 											"objectClass": "System",
-											"sid": 748798890649949,
+											"sid": 712380228186778,
 											"parameters": {
 												"first-value": "view",
 												"comparison": 0,
-												"second-value": "starterView"
+												"second-value": "MENU_STARTER"
 											}
 										}
 									],
@@ -817,9 +777,30 @@
 												"x": "900",
 												"y": "320"
 											}
+										},
+										{
+											"callFunction": "highlightCurrentTab",
+											"sid": 771847857935475,
+											"parameters": [
+												"last_tab"
+											]
 										}
 									],
 									"sid": 646633220058725
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"callFunction": "highlightCurrentTab",
+											"sid": 860738792169641,
+											"parameters": [
+												"last_tab"
+											]
+										}
+									],
+									"sid": 459224186879054
 								}
 							]
 						},
@@ -1120,6 +1101,26 @@
 				}
 			],
 			"sid": 435737456530504
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 170873695799055
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "menuScrollTo",
+					"sid": 747696549358039,
+					"parameters": [
+						"last_tab"
+					]
+				}
+			],
+			"sid": 978550422797923
 		}
 	],
 	"sid": 413805959310103

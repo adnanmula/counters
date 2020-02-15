@@ -227,7 +227,7 @@
 			"sid": 441939009539801
 		},
 		{
-			"functionName": "setUp3CountersA",
+			"functionName": "setUpCounters2A",
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
@@ -238,7 +238,81 @@
 			"actions": [
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 627637041586532,
+					"sid": 721922109880440,
+					"parameters": [
+						"1",
+						"LayoutWidth/2",
+						"0",
+						"LayoutHeight",
+						"LayoutWidth/2",
+						"90"
+					]
+				},
+				{
+					"callFunction": "createCounterBlock",
+					"sid": 474302187651348,
+					"parameters": [
+						"2",
+						"LayoutWidth/2",
+						"LayoutHeight",
+						"LayoutHeight",
+						"LayoutWidth/2",
+						"-90"
+					]
+				}
+			],
+			"sid": 840606545314757
+		},
+		{
+			"functionName": "setUpCounters2B",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"callFunction": "createCounterBlock",
+					"sid": 918694506164482,
+					"parameters": [
+						"1",
+						"LayoutWidth/2",
+						"0",
+						"LayoutHeight",
+						"LayoutWidth/2",
+						"90"
+					]
+				},
+				{
+					"callFunction": "createCounterBlock",
+					"sid": 736731358209237,
+					"parameters": [
+						"2",
+						"LayoutWidth",
+						"0",
+						"LayoutHeight",
+						"LayoutWidth/2",
+						"90"
+					]
+				}
+			],
+			"sid": 106035463583386
+		},
+		{
+			"functionName": "setUpCounters3A",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"callFunction": "createCounterBlock",
+					"sid": 512597897277170,
 					"parameters": [
 						"1",
 						"LayoutWidth/2",
@@ -250,7 +324,7 @@
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 946363962054831,
+					"sid": 568357654372094,
 					"parameters": [
 						"2",
 						"LayoutWidth/2",
@@ -262,7 +336,7 @@
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 112148495887696,
+					"sid": 972389706950874,
 					"parameters": [
 						"3",
 						"0",
@@ -273,10 +347,10 @@
 					]
 				}
 			],
-			"sid": 840606545314757
+			"sid": 657265550163990
 		},
 		{
-			"functionName": "setUp4CountersA",
+			"functionName": "setUpCounters4A",
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
@@ -337,7 +411,7 @@
 			"sid": 290494462343925
 		},
 		{
-			"functionName": "setUp4CountersB",
+			"functionName": "setUpCounters4B",
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
@@ -398,7 +472,7 @@
 			"sid": 909479171267022
 		},
 		{
-			"functionName": "setUp5CountersA",
+			"functionName": "setUpCounters5A",
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
@@ -471,7 +545,7 @@
 			"sid": 115917706614676
 		},
 		{
-			"functionName": "setUp6CountersA",
+			"functionName": "setUpCounters6A",
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
@@ -554,6 +628,91 @@
 				}
 			],
 			"sid": 864568981642930
+		},
+		{
+			"functionName": "setUpCounters6B",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"callFunction": "createCounterBlock",
+					"sid": 556642836245958,
+					"parameters": [
+						"1",
+						"LayoutWidth/2",
+						"0",
+						"LayoutHeight/3",
+						"LayoutWidth/2",
+						"90"
+					]
+				},
+				{
+					"callFunction": "createCounterBlock",
+					"sid": 952746806845237,
+					"parameters": [
+						"2",
+						"LayoutWidth/2",
+						"LayoutHeight/3",
+						"LayoutHeight/3",
+						"LayoutWidth/2",
+						"90"
+					]
+				},
+				{
+					"callFunction": "createCounterBlock",
+					"sid": 122896991176171,
+					"parameters": [
+						"3",
+						"LayoutWidth",
+						"0",
+						"LayoutHeight/3",
+						"LayoutWidth/2",
+						"90"
+					]
+				},
+				{
+					"callFunction": "createCounterBlock",
+					"sid": 336363684307182,
+					"parameters": [
+						"4",
+						"LayoutWidth",
+						"LayoutHeight/3",
+						"LayoutHeight/3",
+						"LayoutWidth/2",
+						"90"
+					]
+				},
+				{
+					"callFunction": "createCounterBlock",
+					"sid": 929128070754665,
+					"parameters": [
+						"5",
+						"LayoutWidth/2",
+						"LayoutHeight/3 * 2",
+						"LayoutHeight/3",
+						"LayoutWidth/2",
+						"90"
+					]
+				},
+				{
+					"callFunction": "createCounterBlock",
+					"sid": 587985978069003,
+					"parameters": [
+						"6",
+						"LayoutWidth",
+						"LayoutHeight/3 * 2",
+						"LayoutHeight/3",
+						"LayoutWidth/2",
+						"90"
+					]
+				}
+			],
+			"sid": 469509052358005
 		},
 		{
 			"functionName": "createCounterBlock",

@@ -2,6 +2,149 @@
 	"name": "settings",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "last_tab",
+			"type": "string",
+			"initialValue": "dice",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 406343825222258
+		},
+		{
+			"eventType": "variable",
+			"name": "MENU_DICE",
+			"type": "string",
+			"initialValue": "dice",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 479539519544979
+		},
+		{
+			"eventType": "variable",
+			"name": "MENU_COUNTERS",
+			"type": "string",
+			"initialValue": "counters",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 594057010489363
+		},
+		{
+			"eventType": "variable",
+			"name": "MENU_STARTER",
+			"type": "string",
+			"initialValue": "starter",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 374064078315551
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Set up function mapping",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 182503540768855
+						}
+					],
+					"actions": [
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 882403785821359,
+							"parameters": {
+								"name": "\"counters\"",
+								"string": "\"setUpCounters2A\"",
+								"function": "setUpCounters2A"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 106625026882626,
+							"parameters": {
+								"name": "\"counters\"",
+								"string": "\"setUpCounters2B\"",
+								"function": "setUpCounters2B"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 406215170280221,
+							"parameters": {
+								"name": "\"counters\"",
+								"string": "\"setUpCounters3A\"",
+								"function": "setUpCounters3A"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 293211158013344,
+							"parameters": {
+								"name": "\"counters\"",
+								"string": "\"setUpCounters4A\"",
+								"function": "setUpCounters4A"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 543817638912947,
+							"parameters": {
+								"name": "\"counters\"",
+								"string": "\"setUpCounters4B\"",
+								"function": "setUpCounters4B"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 582984732473871,
+							"parameters": {
+								"name": "\"counters\"",
+								"string": "\"setUpCounters5A\"",
+								"function": "setUpCounters5A"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 738495184357838,
+							"parameters": {
+								"name": "\"counters\"",
+								"string": "\"setUpCounters6A\"",
+								"function": "setUpCounters6A"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 624149301690041,
+							"parameters": {
+								"name": "\"counters\"",
+								"string": "\"setUpCounters6B\"",
+								"function": "setUpCounters6B"
+							}
+						}
+					],
+					"sid": 530777726877780
+				}
+			],
+			"sid": 347815482919293
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Load default",
@@ -14,21 +157,21 @@
 						{
 							"id": "on-start-of-layout",
 							"objectClass": "System",
-							"sid": 146745285850893
+							"sid": 776095246535771
 						}
 					],
 					"actions": [
 						{
 							"id": "request-project-file",
 							"objectClass": "AJAX",
-							"sid": 252318304189867,
+							"sid": 630569655547771,
 							"parameters": {
 								"tag": "\"counters-default.json\"",
 								"file": "counters-default.json"
 							}
 						}
 					],
-					"sid": 762268523420878
+					"sid": 941219446424229
 				},
 				{
 					"eventType": "block",
@@ -36,7 +179,7 @@
 						{
 							"id": "on-completed",
 							"objectClass": "AJAX",
-							"sid": 826146682794565,
+							"sid": 383603762997489,
 							"parameters": {
 								"tag": "\"counters-default.json\""
 							}
@@ -46,16 +189,16 @@
 						{
 							"id": "load",
 							"objectClass": "CountersInfo",
-							"sid": 960317019286415,
+							"sid": 539377632976325,
 							"parameters": {
 								"json": "AJAX.LastData"
 							}
 						}
 					],
-					"sid": 653451376013008
+					"sid": 340390322779919
 				}
 			],
-			"sid": 956414361320213
+			"sid": 749530782729776
 		}
 	],
 	"sid": 560295561596196

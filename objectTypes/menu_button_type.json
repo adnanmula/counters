@@ -286,13 +286,13 @@
 								"originalSource": "",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 44,
+								"imageSpriteId": 46,
 								"useCollisionPoly": true,
 								"duration": 1
 							}
 						],
 						"sid": 551299930748947,
-						"name": "2countersA",
+						"name": "2A",
 						"isLooping": false,
 						"isPingPong": false,
 						"repeatCount": 1,
@@ -315,7 +315,99 @@
 							}
 						],
 						"sid": 481871716572813,
-						"name": "2countersB",
+						"name": "2B",
+						"isLooping": false,
+						"isPingPong": false,
+						"repeatCount": 1,
+						"repeatTo": 0,
+						"speed": 5
+					},
+					{
+						"frames": [
+							{
+								"width": 50,
+								"height": 50,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 48,
+								"useCollisionPoly": true,
+								"duration": 1
+							}
+						],
+						"sid": 359060573052501,
+						"name": "4A",
+						"isLooping": false,
+						"isPingPong": false,
+						"repeatCount": 1,
+						"repeatTo": 0,
+						"speed": 5
+					},
+					{
+						"frames": [
+							{
+								"width": 50,
+								"height": 50,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 43,
+								"useCollisionPoly": true,
+								"duration": 1
+							}
+						],
+						"sid": 808728414802443,
+						"name": "4B",
+						"isLooping": false,
+						"isPingPong": false,
+						"repeatCount": 1,
+						"repeatTo": 0,
+						"speed": 5
+					},
+					{
+						"frames": [
+							{
+								"width": 50,
+								"height": 50,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 41,
+								"useCollisionPoly": true,
+								"duration": 1
+							}
+						],
+						"sid": 149723408957837,
+						"name": "6A",
+						"isLooping": false,
+						"isPingPong": false,
+						"repeatCount": 1,
+						"repeatTo": 0,
+						"speed": 5
+					},
+					{
+						"frames": [
+							{
+								"width": 50,
+								"height": 50,
+								"originX": 0.5,
+								"originY": 0.5,
+								"originalSource": "",
+								"exportFormat": "png",
+								"exportQuality": 0.8,
+								"imageSpriteId": 42,
+								"useCollisionPoly": true,
+								"duration": 1
+							}
+						],
+						"sid": 940309000002998,
+						"name": "6B",
 						"isLooping": false,
 						"isPingPong": false,
 						"repeatCount": 1,

@@ -42,6 +42,16 @@
 			"sid": 374064078315551
 		},
 		{
+			"eventType": "variable",
+			"name": "function_mapping_loaded",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 877348485707356
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Set up function mapping",
@@ -55,6 +65,15 @@
 							"id": "on-start-of-layout",
 							"objectClass": "System",
 							"sid": 182503540768855
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 734098735346560,
+							"parameters": {
+								"variable": "function_mapping_loaded"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -147,6 +166,15 @@
 								"string": "\"setUpCounters6B\"",
 								"function": "setUpCounters6B"
 							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 397542119882846,
+							"parameters": {
+								"variable": "function_mapping_loaded",
+								"value": "true"
+							}
 						}
 					],
 					"sid": 530777726877780
@@ -172,40 +200,59 @@
 					],
 					"actions": [
 						{
-							"id": "request-project-file",
-							"objectClass": "AJAX",
-							"sid": 630569655547771,
-							"parameters": {
-								"tag": "\"counters-default.json\"",
-								"file": "counters-default.json"
-							}
-						}
-					],
-					"sid": 941219446424229
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-completed",
-							"objectClass": "AJAX",
-							"sid": 383603762997489,
-							"parameters": {
-								"tag": "\"counters-default.json\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "load",
+							"id": "clear",
 							"objectClass": "CountersInfo",
-							"sid": 539377632976325,
-							"parameters": {
-								"json": "AJAX.LastData"
-							}
+							"sid": 895424430163778
 						}
 					],
-					"sid": 340390322779919
+					"sid": 941219446424229,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 985759362968692,
+									"parameters": {
+										"name": "\"\"",
+										"start-index": "1",
+										"end-index": "20"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-key",
+									"objectClass": "CountersInfo",
+									"sid": 373003938207902,
+									"parameters": {
+										"key": "loopindex&\"height\"",
+										"value": "0"
+									}
+								},
+								{
+									"id": "add-key",
+									"objectClass": "CountersInfo",
+									"sid": 117485223898463,
+									"parameters": {
+										"key": "loopindex&\"width\"",
+										"value": "0"
+									}
+								},
+								{
+									"id": "add-key",
+									"objectClass": "CountersInfo",
+									"sid": 461323441656750,
+									"parameters": {
+										"key": "loopindex&\"rotation\"",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 272116222702518
+						}
+					]
 				}
 			],
 			"sid": 749530782729776

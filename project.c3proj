@@ -295,11 +295,6 @@
 		"general": {
 			"items": [
 				{
-					"name": "counters-default.json",
-					"type": "application/json",
-					"sid": 298861283202981
-				},
-				{
 					"name": "touchPlayerColors.json",
 					"type": "application/json",
 					"sid": 882252654420434

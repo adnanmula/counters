@@ -286,7 +286,7 @@
 								"originalSource": "",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 46,
+								"imageSpriteId": 31,
 								"useCollisionPoly": true,
 								"duration": 1
 							}
@@ -309,7 +309,7 @@
 								"originalSource": "",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 45,
+								"imageSpriteId": 33,
 								"useCollisionPoly": true,
 								"duration": 1
 							}
@@ -332,7 +332,7 @@
 								"originalSource": "",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 38,
+								"imageSpriteId": 43,
 								"useCollisionPoly": true,
 								"duration": 1
 							}
@@ -355,7 +355,7 @@
 								"originalSource": "",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 48,
+								"imageSpriteId": 45,
 								"useCollisionPoly": true,
 								"duration": 1
 							}
@@ -378,7 +378,7 @@
 								"originalSource": "",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 43,
+								"imageSpriteId": 38,
 								"useCollisionPoly": true,
 								"duration": 1
 							}
@@ -401,7 +401,7 @@
 								"originalSource": "",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 36,
+								"imageSpriteId": 39,
 								"useCollisionPoly": true,
 								"duration": 1
 							}
@@ -424,7 +424,7 @@
 								"originalSource": "",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 37,
+								"imageSpriteId": 40,
 								"useCollisionPoly": true,
 								"duration": 1
 							}
@@ -447,7 +447,7 @@
 								"originalSource": "",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 41,
+								"imageSpriteId": 44,
 								"useCollisionPoly": true,
 								"duration": 1
 							}
@@ -470,7 +470,7 @@
 								"originalSource": "",
 								"exportFormat": "png",
 								"exportQuality": 0.8,
-								"imageSpriteId": 42,
+								"imageSpriteId": 41,
 								"useCollisionPoly": true,
 								"duration": 1
 							}

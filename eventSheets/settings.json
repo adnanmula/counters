@@ -111,6 +111,16 @@
 						{
 							"id": "map-function",
 							"objectClass": "Functions",
+							"sid": 437817432089547,
+							"parameters": {
+								"name": "\"counters\"",
+								"string": "\"setUpCounters4C\"",
+								"function": "setUpCounters4C"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
 							"sid": 582984732473871,
 							"parameters": {
 								"name": "\"counters\"",

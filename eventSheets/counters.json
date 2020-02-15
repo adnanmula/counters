@@ -422,7 +422,68 @@
 			"actions": [
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 333591107313270,
+					"sid": 282438899504667,
+					"parameters": [
+						"1",
+						"LayoutWidth/2",
+						"0",
+						"LayoutHeight/2",
+						"LayoutWidth/2",
+						"90"
+					]
+				},
+				{
+					"callFunction": "createCounterBlock",
+					"sid": 518208234730274,
+					"parameters": [
+						"2",
+						"LayoutWidth",
+						"0",
+						"LayoutHeight/2",
+						"LayoutWidth/2",
+						"90"
+					]
+				},
+				{
+					"callFunction": "createCounterBlock",
+					"sid": 637063924846357,
+					"parameters": [
+						"3",
+						"LayoutWidth/2",
+						"LayoutHeight/2",
+						"LayoutHeight/2",
+						"LayoutWidth/2",
+						"90"
+					]
+				},
+				{
+					"callFunction": "createCounterBlock",
+					"sid": 590764321146379,
+					"parameters": [
+						"4",
+						"LayoutWidth",
+						"LayoutHeight/2",
+						"LayoutHeight/2",
+						"LayoutWidth/2",
+						"90"
+					]
+				}
+			],
+			"sid": 909479171267022
+		},
+		{
+			"functionName": "setUpCounters4C",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"callFunction": "createCounterBlock",
+					"sid": 814582250663521,
 					"parameters": [
 						"1",
 						"LayoutWidth",
@@ -434,7 +495,7 @@
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 555513349019100,
+					"sid": 960174829876814,
 					"parameters": [
 						"2",
 						"LayoutWidth/2",
@@ -446,7 +507,7 @@
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 996501069969820,
+					"sid": 190225362329583,
 					"parameters": [
 						"3",
 						"LayoutWidth/2",
@@ -458,7 +519,7 @@
 				},
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 782800028327680,
+					"sid": 931356212734882,
 					"parameters": [
 						"4",
 						"0",
@@ -469,7 +530,7 @@
 					]
 				}
 			],
-			"sid": 909479171267022
+			"sid": 238183591268234
 		},
 		{
 			"functionName": "setUpCounters5A",

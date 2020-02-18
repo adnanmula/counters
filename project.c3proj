@@ -97,13 +97,7 @@
 	],
 	"uniqueId": "lbsim9dqew5w",
 	"objectTypes": {
-		"items": [
-			"starter_bg_text",
-			"counter_main",
-			"counter_arrow_add",
-			"counter_arrow_sub",
-			"starter_debug"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -119,9 +113,7 @@
 			{
 				"items": [
 					"CountersInfo",
-					"logMessages",
-					"TouchStore",
-					"touchPlayerColors"
+					"logMessages"
 				],
 				"subfolders": [],
 				"name": "data"
@@ -148,7 +140,10 @@
 					"log",
 					"pixel_text",
 					"2_sided_dice",
-					"generic_dice"
+					"generic_dice",
+					"counter_arrow_add",
+					"counter_arrow_sub",
+					"counter_main"
 				],
 				"subfolders": [],
 				"name": "counter"
@@ -156,7 +151,8 @@
 			{
 				"items": [
 					"starter_touch_marker",
-					"starter_bg_helper"
+					"starter_bg_helper",
+					"starter_bg_text"
 				],
 				"subfolders": [],
 				"name": "starter"
@@ -294,13 +290,7 @@
 			"subfolders": []
 		},
 		"general": {
-			"items": [
-				{
-					"name": "touchPlayerColors.json",
-					"type": "application/json",
-					"sid": 882252654420434
-				}
-			],
+			"items": [],
 			"subfolders": []
 		}
 	},

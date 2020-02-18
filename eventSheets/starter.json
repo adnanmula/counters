@@ -367,6 +367,14 @@
 						"variable": "touch_count",
 						"value": "0"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "starter_bg_text",
+					"sid": 672201501982967,
+					"parameters": {
+						"text": "\"Let each player touch the screen to select one\""
+					}
 				}
 			],
 			"sid": 272801438455729,

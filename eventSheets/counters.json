@@ -858,10 +858,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 748882547250137,
+					"sid": 231758801393351,
 					"parameters": {
 						"object-to-create": "counter_main",
-						"layer": "0",
+						"layer": "\"main\"",
 						"x": "x",
 						"y": "y"
 					}

@@ -22,7 +22,26 @@
 					"sid": 561712492818190
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 318642549781184,
+					"parameters": {
+						"type": "log",
+						"message": "layout_type"
+					}
+				},
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 998715168475595,
+					"parameters": {
+						"type": "log",
+						"message": "\"GFGAFSF\""
+					}
+				}
+			],
 			"sid": 444851424623725,
 			"children": [
 				{
@@ -163,7 +182,7 @@
 					"objectClass": "System",
 					"sid": 673290693767464,
 					"parameters": {
-						"layout": "menu"
+						"layout": "menu_dice"
 					}
 				},
 				{

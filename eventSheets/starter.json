@@ -32,10 +32,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 955321260200398,
+					"sid": 538952751076366,
 					"parameters": {
 						"object-to-create": "starter_touch_marker",
-						"layer": "\"Layer 0\"",
+						"layer": "\"main\"",
 						"x": "Touch.X",
 						"y": "Touch.Y"
 					}

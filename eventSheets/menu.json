@@ -642,47 +642,7 @@
 									"sid": 799004062667025
 								}
 							],
-							"sid": 956477926742835,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "for-each",
-											"objectClass": "System",
-											"sid": 692604612632825,
-											"parameters": {
-												"object": "menu_tab"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-animation-frame",
-											"objectClass": "menu_tab",
-											"sid": 312735737957243,
-											"parameters": {
-												"frame-number": "0"
-											}
-										}
-									],
-									"sid": 237373886725453
-								},
-								{
-									"eventType": "block",
-									"conditions": [],
-									"actions": [
-										{
-											"callFunction": "highlightCurrentTab",
-											"sid": 706942436253573,
-											"parameters": [
-												"last_tab"
-											]
-										}
-									],
-									"sid": 738080335681537
-								}
-							]
+							"sid": 956477926742835
 						},
 						{
 							"functionName": "menuScrollTo",
@@ -720,12 +680,11 @@
 									],
 									"actions": [
 										{
-											"id": "scroll-to-position",
+											"id": "go-to-layout",
 											"objectClass": "System",
-											"sid": 984736151879901,
+											"sid": 504000002445973,
 											"parameters": {
-												"x": "180",
-												"y": "320"
+												"layout": "menu_dice"
 											}
 										}
 									],
@@ -747,12 +706,11 @@
 									],
 									"actions": [
 										{
-											"id": "scroll-to-position",
+											"id": "go-to-layout",
 											"objectClass": "System",
-											"sid": 308952586167737,
+											"sid": 130497967083151,
 											"parameters": {
-												"x": "540",
-												"y": "320"
+												"layout": "menu_counter"
 											}
 										}
 									],
@@ -774,37 +732,15 @@
 									],
 									"actions": [
 										{
-											"id": "scroll-to-position",
+											"id": "go-to-layout",
 											"objectClass": "System",
-											"sid": 765177453519770,
+											"sid": 385396569490351,
 											"parameters": {
-												"x": "900",
-												"y": "320"
+												"layout": "menu_starter"
 											}
-										},
-										{
-											"callFunction": "highlightCurrentTab",
-											"sid": 771847857935475,
-											"parameters": [
-												"last_tab"
-											]
 										}
 									],
 									"sid": 646633220058725
-								},
-								{
-									"eventType": "block",
-									"conditions": [],
-									"actions": [
-										{
-											"callFunction": "highlightCurrentTab",
-											"sid": 860738792169641,
-											"parameters": [
-												"last_tab"
-											]
-										}
-									],
-									"sid": 459224186879054
 								}
 							]
 						},
@@ -932,14 +868,6 @@
 								"variable": "layout_amount",
 								"value": "menu_button.layout"
 							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 195704562322055,
-							"parameters": {
-								"layout": "main"
-							}
 						}
 					],
 					"sid": 581671591737451,
@@ -1017,6 +945,21 @@
 								}
 							],
 							"sid": 984225275064772
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 967664701615318,
+									"parameters": {
+										"layout": "main"
+									}
+								}
+							],
+							"sid": 482270621847868
 						}
 					]
 				},
@@ -1049,26 +992,6 @@
 				}
 			],
 			"sid": 137628029255649
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 170873695799055
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "menuScrollTo",
-					"sid": 747696549358039,
-					"parameters": [
-						"last_tab"
-					]
-				}
-			],
-			"sid": 978550422797923
 		}
 	],
 	"sid": 413805959310103

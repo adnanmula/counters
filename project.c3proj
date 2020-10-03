@@ -1,9 +1,9 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 18700,
+	"savedWithRelease": 21800,
 	"name": "Simple dice and counters",
 	"runtime": "c3",
-	"useWorker": false,
+	"useWorker": "dom",
 	"bundleAddons": false,
 	"usedAddons": [
 		{
@@ -11,7 +11,7 @@
 			"id": "Browser",
 			"name": "Browser",
 			"author": "Scirra",
-			"version": "r187",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -19,7 +19,7 @@
 			"id": "Function",
 			"name": "Function",
 			"author": "Scirra",
-			"version": "r187",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -27,7 +27,7 @@
 			"id": "Touch",
 			"name": "Touch",
 			"author": "Scirra",
-			"version": "r187",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -35,7 +35,7 @@
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
-			"version": "r187",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -43,7 +43,7 @@
 			"id": "AJAX",
 			"name": "AJAX",
 			"author": "Scirra",
-			"version": "r187",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -51,7 +51,7 @@
 			"id": "Dictionary",
 			"name": "Dictionary",
 			"author": "Scirra",
-			"version": "r187",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -59,7 +59,7 @@
 			"id": "Arr",
 			"name": "Array",
 			"author": "Scirra",
-			"version": "r187",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -67,7 +67,7 @@
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r187",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -75,7 +75,7 @@
 			"id": "Spritefont2",
 			"name": "Sprite font",
 			"author": "Scirra",
-			"version": "r187",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -83,7 +83,7 @@
 			"id": "NinePatch",
 			"name": "9-patch",
 			"author": "Scirra",
-			"version": "r187",
+			"version": "r218",
 			"bundled": false
 		},
 		{
@@ -91,7 +91,7 @@
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
-			"version": "r187",
+			"version": "r218",
 			"bundled": false
 		}
 	],
@@ -189,11 +189,20 @@
 	},
 	"layouts": {
 		"items": [
-			"menu",
 			"default",
 			"main"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"menu_counter",
+					"menu_dice",
+					"menu_starter"
+				],
+				"subfolders": [],
+				"name": "menus"
+			}
+		]
 	},
 	"eventSheets": {
 		"items": [
@@ -259,32 +268,50 @@
 				{
 					"name": "icon-16.png",
 					"type": "image/png",
-					"sid": 859806537679397
+					"sid": 859806537679397,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
 				},
 				{
 					"name": "icon-32.png",
 					"type": "image/png",
-					"sid": 190624195094577
+					"sid": 190624195094577,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
 				},
 				{
 					"name": "icon-114.png",
 					"type": "image/png",
-					"sid": 393041766309160
+					"sid": 393041766309160,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
 				},
 				{
 					"name": "icon-128.png",
 					"type": "image/png",
-					"sid": 224418559543586
+					"sid": 224418559543586,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
 				},
 				{
 					"name": "icon-256.png",
 					"type": "image/png",
-					"sid": 255842296340033
+					"sid": 255842296340033,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
 				},
 				{
 					"name": "loading-logo.png",
 					"type": "image/png",
-					"sid": 296175368202995
+					"sid": 296175368202995,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
 				}
 			],
 			"subfolders": []
@@ -305,10 +332,10 @@
 	},
 	"properties": {
 		"description": "Helper app for board and card games, keep track of points, throw dice and coins.",
-		"version": "1.2.0.0",
-		"author": "demigrantsoft.com",
+		"version": "1.3.0.0",
+		"author": "Adnan Mula",
 		"authorEmail": "demigrantsoft@gmail.com",
-		"authorWebsite": "http://demigrantsoft.com",
+		"authorWebsite": "http://adnanmula.com",
 		"appId": "com.demigrantsoft.counters",
 		"pixelRounding": true,
 		"useLoaderLayout": false,
@@ -346,9 +373,10 @@
 		"loaderStyle": "progress-logo",
 		"preloadSounds": false,
 		"clearBackground": true,
-		"enhancedAccelerationPrecision": true
+		"enhancedAccelerationPrecision": true,
+		"cordovaiOSScheme": "file"
 	},
 	"viewportWidth": 360,
 	"viewportHeight": 640,
-	"firstLayout": "menu"
+	"firstLayout": "menu_dice"
 }

@@ -19,14 +19,16 @@
 						"seams": "overlap"
 					},
 					"uid": 31,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"layout": "dice"
+					},
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
-								"bottom-edge": "none",
+								"bottom-edge": "window-bottom",
 								"enabled": true
 							}
 						}
@@ -94,8 +96,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -136,8 +138,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -178,8 +180,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -220,8 +222,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -262,8 +264,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -304,8 +306,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -346,8 +348,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -388,8 +390,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -430,8 +432,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -472,10 +474,10 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
-								"bottom-edge": "none",
+								"bottom-edge": "window-bottom",
 								"enabled": true
 							}
 						}
@@ -514,16 +516,16 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
-								"bottom-edge": "none",
+								"bottom-edge": "window-bottom",
 								"enabled": true
 							}
 						}
 					},
 					"world": {
-						"x": 157.92584264496978,
+						"x": 164.92584264496978,
 						"y": 554.3190740431631,
 						"width": 75.17676617793414,
 						"height": 75.17676617793414,
@@ -556,19 +558,19 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
-								"bottom-edge": "none",
+								"bottom-edge": "window-bottom",
 								"enabled": true
 							}
 						}
 					},
 					"world": {
-						"x": 296.94400255470566,
-						"y": 552.8052457144146,
-						"width": 72.14910952043714,
-						"height": 72.14910952043714,
+						"x": 303.94400255470566,
+						"y": 554.3190740431633,
+						"width": 75.17676617793414,
+						"height": 75.17676617793414,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -604,16 +606,16 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
-								"enabled": true
+								"enabled": false
 							}
 						}
 					},
 					"world": {
-						"x": 181.0110941555951,
+						"x": 188.0110941555951,
 						"y": 538.5905477154946,
 						"width": 94.61629825513006,
 						"height": 30,
@@ -645,7 +647,7 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
+								"left-edge": "none",
 								"top-edge": "window-top",
 								"right-edge": "none",
 								"bottom-edge": "none",
@@ -686,7 +688,7 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
+								"left-edge": "none",
 								"top-edge": "window-top",
 								"right-edge": "none",
 								"bottom-edge": "none",
@@ -727,7 +729,7 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
+								"left-edge": "none",
 								"top-edge": "window-top",
 								"right-edge": "none",
 								"bottom-edge": "none",

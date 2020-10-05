@@ -34,45 +34,6 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "starter_bg_helper",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 47,
-					"instanceVariables": {},
-					"behaviors": {
-						"Anchor": {
-							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
-								"right-edge": "none",
-								"bottom-edge": "none",
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 0.07994010964915788,
-						"y": 83.84576140342375,
-						"width": 359.8401197807017,
-						"height": 540.9079771931525,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "starter_bg_text",
 					"properties": {
 						"text": "Let each player touch the screen to select one",
@@ -96,7 +57,17 @@
 					},
 					"uid": 48,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "window-right",
+								"bottom-edge": "window-bottom",
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 21.079940109649158,
 						"y": 278.84576140342375,
@@ -115,6 +86,74 @@
 					}
 				},
 				{
+					"type": "starter_bg_helper",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 47,
+					"instanceVariables": {},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "window-right",
+								"bottom-edge": "window-bottom",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 0.07994010964915788,
+						"y": 83.84576140342375,
+						"width": 359.8401197807017,
+						"height": 540.9079771931525,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 802566402813975,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "tabs",
+			"overriden": 0,
+			"instances": [
+				{
 					"type": "menu_tab",
 					"properties": {
 						"initially-visible": true,
@@ -130,7 +169,7 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
+								"left-edge": "none",
 								"top-edge": "window-top",
 								"right-edge": "none",
 								"bottom-edge": "none",
@@ -171,7 +210,7 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
+								"left-edge": "none",
 								"top-edge": "window-top",
 								"right-edge": "none",
 								"bottom-edge": "none",
@@ -212,7 +251,7 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
+								"left-edge": "none",
 								"top-edge": "window-top",
 								"right-edge": "none",
 								"bottom-edge": "none",
@@ -238,7 +277,7 @@
 					}
 				}
 			],
-			"sid": 802566402813975,
+			"sid": 583385593166056,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -254,8 +293,8 @@
 				1
 			],
 			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"useRenderCells": false,

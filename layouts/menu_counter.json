@@ -21,8 +21,8 @@
 				1
 			],
 			"isTransparent": false,
-			"parallaxX": 1,
-			"parallaxY": 1,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"useRenderCells": false,
@@ -47,14 +47,16 @@
 						"seams": "overlap"
 					},
 					"uid": 3,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"layout": "counter"
+					},
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
-								"bottom-edge": "none",
+								"bottom-edge": "window-bottom",
 								"enabled": true
 							}
 						}
@@ -93,10 +95,10 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
-								"bottom-edge": "none",
+								"bottom-edge": "window-bottom",
 								"enabled": true
 							}
 						}
@@ -135,16 +137,16 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
-								"bottom-edge": "none",
+								"bottom-edge": "window-bottom",
 								"enabled": true
 							}
 						}
 					},
 					"world": {
-						"x": 158,
+						"x": 165,
 						"y": 554.4222212333929,
 						"width": 75.17676617793414,
 						"height": 75.17676617793414,
@@ -177,19 +179,19 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
-								"bottom-edge": "none",
+								"bottom-edge": "window-bottom",
 								"enabled": true
 							}
 						}
 					},
 					"world": {
-						"x": 297,
-						"y": 552.4222212333929,
-						"width": 72.14910952043714,
-						"height": 72.14910952043714,
+						"x": 304,
+						"y": 554.4222212333929,
+						"width": 75.17676617793414,
+						"height": 75.17676617793414,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -226,15 +228,15 @@
 						"Anchor": {
 							"properties": {
 								"left-edge": "window-left",
-								"top-edge": "window-top",
-								"right-edge": "none",
-								"bottom-edge": "none",
+								"top-edge": "none",
+								"right-edge": "window-right",
+								"bottom-edge": "window-bottom",
 								"enabled": true
 							}
 						}
 					},
 					"world": {
-						"x": 181,
+						"x": 188,
 						"y": 538.4222212333929,
 						"width": 94.61629825513006,
 						"height": 30,
@@ -266,7 +268,7 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
+								"left-edge": "none",
 								"top-edge": "window-top",
 								"right-edge": "none",
 								"bottom-edge": "none",
@@ -307,7 +309,7 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
+								"left-edge": "none",
 								"top-edge": "window-top",
 								"right-edge": "none",
 								"bottom-edge": "none",
@@ -348,7 +350,7 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
+								"left-edge": "none",
 								"top-edge": "window-top",
 								"right-edge": "none",
 								"bottom-edge": "none",
@@ -390,8 +392,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -432,8 +434,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -474,8 +476,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -516,8 +518,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -558,8 +560,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -600,8 +602,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -642,8 +644,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -684,8 +686,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -726,8 +728,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
+								"left-edge": "none",
+								"top-edge": "none",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -768,8 +770,8 @@
 				1
 			],
 			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"useRenderCells": false,

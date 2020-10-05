@@ -159,14 +159,6 @@
 			],
 			"actions": [
 				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 673290693767464,
-					"parameters": {
-						"layout": "menu"
-					}
-				},
-				{
 					"callFunction": "menuScrollTo",
 					"sid": 695169153889062,
 					"parameters": [
@@ -176,6 +168,70 @@
 			],
 			"sid": 299589574071426,
 			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 345890072751041
+				}
+			],
+			"actions": [],
+			"sid": 226762233782151,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-random-instance",
+							"objectClass": "System",
+							"sid": 202923739201167,
+							"parameters": {
+								"object": "clean_log_button"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "clean_log_button",
+							"sid": 782207769899232,
+							"parameters": {
+								"width": "100",
+								"height": "50"
+							}
+						}
+					],
+					"sid": 640561306464874
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-random-instance",
+							"objectClass": "System",
+							"sid": 922414600291426,
+							"parameters": {
+								"object": "main_back_button"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "main_back_button",
+							"sid": 444577085994619,
+							"parameters": {
+								"width": "100",
+								"height": "50"
+							}
+						}
+					],
+					"sid": 937863088036408
+				}
+			]
 		}
 	],
 	"sid": 681969915728584

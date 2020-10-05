@@ -136,10 +136,10 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 135314235142807,
+							"sid": 224372183382683,
 							"parameters": {
 								"object-to-create": "counter_list_main",
-								"layer": "0",
+								"layer": "\"main\"",
 								"x": "Function.Param(1)",
 								"y": "Function.Param(2)"
 							}

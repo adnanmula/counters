@@ -3,8 +3,21 @@
 	"plugin-id": "NinePatch",
 	"sid": 494174972016185,
 	"isGlobal": false,
-	"instanceVariables": [],
-	"behaviorTypes": [],
+	"instanceVariables": [
+		{
+			"name": "layout",
+			"type": "string",
+			"desc": "",
+			"sid": 751977661813077
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 815824851780481
+		}
+	],
 	"effectTypes": [],
 	"image": {
 		"width": 9,

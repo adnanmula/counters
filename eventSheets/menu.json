@@ -70,6 +70,168 @@
 			"includeSheet": "starter"
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 709428729765324
+				}
+			],
+			"actions": [],
+			"sid": 615689062829343,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-evaluate",
+							"objectClass": "System",
+							"sid": 399578874327635,
+							"parameters": {
+								"object": "menu_button_type",
+								"expression": "menu_button_type.type = \"counter_list\" & menu_button_type.layout = \"custom\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "menu_button_type",
+							"sid": 401308319198530,
+							"parameters": {
+								"width": "90.397306",
+								"height": "90.397306"
+							}
+						}
+					],
+					"sid": 517420123715001
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-evaluate",
+							"objectClass": "System",
+							"sid": 443602119936892,
+							"parameters": {
+								"object": "menu_button_type",
+								"expression": "menu_button_type.type = \"dice\" & menu_button_type.layout = \"custom\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "menu_button_type",
+							"sid": 691695666464091,
+							"parameters": {
+								"width": "90.397306",
+								"height": "90.397306"
+							}
+						}
+					],
+					"sid": 761038606553377,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-evaluate",
+							"objectClass": "System",
+							"sid": 569660822354241,
+							"parameters": {
+								"object": "menu_square_bg",
+								"expression": "menu_square_bg.layout = \"counter\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "menu_square_bg",
+							"sid": 787992470021527,
+							"parameters": {
+								"width": "314.370219",
+								"height": "111.510115"
+							}
+						}
+					],
+					"sid": 730857828647314,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-evaluate",
+							"objectClass": "System",
+							"sid": 466668758305170,
+							"parameters": {
+								"object": "menu_square_bg",
+								"expression": "menu_square_bg.layout = \"dice\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "menu_square_bg",
+							"sid": 493632631503579,
+							"parameters": {
+								"width": "314.370219",
+								"height": "111.510115"
+							}
+						}
+					],
+					"sid": 710704423909144,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 762639598751909,
+							"parameters": {
+								"object": "menu_amount_arrow"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "menu_amount_arrow",
+							"sid": 776009675620030,
+							"parameters": {
+								"width": "72.14911",
+								"height": "72.14911"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "menu_counterlist_amount_text",
+							"sid": 583792666216146,
+							"parameters": {
+								"y": "menu_amount_arrow.Y - 10"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "menu_dice_amount_text",
+							"sid": 875441605632385,
+							"parameters": {
+								"y": "menu_amount_arrow.Y - 13"
+							}
+						}
+					],
+					"sid": 490833856673318
+				}
+			]
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Update counter/dice text",
@@ -642,47 +804,7 @@
 									"sid": 799004062667025
 								}
 							],
-							"sid": 956477926742835,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "for-each",
-											"objectClass": "System",
-											"sid": 692604612632825,
-											"parameters": {
-												"object": "menu_tab"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-animation-frame",
-											"objectClass": "menu_tab",
-											"sid": 312735737957243,
-											"parameters": {
-												"frame-number": "0"
-											}
-										}
-									],
-									"sid": 237373886725453
-								},
-								{
-									"eventType": "block",
-									"conditions": [],
-									"actions": [
-										{
-											"callFunction": "highlightCurrentTab",
-											"sid": 706942436253573,
-											"parameters": [
-												"last_tab"
-											]
-										}
-									],
-									"sid": 738080335681537
-								}
-							]
+							"sid": 956477926742835
 						},
 						{
 							"functionName": "menuScrollTo",
@@ -720,12 +842,11 @@
 									],
 									"actions": [
 										{
-											"id": "scroll-to-position",
+											"id": "go-to-layout",
 											"objectClass": "System",
-											"sid": 984736151879901,
+											"sid": 504000002445973,
 											"parameters": {
-												"x": "180",
-												"y": "320"
+												"layout": "menu_dice"
 											}
 										}
 									],
@@ -747,12 +868,11 @@
 									],
 									"actions": [
 										{
-											"id": "scroll-to-position",
+											"id": "go-to-layout",
 											"objectClass": "System",
-											"sid": 308952586167737,
+											"sid": 130497967083151,
 											"parameters": {
-												"x": "540",
-												"y": "320"
+												"layout": "menu_counter"
 											}
 										}
 									],
@@ -774,37 +894,15 @@
 									],
 									"actions": [
 										{
-											"id": "scroll-to-position",
+											"id": "go-to-layout",
 											"objectClass": "System",
-											"sid": 765177453519770,
+											"sid": 385396569490351,
 											"parameters": {
-												"x": "900",
-												"y": "320"
+												"layout": "menu_starter"
 											}
-										},
-										{
-											"callFunction": "highlightCurrentTab",
-											"sid": 771847857935475,
-											"parameters": [
-												"last_tab"
-											]
 										}
 									],
 									"sid": 646633220058725
-								},
-								{
-									"eventType": "block",
-									"conditions": [],
-									"actions": [
-										{
-											"callFunction": "highlightCurrentTab",
-											"sid": 860738792169641,
-											"parameters": [
-												"last_tab"
-											]
-										}
-									],
-									"sid": 459224186879054
 								}
 							]
 						},
@@ -932,14 +1030,6 @@
 								"variable": "layout_amount",
 								"value": "menu_button.layout"
 							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 195704562322055,
-							"parameters": {
-								"layout": "main"
-							}
 						}
 					],
 					"sid": 581671591737451,
@@ -1017,6 +1107,21 @@
 								}
 							],
 							"sid": 984225275064772
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 967664701615318,
+									"parameters": {
+										"layout": "main"
+									}
+								}
+							],
+							"sid": 482270621847868
 						}
 					]
 				},
@@ -1049,26 +1154,6 @@
 				}
 			],
 			"sid": 137628029255649
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 170873695799055
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "menuScrollTo",
-					"sid": 747696549358039,
-					"parameters": [
-						"last_tab"
-					]
-				}
-			],
-			"sid": 978550422797923
 		}
 	],
 	"sid": 413805959310103

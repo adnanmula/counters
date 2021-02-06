@@ -799,7 +799,7 @@
 						{
 							"id": "on-touched-object",
 							"objectClass": "Touch",
-							"sid": 747910344402636,
+							"sid": 234789900370388,
 							"parameters": {
 								"object": "clean_log_button"
 							}
@@ -807,31 +807,25 @@
 					],
 					"actions": [
 						{
-							"id": "destroy",
+							"id": "set-text",
 							"objectClass": "log",
-							"sid": 452353760047095
+							"sid": 340169053874865,
+							"parameters": {
+								"text": "\"Log\" & newline"
+							}
 						},
 						{
 							"id": "set-size",
 							"objectClass": "logMessages",
-							"sid": 898399511431008,
+							"sid": 985215530236593,
 							"parameters": {
 								"width": "0",
 								"height": "1",
 								"depth": "1"
 							}
-						},
-						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 530712488850743,
-							"parameters": {
-								"name": "\"setUpLog\"",
-								"parameter-n": []
-							}
 						}
 					],
-					"sid": 586413732920710
+					"sid": 465716075804867
 				}
 			],
 			"sid": 772273118635116

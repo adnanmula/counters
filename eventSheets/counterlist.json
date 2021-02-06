@@ -141,7 +141,8 @@
 								"object-to-create": "counter_list_main",
 								"layer": "\"main\"",
 								"x": "Function.Param(1)",
-								"y": "Function.Param(2)"
+								"y": "Function.Param(2)",
+								"create-hierarchy": false
 							}
 						},
 						{
@@ -254,7 +255,8 @@
 								"object-to-create": "pixel_text",
 								"layer": "counter_list_main.LayerName",
 								"x": "counter_list_main.ImagePointX(COUNTER_CONTAINER_CENTER)",
-								"y": "counter_list_main.ImagePointY(COUNTER_CONTAINER_CENTER)"
+								"y": "counter_list_main.ImagePointY(COUNTER_CONTAINER_CENTER)",
+								"create-hierarchy": false
 							}
 						},
 						{

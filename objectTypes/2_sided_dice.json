@@ -11,26 +11,26 @@
 			{
 				"frames": [
 					{
-						"width": 50,
-						"height": 50,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 79,
+						"imageSpriteId": 3540472,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
 					{
-						"width": 50,
-						"height": 50,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 80,
+						"imageSpriteId": 4832034,
 						"useCollisionPoly": true,
 						"duration": 1
 					}

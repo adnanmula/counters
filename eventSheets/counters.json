@@ -174,7 +174,8 @@
 								"object-to-create": "pixel_text",
 								"layer": "counter_main.LayerName",
 								"x": "counter_main.ImagePointX(COUNTER_CONTAINER_CENTER)",
-								"y": "counter_main.ImagePointY(COUNTER_CONTAINER_CENTER)"
+								"y": "counter_main.ImagePointY(COUNTER_CONTAINER_CENTER)",
+								"create-hierarchy": false
 							}
 						},
 						{
@@ -863,7 +864,8 @@
 						"object-to-create": "counter_main",
 						"layer": "\"main\"",
 						"x": "x",
-						"y": "y"
+						"y": "y",
+						"create-hierarchy": false
 					}
 				}
 			],

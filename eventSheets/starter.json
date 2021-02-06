@@ -37,7 +37,8 @@
 						"object-to-create": "starter_touch_marker",
 						"layer": "\"main\"",
 						"x": "Touch.X",
-						"y": "Touch.Y"
+						"y": "Touch.Y",
+						"create-hierarchy": false
 					}
 				},
 				{

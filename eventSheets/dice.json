@@ -26,7 +26,8 @@
 								"object-to-create": "pixel_text",
 								"layer": "dices.LayerName",
 								"x": "dices.X",
-								"y": "dices.Y"
+								"y": "dices.Y",
+								"create-hierarchy": false
 							}
 						},
 						{
@@ -97,7 +98,8 @@
 										"object-to-create": "2_sided_dice",
 										"layer": "\"main\"",
 										"x": "LayoutWidth/2",
-										"y": "LayoutHeight/2"
+										"y": "LayoutHeight/2",
+										"create-hierarchy": false
 									}
 								},
 								{
@@ -137,7 +139,8 @@
 										"object-to-create": "generic_dice",
 										"layer": "\"main\"",
 										"x": "LayoutWidth/2",
-										"y": "LayoutHeight/2"
+										"y": "LayoutHeight/2",
+										"create-hierarchy": false
 									}
 								},
 								{
@@ -205,7 +208,8 @@
 										"object-to-create": "generic_dice",
 										"layer": "\"main\"",
 										"x": "LayoutWidth/2",
-										"y": "LayoutHeight/2"
+										"y": "LayoutHeight/2",
+										"create-hierarchy": false
 									}
 								},
 								{
@@ -652,7 +656,8 @@
 								"object-to-create": "log",
 								"layer": "\"main\"",
 								"x": "5",
-								"y": "4"
+								"y": "4",
+								"create-hierarchy": false
 							}
 						},
 						{
@@ -663,7 +668,8 @@
 								"object-to-create": "clean_log_button",
 								"layer": "\"main\"",
 								"x": "60",
-								"y": "605"
+								"y": "605",
+								"create-hierarchy": false
 							}
 						},
 						{
@@ -674,7 +680,8 @@
 								"object-to-create": "main_back_button",
 								"layer": "\"main\"",
 								"x": "300",
-								"y": "605"
+								"y": "605",
+								"create-hierarchy": false
 							}
 						},
 						{

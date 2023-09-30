@@ -7,12 +7,14 @@
 			"name": "value",
 			"type": "number",
 			"desc": "",
+			"show": true,
 			"sid": 928839282847622
 		},
 		{
 			"name": "text_uid",
 			"type": "number",
 			"desc": "",
+			"show": true,
 			"sid": 598525384336492
 		}
 	],

@@ -7,18 +7,21 @@
 			"name": "sides",
 			"type": "number",
 			"desc": "",
+			"show": true,
 			"sid": 418448419698556
 		},
 		{
 			"name": "text_uid",
 			"type": "number",
 			"desc": "",
+			"show": true,
 			"sid": 641261143540931
 		},
 		{
 			"name": "custom",
 			"type": "boolean",
 			"desc": "",
+			"show": true,
 			"sid": 646966776383077
 		}
 	],

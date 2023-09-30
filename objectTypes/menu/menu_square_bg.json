@@ -1,0 +1,35 @@
+{
+	"name": "menu_square_bg",
+	"plugin-id": "NinePatch",
+	"sid": 494174972016185,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "layout",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 751977661813077
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 815824851780481
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 9,
+		"height": 9,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 27,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

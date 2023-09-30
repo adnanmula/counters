@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 23402,
+	"savedWithRelease": 36000,
 	"name": "Simple dice and counters",
 	"runtime": "c3",
 	"useWorker": "dom",
@@ -8,50 +8,9 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Browser",
-			"name": "Browser",
-			"author": "Scirra",
-			"version": "r234.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Function",
-			"name": "Function",
-			"author": "Scirra",
-			"version": "r234.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Touch",
-			"name": "Touch",
-			"author": "Scirra",
-			"version": "r234.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Keyboard",
-			"name": "Keyboard",
-			"author": "Scirra",
-			"version": "r234.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "AJAX",
 			"name": "AJAX",
 			"author": "Scirra",
-			"version": "r234.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Dictionary",
-			"name": "Dictionary",
-			"author": "Scirra",
-			"version": "r234.2",
 			"bundled": false
 		},
 		{
@@ -59,23 +18,34 @@
 			"id": "Arr",
 			"name": "Array",
 			"author": "Scirra",
-			"version": "r234.2",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
+			"id": "Browser",
+			"name": "Browser",
 			"author": "Scirra",
-			"version": "r234.2",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Spritefont2",
-			"name": "Sprite font",
+			"id": "Dictionary",
+			"name": "Dictionary",
 			"author": "Scirra",
-			"version": "r234.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Function",
+			"name": "Function",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
 			"bundled": false
 		},
 		{
@@ -83,7 +53,20 @@
 			"id": "NinePatch",
 			"name": "9-patch",
 			"author": "Scirra",
-			"version": "r234.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
 			"bundled": false
 		},
 		{
@@ -91,7 +74,13 @@
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
-			"version": "r234.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
 			"bundled": false
 		},
 		{
@@ -99,7 +88,6 @@
 			"id": "Anchor",
 			"name": "Anchor",
 			"author": "Scirra",
-			"version": "r234.2",
 			"bundled": false
 		}
 	],
@@ -174,16 +162,14 @@
 				"counter_list_arrow_add",
 				"counter_list_arrow_sub",
 				"counter_list_main"
-			],
-			"selectMode": "normal"
+			]
 		},
 		{
 			"members": [
 				"counter_arrow_add",
 				"counter_arrow_sub",
 				"counter_main"
-			],
-			"selectMode": "normal"
+			]
 		}
 	],
 	"families": {
@@ -346,6 +332,8 @@
 		"authorWebsite": "http://adnanmula.com",
 		"appId": "com.demigrantsoft.counters",
 		"pixelRounding": true,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
 		"fullscreenMode": "scale-outer",
 		"fullscreenQuality": "high",
@@ -369,21 +357,26 @@
 			1,
 			0
 		],
-		"useHighDpi": true,
 		"orientations": "portrait",
-		"enableWebGL": true,
+		"webgpu": "auto",
 		"gpuPreference": "high-performance",
 		"scriptsType": "module",
 		"framerateMode": "vsync",
 		"compositingMode": "standard",
 		"sampling": "nearest",
 		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
 		"maxSpriteSheetSize": 2048,
 		"loaderStyle": "progress-logo",
 		"preloadSounds": false,
-		"clearBackground": true,
-		"enhancedAccelerationPrecision": true,
-		"cordovaiOSScheme": "file"
+		"cordovaiOSScheme": "file",
+		"cordovaAndroidScheme": "file",
+		"autoReloadScriptsOnPreview": false,
+		"exportFileStructure": "flat",
+		"uidAllocationMode": "increment"
 	},
 	"viewportWidth": 360,
 	"viewportHeight": 640,

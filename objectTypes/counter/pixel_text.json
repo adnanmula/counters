@@ -1,0 +1,29 @@
+{
+	"name": "pixel_text",
+	"plugin-id": "Spritefont2",
+	"sid": 137952271893482,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "base_uid",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 875238499641158
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 128,
+		"height": 128,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 5,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

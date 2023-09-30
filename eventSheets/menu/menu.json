@@ -1,0 +1,1162 @@
+{
+	"name": "menu",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "layout_type",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 683602669975019
+		},
+		{
+			"eventType": "variable",
+			"name": "layout_amount",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 873836329886631
+		},
+		{
+			"eventType": "variable",
+			"name": "counter_amount",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 739050291189968
+		},
+		{
+			"eventType": "variable",
+			"name": "dice_amount",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 271751297735548
+		},
+		{
+			"eventType": "variable",
+			"name": "hold_amount",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 458748768377047
+		},
+		{
+			"eventType": "variable",
+			"name": "hold_type",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 786226644371661
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "settings"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "starter"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 709428729765324
+				}
+			],
+			"actions": [],
+			"sid": 615689062829343,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-evaluate",
+							"objectClass": "System",
+							"sid": 399578874327635,
+							"parameters": {
+								"object": "menu_button_type",
+								"expression": "menu_button_type.type = \"counter_list\" & menu_button_type.layout = \"custom\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "menu_button_type",
+							"sid": 401308319198530,
+							"parameters": {
+								"width": "90.397306",
+								"height": "90.397306"
+							}
+						}
+					],
+					"sid": 517420123715001
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-evaluate",
+							"objectClass": "System",
+							"sid": 443602119936892,
+							"parameters": {
+								"object": "menu_button_type",
+								"expression": "menu_button_type.type = \"dice\" & menu_button_type.layout = \"custom\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "menu_button_type",
+							"sid": 691695666464091,
+							"parameters": {
+								"width": "90.397306",
+								"height": "90.397306"
+							}
+						}
+					],
+					"sid": 761038606553377,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-evaluate",
+							"objectClass": "System",
+							"sid": 569660822354241,
+							"parameters": {
+								"object": "menu_square_bg",
+								"expression": "menu_square_bg.layout = \"counter\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "menu_square_bg",
+							"sid": 787992470021527,
+							"parameters": {
+								"width": "314.370219",
+								"height": "111.510115"
+							}
+						}
+					],
+					"sid": 730857828647314,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-evaluate",
+							"objectClass": "System",
+							"sid": 466668758305170,
+							"parameters": {
+								"object": "menu_square_bg",
+								"expression": "menu_square_bg.layout = \"dice\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "menu_square_bg",
+							"sid": 493632631503579,
+							"parameters": {
+								"width": "314.370219",
+								"height": "111.510115"
+							}
+						}
+					],
+					"sid": 710704423909144,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 762639598751909,
+							"parameters": {
+								"object": "menu_amount_arrow"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "menu_amount_arrow",
+							"sid": 776009675620030,
+							"parameters": {
+								"width": "72.14911",
+								"height": "72.14911"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "menu_counterlist_amount_text",
+							"sid": 583792666216146,
+							"parameters": {
+								"y": "menu_amount_arrow.Y - 10"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "menu_dice_amount_text",
+							"sid": 875441605632385,
+							"parameters": {
+								"y": "menu_amount_arrow.Y - 13"
+							}
+						}
+					],
+					"sid": 490833856673318
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Update counter/dice text",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 629450276235511
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 400416994507265,
+							"parameters": {
+								"name": "\"updateCounterMenuAmount\"",
+								"parameter-n": [
+									"counter_amount"
+								]
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 945922759918286,
+							"parameters": {
+								"name": "\"updateDiceMenuAmount\"",
+								"parameter-n": [
+									"dice_amount"
+								]
+							}
+						}
+					],
+					"sid": 414631417317516
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 132751890242941,
+							"parameters": {
+								"object": "menu_amount_arrow"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 200786421904219,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 184116578783818,
+									"parameters": {
+										"first-value": "menu_amount_arrow.type",
+										"comparison": 0,
+										"second-value": "\"counter_list\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 152421942302400,
+									"parameters": {
+										"name": "\"updateCounterMenuAmount\"",
+										"parameter-n": [
+											"counter_amount + int(menu_amount_arrow.action)"
+										]
+									}
+								}
+							],
+							"sid": 185159596063825
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 335035717761058,
+									"parameters": {
+										"first-value": "menu_amount_arrow.type",
+										"comparison": 0,
+										"second-value": "\"dice\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 448600376730712,
+									"parameters": {
+										"name": "\"updateDiceMenuAmount\"",
+										"parameter-n": [
+											"dice_amount+ int(menu_amount_arrow.action)"
+										]
+									}
+								}
+							],
+							"sid": 606530373109334
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 676217761344110,
+							"parameters": {
+								"name": "\"updateCounterMenuAmount\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 435497010779519,
+							"parameters": {
+								"variable": "counter_amount",
+								"value": "Function.Param(0)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "menu_counterlist_amount_text",
+							"sid": 964920768398041,
+							"parameters": {
+								"text": "counter_amount"
+							}
+						}
+					],
+					"sid": 879321030491667,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "counter_max",
+							"type": "number",
+							"initialValue": "20",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 965261452387831
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 459936522943398,
+									"parameters": {
+										"first-value": "Function.Param(0)",
+										"comparison": 4,
+										"second-value": "counter_max"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 783934180492535,
+									"parameters": {
+										"variable": "counter_amount",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "menu_counterlist_amount_text",
+									"sid": 484611153371247,
+									"parameters": {
+										"text": "counter_amount"
+									}
+								}
+							],
+							"sid": 468105272302012
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 473204621290469,
+									"parameters": {
+										"first-value": "Function.Param(0)",
+										"comparison": 2,
+										"second-value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 778887902795064,
+									"parameters": {
+										"variable": "counter_amount",
+										"value": "counter_max"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "menu_counterlist_amount_text",
+									"sid": 749980275831441,
+									"parameters": {
+										"text": "counter_amount"
+									}
+								}
+							],
+							"sid": 575508478760422
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 593716602971691,
+							"parameters": {
+								"name": "\"updateDiceMenuAmount\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 157717267236639,
+							"parameters": {
+								"variable": "dice_amount",
+								"value": "Function.Param(0)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "menu_dice_amount_text",
+							"sid": 778987126204522,
+							"parameters": {
+								"text": "dice_amount"
+							}
+						}
+					],
+					"sid": 372990843441834,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "dice_max",
+							"type": "number",
+							"initialValue": "1000",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 217210999914439
+						},
+						{
+							"eventType": "variable",
+							"name": "dice_min",
+							"type": "number",
+							"initialValue": "3",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 134436222416466
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 108596635359000,
+									"parameters": {
+										"first-value": "Function.Param(0)",
+										"comparison": 4,
+										"second-value": "dice_max"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 692996833198467,
+									"parameters": {
+										"variable": "dice_amount",
+										"value": "dice_min"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "menu_dice_amount_text",
+									"sid": 249988847525110,
+									"parameters": {
+										"text": "dice_amount"
+									}
+								}
+							],
+							"sid": 652997310657899
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 788575907127767,
+									"parameters": {
+										"first-value": "Function.Param(0)",
+										"comparison": 2,
+										"second-value": "dice_min"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 495997511284509,
+									"parameters": {
+										"variable": "dice_amount",
+										"value": "dice_max"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "menu_dice_amount_text",
+									"sid": 695190728955421,
+									"parameters": {
+										"text": "dice_amount"
+									}
+								}
+							],
+							"sid": 355250930691943
+						}
+					]
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Hold",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "HOLD_THRESHOLD",
+							"type": "number",
+							"initialValue": "40",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": true,
+							"sid": 889165441933731
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-touching-object",
+									"objectClass": "Touch",
+									"sid": 688932514762428,
+									"parameters": {
+										"object": "menu_amount_arrow"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 794128963199919,
+									"parameters": {
+										"variable": "hold_amount",
+										"comparison": 4,
+										"value": "HOLD_THRESHOLD"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 385790594501131,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 264272963296690,
+											"parameters": {
+												"first-value": "menu_amount_arrow.type",
+												"comparison": 0,
+												"second-value": "\"counter_list\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "call-function",
+											"objectClass": "Function",
+											"sid": 816780852606112,
+											"parameters": {
+												"name": "\"updateCounterMenuAmount\"",
+												"parameter-n": [
+													"counter_amount + menu_amount_arrow.action"
+												]
+											}
+										}
+									],
+									"sid": 889654271954767
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 597409306072471,
+											"parameters": {
+												"first-value": "menu_amount_arrow.type",
+												"comparison": 0,
+												"second-value": "\"dice\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "call-function",
+											"objectClass": "Function",
+											"sid": 925448965129438,
+											"parameters": {
+												"name": "\"updateDiceMenuAmount\"",
+												"parameter-n": [
+													"dice_amount + menu_amount_arrow.action"
+												]
+											}
+										}
+									],
+									"sid": 538158690489773
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-touching-object",
+									"objectClass": "Touch",
+									"sid": 520429807495795,
+									"parameters": {
+										"object": "menu_amount_arrow"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 913830385700189,
+									"parameters": {
+										"variable": "hold_type",
+										"value": "menu_amount_arrow.type"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 543104760961886,
+									"parameters": {
+										"variable": "hold_amount",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 258744387403946
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-touching-object",
+									"objectClass": "Touch",
+									"sid": 193352260232260,
+									"parameters": {
+										"object": "menu_amount_arrow"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 103659292094314,
+									"parameters": {
+										"variable": "hold_amount",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 862146356961561
+						}
+					],
+					"sid": 543067240596147
+				}
+			],
+			"sid": 489008788572409
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Menu navigation",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Tabs - Menu navigation",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 284513597459892,
+									"parameters": {
+										"object": "menu_tab"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "menuScrollTo",
+									"sid": 975699105009984,
+									"parameters": [
+										"menu_tab.tab"
+									]
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 875437535600110,
+									"parameters": {
+										"variable": "last_tab",
+										"value": "menu_tab.tab"
+									}
+								},
+								{
+									"callFunction": "starterRestart",
+									"sid": 799004062667025
+								}
+							],
+							"sid": 956477926742835
+						},
+						{
+							"functionName": "menuScrollTo",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionCopyPicked": false,
+							"functionIsAsync": false,
+							"functionParameters": [
+								{
+									"name": "view",
+									"type": "string",
+									"initialValue": "",
+									"comment": "",
+									"sid": 690645306665213
+								}
+							],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 622408606683352,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 517778811181692,
+											"parameters": {
+												"first-value": "view",
+												"comparison": 0,
+												"second-value": "MENU_DICE"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 504000002445973,
+											"parameters": {
+												"layout": "menu_dice"
+											}
+										}
+									],
+									"sid": 782918075949225
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 672256064892618,
+											"parameters": {
+												"first-value": "view",
+												"comparison": 0,
+												"second-value": "MENU_COUNTERS"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 130497967083151,
+											"parameters": {
+												"layout": "menu_counter"
+											}
+										}
+									],
+									"sid": 557402277435861
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 712380228186778,
+											"parameters": {
+												"first-value": "view",
+												"comparison": 0,
+												"second-value": "MENU_STARTER"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 385396569490351,
+											"parameters": {
+												"layout": "menu_starter"
+											}
+										}
+									],
+									"sid": 646633220058725
+								}
+							]
+						},
+						{
+							"functionName": "highlightCurrentTab",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionCopyPicked": false,
+							"functionIsAsync": false,
+							"functionParameters": [
+								{
+									"name": "tab",
+									"type": "string",
+									"initialValue": "",
+									"comment": "",
+									"sid": 744471728111552
+								}
+							],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 122409314672562,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 467238393621485,
+											"parameters": {
+												"object": "menu_tab"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 334055322995408,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "menu_tab",
+													"sid": 286689303900652,
+													"parameters": {
+														"instance-variable": "tab",
+														"comparison": 1,
+														"value": "tab"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation-frame",
+													"objectClass": "menu_tab",
+													"sid": 974141695457808,
+													"parameters": {
+														"frame-number": "0"
+													}
+												}
+											],
+											"sid": 625605821450684
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "menu_tab",
+													"sid": 536613262619736,
+													"parameters": {
+														"instance-variable": "tab",
+														"comparison": 0,
+														"value": "tab"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation-frame",
+													"objectClass": "menu_tab",
+													"sid": 294975281653999,
+													"parameters": {
+														"frame-number": "1"
+													}
+												}
+											],
+											"sid": 488513266797706
+										}
+									]
+								}
+							]
+						}
+					],
+					"sid": 457296015587379
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 862737013286403,
+							"parameters": {
+								"object": "menu_button"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 454405519848110,
+							"parameters": {
+								"variable": "layout_type",
+								"value": "menu_button.type"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 258369439578249,
+							"parameters": {
+								"variable": "layout_amount",
+								"value": "menu_button.layout"
+							}
+						}
+					],
+					"sid": 581671591737451,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 521203866292009,
+									"parameters": {
+										"first-value": "menu_button.type",
+										"comparison": 0,
+										"second-value": "\"counter_list\""
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 311941576752046,
+									"parameters": {
+										"first-value": "menu_button.layout",
+										"comparison": 0,
+										"second-value": "\"custom\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 478691214081982,
+									"parameters": {
+										"variable": "layout_amount",
+										"value": "counter_amount"
+									}
+								}
+							],
+							"sid": 844428603837602
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 567684098801260,
+									"parameters": {
+										"first-value": "menu_button.type",
+										"comparison": 0,
+										"second-value": "\"dice\""
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 178635779124464,
+									"parameters": {
+										"first-value": "menu_button.layout",
+										"comparison": 0,
+										"second-value": "\"custom\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 617695490038148,
+									"parameters": {
+										"variable": "layout_amount",
+										"value": "dice_amount"
+									}
+								}
+							],
+							"sid": 984225275064772
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 967664701615318,
+									"parameters": {
+										"layout": "main"
+									}
+								}
+							],
+							"sid": 482270621847868
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-back-button",
+							"objectClass": "Browser",
+							"sid": 519737783236337
+						},
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 490152927662067,
+							"parameters": {
+								"key": 8
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "close",
+							"objectClass": "Browser",
+							"sid": 864790355062212
+						}
+					],
+					"sid": 119604270739381,
+					"isOrBlock": true
+				}
+			],
+			"sid": 137628029255649
+		}
+	],
+	"sid": 413805959310103
+}

@@ -7,12 +7,14 @@
 			"name": "value",
 			"type": "number",
 			"desc": "",
+			"show": true,
 			"sid": 302856915292853
 		},
 		{
 			"name": "base_uid",
 			"type": "number",
 			"desc": "",
+			"show": true,
 			"sid": 236620321249126
 		}
 	],

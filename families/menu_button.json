@@ -7,12 +7,14 @@
 			"name": "type",
 			"type": "string",
 			"desc": "",
+			"show": true,
 			"sid": 718996342012019
 		},
 		{
 			"name": "layout",
 			"type": "string",
 			"desc": "",
+			"show": true,
 			"sid": 225185002939114
 		}
 	],

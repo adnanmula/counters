@@ -55,19 +55,25 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
+					"functionName": "setUpCountersList",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
 						{
-							"id": "on-function",
-							"objectClass": "Function",
-							"sid": 252356546241911,
-							"parameters": {
-								"name": "\"setUpCountersList\""
-							}
+							"name": "amount",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 552528679972407
 						}
 					],
+					"eventType": "function-block",
+					"conditions": [],
 					"actions": [],
-					"sid": 302039304956180,
+					"sid": 529270475216002,
 					"children": [
 						{
 							"eventType": "block",
@@ -75,73 +81,103 @@
 								{
 									"id": "repeat",
 									"objectClass": "System",
-									"sid": 150746347919856,
+									"sid": 352561969930809,
 									"parameters": {
-										"count": "int(Function.Param(0))"
+										"count": "amount"
 									}
 								}
 							],
 							"actions": [
 								{
-									"id": "call-function",
-									"objectClass": "Function",
-									"sid": 115595463621820,
-									"parameters": {
-										"name": "\"createCounterListContainer\"",
-										"parameter-n": [
-											"loopindex + 1",
-											"0",
-											"(LayoutHeight/int(Function.Param(0)) * (loopindex))",
-											"LayoutWidth",
-											"LayoutHeight/int(Function.Param(0))"
-										]
-									}
+									"callFunction": "createCounterListContainer",
+									"sid": 865040443651677,
+									"parameters": [
+										"loopindex + 1",
+										"0",
+										"(LayoutHeight/int(amount) * (loopindex))",
+										"LayoutWidth",
+										"LayoutHeight/int(amount)"
+									]
 								}
 							],
-							"sid": 629695538706078
+							"sid": 740881362086850
 						}
 					]
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"functionName": "createCounterListContainer",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
 						{
-							"id": "on-function",
-							"objectClass": "Function",
-							"sid": 161412908525957,
-							"parameters": {
-								"name": "\"createCounterListContainer\""
-							}
+							"name": "Parameter0",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 703236455266857
+						},
+						{
+							"name": "Parameter1",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 483272754042528
+						},
+						{
+							"name": "Parameter2",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 648391806011098
+						},
+						{
+							"name": "Parameter3",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 940369317188167
+						},
+						{
+							"name": "Parameter4",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 389770311338733
 						}
 					],
+					"eventType": "function-block",
+					"conditions": [],
 					"actions": [
 						{
 							"id": "set-key",
 							"objectClass": "CountersInfo",
-							"sid": 487353675820662,
+							"sid": 166442182935790,
 							"parameters": {
-								"key": "Function.Param(0) & \"width\"",
-								"value": "Function.Param(3)"
+								"key": "Parameter0 & \"width\"",
+								"value": "Parameter3"
 							}
 						},
 						{
 							"id": "set-key",
 							"objectClass": "CountersInfo",
-							"sid": 102016460003660,
+							"sid": 335218933808433,
 							"parameters": {
-								"key": "Function.Param(0) & \"height\"",
-								"value": "Function.Param(4)"
+								"key": "Parameter0 & \"height\"",
+								"value": "Parameter4"
 							}
 						},
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 224372183382683,
+							"sid": 832851422306378,
 							"parameters": {
 								"object-to-create": "counter_list_main",
 								"layer": "\"main\"",
-								"x": "Function.Param(1)",
-								"y": "Function.Param(2)",
+								"x": "Parameter1",
+								"y": "Parameter2",
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
@@ -149,14 +185,14 @@
 						{
 							"id": "set-size",
 							"objectClass": "counter_list_main",
-							"sid": 659012050517618,
+							"sid": 116497233687634,
 							"parameters": {
 								"width": "LayoutWidth",
-								"height": "LayoutHeight/int(Function.Param(0))"
+								"height": "LayoutHeight/int(Parameter0)"
 							}
 						}
 					],
-					"sid": 846645333235457
+					"sid": 640571861986193
 				},
 				{
 					"eventType": "block",

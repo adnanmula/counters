@@ -16,54 +16,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-function",
-							"objectClass": "Function",
-							"sid": 569303339064071,
-							"parameters": {
-								"name": "\"setUpCountersAA\""
-							}
-						}
-					],
-					"actions": [],
-					"sid": 615314592241369,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "repeat",
-									"objectClass": "System",
-									"sid": 654280682977434,
-									"parameters": {
-										"count": "int(Function.Param(0))"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "call-function",
-									"objectClass": "Function",
-									"sid": 361383645547722,
-									"parameters": {
-										"name": "\"createCounterListContainer\"",
-										"parameter-n": [
-											"loopindex + 1",
-											"0",
-											"(LayoutHeight/int(Function.Param(0)) * (loopindex))",
-											"LayoutWidth",
-											"LayoutHeight/int(Function.Param(0))"
-										]
-									}
-								}
-							],
-							"sid": 329135285041774
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "on-created",
 							"objectClass": "counter_main",
 							"sid": 216926630738339

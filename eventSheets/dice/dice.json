@@ -62,31 +62,37 @@
 					"sid": 287955094429117
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"functionName": "setUpDices",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
 						{
-							"id": "on-function",
-							"objectClass": "Function",
-							"sid": 211780361612863,
-							"parameters": {
-								"name": "\"setUpDices\""
-							}
+							"name": "faces",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 584224874484277
 						}
 					],
+					"eventType": "function-block",
+					"conditions": [],
 					"actions": [],
-					"sid": 599825379728419,
+					"sid": 975066460344634,
 					"children": [
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-parameter",
-									"objectClass": "Function",
-									"sid": 222660110800311,
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 824163702215268,
 									"parameters": {
-										"index": "0",
+										"first-value": "faces",
 										"comparison": 0,
-										"value": "2"
+										"second-value": "2"
 									}
 								}
 							],
@@ -94,7 +100,7 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 283949613481765,
+									"sid": 640235973451754,
 									"parameters": {
 										"object-to-create": "2_sided_dice",
 										"layer": "\"main\"",
@@ -107,7 +113,7 @@
 								{
 									"id": "call-function",
 									"objectClass": "Function",
-									"sid": 782619825375473,
+									"sid": 843554223732992,
 									"parameters": {
 										"name": "\"rollCoin\"",
 										"parameter-n": [
@@ -116,19 +122,19 @@
 									}
 								}
 							],
-							"sid": 187101784866423
+							"sid": 877924490024515
 						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-parameter",
-									"objectClass": "Function",
-									"sid": 345126053761053,
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 662857670760854,
 									"parameters": {
-										"index": "0",
+										"first-value": "faces",
 										"comparison": 0,
-										"value": "9999"
+										"second-value": "9999"
 									}
 								}
 							],
@@ -136,7 +142,7 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 448273279517910,
+									"sid": 296345587600390,
 									"parameters": {
 										"object-to-create": "generic_dice",
 										"layer": "\"main\"",
@@ -149,7 +155,7 @@
 								{
 									"id": "set-boolean-instvar",
 									"objectClass": "generic_dice",
-									"sid": 783642172203778,
+									"sid": 169733335559124,
 									"parameters": {
 										"instance-variable": "custom",
 										"value": "true"
@@ -158,7 +164,7 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "generic_dice",
-									"sid": 914503031731453,
+									"sid": 802024715360332,
 									"parameters": {
 										"instance-variable": "sides",
 										"value": "6"
@@ -167,7 +173,7 @@
 								{
 									"id": "call-function",
 									"objectClass": "Function",
-									"sid": 873383295654683,
+									"sid": 919812131090084,
 									"parameters": {
 										"name": "\"rollDice\"",
 										"parameter-n": [
@@ -176,29 +182,29 @@
 									}
 								}
 							],
-							"sid": 742869243677723
+							"sid": 853477865939894
 						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-parameter",
-									"objectClass": "Function",
-									"sid": 358780860175025,
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 853633945472929,
 									"parameters": {
-										"index": "0",
+										"first-value": "faces",
 										"comparison": 1,
-										"value": "2"
+										"second-value": "2"
 									}
 								},
 								{
-									"id": "compare-parameter",
-									"objectClass": "Function",
-									"sid": 198004065283029,
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 898728685872550,
 									"parameters": {
-										"index": "0",
+										"first-value": "faces",
 										"comparison": 1,
-										"value": "9999"
+										"second-value": "9999"
 									}
 								}
 							],
@@ -206,7 +212,7 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 331916928489577,
+									"sid": 570902915920809,
 									"parameters": {
 										"object-to-create": "generic_dice",
 										"layer": "\"main\"",
@@ -219,16 +225,16 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "generic_dice",
-									"sid": 125343754956491,
+									"sid": 926785171364605,
 									"parameters": {
 										"instance-variable": "sides",
-										"value": "Function.Param(0)"
+										"value": "faces"
 									}
 								},
 								{
 									"id": "call-function",
 									"objectClass": "Function",
-									"sid": 402353011994324,
+									"sid": 509834353802618,
 									"parameters": {
 										"name": "\"rollDice\"",
 										"parameter-n": [
@@ -237,7 +243,7 @@
 									}
 								}
 							],
-							"sid": 604306695417673
+							"sid": 214783565607461
 						}
 					]
 				}

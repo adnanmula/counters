@@ -120,19 +120,6 @@
 					],
 					"actions": [
 						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 418345864764172,
-							"disabled": true,
-							"parameters": {
-								"name": "\"updateCounter\"",
-								"parameter-n": [
-									"counter_arrow.base_uid",
-									" counter_arrow.value"
-								]
-							}
-						},
-						{
 							"callFunction": "updateCounter",
 							"sid": 922860448531709,
 							"parameters": [
@@ -269,16 +256,12 @@
 							],
 							"actions": [
 								{
-									"id": "call-function",
-									"objectClass": "Function",
-									"sid": 321720062853463,
-									"parameters": {
-										"name": "\"updateCounter\"",
-										"parameter-n": [
-											"pixel_text.base_uid",
-											"-counter_base.value"
-										]
-									}
+									"callFunction": "updateCounter",
+									"sid": 919564928418252,
+									"parameters": [
+										"pixel_text.base_uid",
+										"-counter_base.value"
+									]
 								}
 							],
 							"sid": 137435913804047,
@@ -297,19 +280,32 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
+					"functionName": "updateCounter",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
 						{
-							"id": "on-function",
-							"objectClass": "Function",
-							"sid": 276994722068662,
-							"parameters": {
-								"name": "\"updateCounter\""
-							}
+							"name": "uid",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 945507721092610
+						},
+						{
+							"name": "value",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 590844698970955
 						}
 					],
+					"eventType": "function-block",
+					"conditions": [],
 					"actions": [],
-					"sid": 224146897987813,
+					"sid": 117050956881090,
 					"children": [
 						{
 							"eventType": "variable",
@@ -319,7 +315,7 @@
 							"comment": "",
 							"isStatic": false,
 							"isConstant": false,
-							"sid": 946091969693268
+							"sid": 603173318499633
 						},
 						{
 							"eventType": "variable",
@@ -329,7 +325,7 @@
 							"comment": "",
 							"isStatic": false,
 							"isConstant": false,
-							"sid": 256967722403789
+							"sid": 326734485476490
 						},
 						{
 							"eventType": "block",
@@ -337,14 +333,14 @@
 								{
 									"id": "pick-by-unique-id",
 									"objectClass": "counter_base",
-									"sid": 198434327818322,
+									"sid": 254059838511418,
 									"parameters": {
-										"unique-id": "Function.Param(0)"
+										"unique-id": "uid"
 									}
 								}
 							],
 							"actions": [],
-							"sid": 271605244064690,
+							"sid": 614080175474805,
 							"children": [
 								{
 									"eventType": "block",
@@ -353,14 +349,14 @@
 										{
 											"id": "set-instvar-value",
 											"objectClass": "counter_base",
-											"sid": 965364803956470,
+											"sid": 938278545544351,
 											"parameters": {
 												"instance-variable": "value",
-												"value": "counter_base.value + Function.Param(1) > max_value ? max_value : (counter_base.value + Function.Param(1) < min_value ? min_value : counter_base.value + Function.Param(1) )"
+												"value": "counter_base.value + value > max_value ? max_value : (counter_base.value + value < min_value ? min_value : counter_base.value + value )"
 											}
 										}
 									],
-									"sid": 955684856284599,
+									"sid": 767962449015514,
 									"children": [
 										{
 											"eventType": "block",
@@ -368,7 +364,7 @@
 												{
 													"id": "pick-by-unique-id",
 													"objectClass": "pixel_text",
-													"sid": 413906193401675,
+													"sid": 399536049121400,
 													"parameters": {
 														"unique-id": "counter_base.text_uid"
 													}
@@ -378,13 +374,13 @@
 												{
 													"id": "set-text",
 													"objectClass": "pixel_text",
-													"sid": 722174689754800,
+													"sid": 929265709181173,
 													"parameters": {
 														"text": "counter_base.value"
 													}
 												}
 											],
-											"sid": 624676091892193
+											"sid": 638048499842480
 										}
 									]
 								}
@@ -415,131 +411,18 @@
 					],
 					"actions": [
 						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 714620836379087,
-							"parameters": {
-								"name": "\"updateCounter\"",
-								"parameter-n": [
-									"counter_arrow.base_uid",
-									"counter_arrow.value"
-								]
-							}
+							"callFunction": "updateCounter",
+							"sid": 473644372695821,
+							"parameters": [
+								"counter_arrow.base_uid",
+								"counter_arrow.value"
+							]
 						}
 					],
 					"sid": 261920158933893
 				}
 			],
 			"sid": 982046265698808
-		},
-		{
-			"functionName": "updateCounter",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionCopyPicked": false,
-			"functionIsAsync": false,
-			"functionParameters": [
-				{
-					"name": "uid",
-					"type": "number",
-					"initialValue": "0",
-					"comment": "",
-					"sid": 945507721092610
-				},
-				{
-					"name": "value",
-					"type": "number",
-					"initialValue": "0",
-					"comment": "",
-					"sid": 590844698970955
-				}
-			],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [],
-			"sid": 540768485423291,
-			"children": [
-				{
-					"eventType": "variable",
-					"name": "max_value",
-					"type": "number",
-					"initialValue": "9999999",
-					"comment": "",
-					"isStatic": false,
-					"isConstant": false,
-					"sid": 785285888144492
-				},
-				{
-					"eventType": "variable",
-					"name": "min_value",
-					"type": "number",
-					"initialValue": "-999999",
-					"comment": "",
-					"isStatic": false,
-					"isConstant": false,
-					"sid": 658382030997193
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "pick-by-unique-id",
-							"objectClass": "counter_base",
-							"sid": 930737308066357,
-							"parameters": {
-								"unique-id": "uid"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 289056871015833,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"id": "set-instvar-value",
-									"objectClass": "counter_base",
-									"sid": 104591367545016,
-									"parameters": {
-										"instance-variable": "value",
-										"value": "counter_base.value + value > max_value ? max_value : (counter_base.value + value < min_value ? min_value : counter_base.value + value )"
-									}
-								}
-							],
-							"sid": 925314663284243,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "pick-by-unique-id",
-											"objectClass": "pixel_text",
-											"sid": 479853406966367,
-											"parameters": {
-												"unique-id": "counter_base.text_uid"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-text",
-											"objectClass": "pixel_text",
-											"sid": 800218519830921,
-											"parameters": {
-												"text": "counter_base.value"
-											}
-										}
-									],
-									"sid": 131429086967768
-								}
-							]
-						}
-					]
-				}
-			]
 		}
 	],
 	"sid": 724543389463521

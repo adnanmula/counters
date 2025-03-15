@@ -3,13 +3,236 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "touch_count",
+			"name": "starter_wait_seconds",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 978254240331900
+		},
+		{
+			"eventType": "variable",
+			"name": "starter_min_players",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 152038107270487
+		},
+		{
+			"eventType": "variable",
+			"name": "starter_timer",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 779411812578714
+			"sid": 905184406878891
+		},
+		{
+			"eventType": "variable",
+			"name": "starter_already_selected",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 862557357416811
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 529451334609004,
+					"parameters": {
+						"variable": "starter_already_selected"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 275107528659620,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 162113707126717,
+							"parameters": {
+								"first-value": "Touch.TouchCount",
+								"comparison": 5,
+								"second-value": "starter_min_players"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 984285265232198,
+							"parameters": {
+								"variable": "starter_timer",
+								"value": "1 * dt"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "starter_bg_text",
+							"sid": 241959946056839,
+							"parameters": {
+								"text": "\"Selecting a winner (\" & Touch.TouchCount & \")...\""
+							}
+						}
+					],
+					"sid": 906781297678405
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 933914511840435,
+							"parameters": {
+								"first-value": "Touch.TouchCount",
+								"comparison": 2,
+								"second-value": "starter_min_players"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "starter_bg_text",
+							"sid": 460602985104955,
+							"parameters": {
+								"text": "\"Selecting a winner (\" & Touch.TouchCount & \")...\""
+							}
+						}
+					],
+					"sid": 893502355788609
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 842354493933369,
+					"parameters": {
+						"variable": "starter_already_selected"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 904859058272693,
+					"parameters": {
+						"first-value": "Touch.TouchCount",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 731349726955404,
+					"parameters": {
+						"variable": "starter_already_selected",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 411043421092751,
+					"parameters": {
+						"variable": "starter_timer",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 408547489068385
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 502505881428490,
+					"parameters": {
+						"first-value": "Touch.TouchCount",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "starterRestart",
+					"sid": 264663759557449
+				},
+				{
+					"id": "destroy",
+					"objectClass": "starter_touch_marker",
+					"sid": 743491869275964
+				}
+			],
+			"sid": 426187901402471
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 286066948430881,
+					"parameters": {
+						"variable": "starter_timer",
+						"comparison": 5,
+						"value": "starter_wait_seconds"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "starterSelectPlayer",
+					"sid": 591595822176101,
+					"parameters": [
+						"Touch.TouchCount"
+					]
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 455025059210585,
+					"parameters": {
+						"variable": "starter_timer",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 376168868675440,
+					"parameters": {
+						"variable": "starter_already_selected",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 141586601530508
 		},
 		{
 			"eventType": "block",
@@ -82,43 +305,9 @@
 						"animation": "str(Touch.TouchIndex)",
 						"from": "beginning"
 					}
-				},
-				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 254857093925535,
-					"parameters": {
-						"variable": "touch_count",
-						"value": "1"
-					}
 				}
 			],
 			"sid": 836630095535654
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-any-touch-end",
-					"objectClass": "Touch",
-					"sid": 353724771599948
-				},
-				{
-					"id": "is-touching-object",
-					"objectClass": "Touch",
-					"sid": 681859513919488,
-					"parameters": {
-						"object": "starter_bg_helper"
-					}
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "starterRestart",
-					"sid": 259747018065723
-				}
-			],
-			"sid": 438066108052160
 		},
 		{
 			"eventType": "block",
@@ -132,109 +321,108 @@
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "starter_touch_marker",
-					"sid": 393931608486169,
-					"parameters": {
-						"x": "Touch.XForID(starter_touch_marker.touchId)",
-						"y": "Touch.YForID(starter_touch_marker.touchId)"
-					}
-				}
-			],
-			"sid": 242714845513002
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 789015794849574,
-					"parameters": {
-						"variable": "touch_count",
-						"comparison": 5,
-						"value": "2"
-					}
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 898379233280009
-				}
-			],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "starter_bg_text",
-					"sid": 222648838423279,
-					"parameters": {
-						"text": "\"Counting players, wait 2 seconds...\""
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 478322983859916,
-					"parameters": {
-						"seconds": "2",
-						"use-timescale": true
-					}
-				}
-			],
-			"sid": 469382172307877,
+			"actions": [],
+			"sid": 242714845513002,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 821194655287199,
+							"id": "has-nth-touch",
+							"objectClass": "Touch",
+							"sid": 962651861324413,
 							"parameters": {
-								"variable": "touch_count",
-								"comparison": 5,
-								"value": "2"
+								"touch-number": "starter_touch_marker.touchIndex"
 							}
 						},
 						{
-							"id": "trigger-once-while-true",
+							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 905095368983831
+							"sid": 710385505444376,
+							"parameters": {
+								"first-value": "Touch.XForID(starter_touch_marker.touchId)",
+								"comparison": 1,
+								"second-value": "0"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 368285051457597,
+							"parameters": {
+								"first-value": "Touch.YForID(starter_touch_marker.touchId)",
+								"comparison": 1,
+								"second-value": "0"
+							}
 						}
 					],
 					"actions": [
 						{
-							"callFunction": "starterSelectPlayer",
-							"sid": 755136548978976,
-							"parameters": [
-								"Touch.TouchCount"
-							]
+							"id": "set-position",
+							"objectClass": "starter_touch_marker",
+							"sid": 361689340118244,
+							"parameters": {
+								"x": "Touch.XForID(starter_touch_marker.touchId)",
+								"y": "Touch.YForID(starter_touch_marker.touchId)"
+							}
 						}
 					],
-					"sid": 185516268535529
+					"sid": 671664515770871
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "else",
+							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 407595618631016
+							"sid": 506561411804594,
+							"parameters": {
+								"first-value": "Touch.XForID(starter_touch_marker.touchId)",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 916846669769523,
+							"parameters": {
+								"first-value": "Touch.YForID(starter_touch_marker.touchId)",
+								"comparison": 0,
+								"second-value": "0"
+							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-text",
-							"objectClass": "starter_bg_text",
-							"sid": 879170036049264,
-							"parameters": {
-								"text": "\"\""
-							}
+							"id": "destroy",
+							"objectClass": "starter_touch_marker",
+							"sid": 350062531566122
 						}
 					],
-					"sid": 716054924420849
+					"sid": 464763716232215
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-nth-touch",
+							"objectClass": "Touch",
+							"sid": 817976134613361,
+							"parameters": {
+								"touch-number": "starter_touch_marker.touchIndex"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "starter_touch_marker",
+							"sid": 235058063338850
+						}
+					],
+					"sid": 410438700354250
 				}
 			]
 		},
@@ -297,58 +485,68 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "pick-by-evaluate",
-									"objectClass": "System",
-									"sid": 446512110688671,
-									"parameters": {
-										"object": "starter_touch_marker",
-										"expression": "starter_touch_marker.touchIndex = result"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-size",
-									"objectClass": "starter_touch_marker",
-									"sid": 823470321498074,
-									"parameters": {
-										"width": "starter_touch_marker.Width * 2",
-										"height": "starter_touch_marker.Height * 2"
-									}
-								}
-							],
-							"sid": 757987994183173
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
 									"id": "for-each",
 									"objectClass": "System",
 									"sid": 115892729939500,
 									"parameters": {
 										"object": "starter_touch_marker"
 									}
+								}
+							],
+							"actions": [],
+							"sid": 909334773206120,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "starter_touch_marker",
+											"sid": 684482885544040,
+											"parameters": {
+												"instance-variable": "touchIndex",
+												"comparison": 1,
+												"value": "result"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "starter_touch_marker",
+											"sid": 240900561111992
+										}
+									],
+									"sid": 999444384423739
 								},
 								{
-									"id": "compare-instance-variable",
-									"objectClass": "starter_touch_marker",
-									"sid": 591314025831190,
-									"parameters": {
-										"instance-variable": "touchIndex",
-										"comparison": 1,
-										"value": "result"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "starter_touch_marker",
+											"sid": 654413462871692,
+											"parameters": {
+												"instance-variable": "touchIndex",
+												"comparison": 0,
+												"value": "result"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-size",
+											"objectClass": "starter_touch_marker",
+											"sid": 455581445946568,
+											"parameters": {
+												"width": "starter_touch_marker.Width * 2",
+												"height": "starter_touch_marker.Height * 2"
+											}
+										}
+									],
+									"sid": 963354696949717
 								}
-							],
-							"actions": [
-								{
-									"id": "destroy",
-									"objectClass": "starter_touch_marker",
-									"sid": 459166286285809
-								}
-							],
-							"sid": 909334773206120
+							]
 						}
 					]
 				}
@@ -368,10 +566,19 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 883262419461700,
+					"sid": 916890348542029,
 					"parameters": {
-						"variable": "touch_count",
+						"variable": "starter_timer",
 						"value": "0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 879136369768384,
+					"parameters": {
+						"variable": "starter_already_selected",
+						"value": "false"
 					}
 				},
 				{
@@ -383,30 +590,7 @@
 					}
 				}
 			],
-			"sid": 272801438455729,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "for-each",
-							"objectClass": "System",
-							"sid": 745417930707875,
-							"parameters": {
-								"object": "starter_touch_marker"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "starter_touch_marker",
-							"sid": 536486476833245
-						}
-					],
-					"sid": 315880477116452
-				}
-			]
+			"sid": 272801438455729
 		},
 		{
 			"functionName": "colorFromIndex",

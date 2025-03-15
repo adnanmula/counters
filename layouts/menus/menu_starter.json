@@ -10,6 +10,7 @@
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
 			"color": [
 				1,
 				1,
@@ -58,12 +59,15 @@
 						"horizontal-alignment": "center",
 						"vertical-alignment": "center",
 						"wrapping": "word",
+						"text-direction": "ltr",
 						"icon-set": -1,
 						"initially-visible": true,
 						"origin": "top-left",
 						"read-aloud": false
 					},
 					"uid": 48,
+					"sid": 598499884599833,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Anchor": {
@@ -76,6 +80,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 21.079940109649158,
 						"y": 278.84576140342375,
@@ -103,6 +109,8 @@
 						"live-preview": false
 					},
 					"uid": 47,
+					"sid": 426701075816274,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Anchor": {
@@ -115,6 +123,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 0.07994010964915788,
 						"y": 83.84576140342375,
@@ -137,6 +147,7 @@
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
 			"color": [
 				1,
 				1,
@@ -176,6 +187,8 @@
 						"live-preview": false
 					},
 					"uid": 58,
+					"sid": 508435600564842,
+					"tags": "",
 					"instanceVariables": {
 						"tab": "dice"
 					},
@@ -190,6 +203,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 68,
 						"y": 51.422221,
@@ -217,6 +232,8 @@
 						"live-preview": false
 					},
 					"uid": 59,
+					"sid": 431799364413306,
+					"tags": "",
 					"instanceVariables": {
 						"tab": "counters"
 					},
@@ -231,6 +248,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 180,
 						"y": 51.422221,
@@ -258,6 +277,8 @@
 						"live-preview": false
 					},
 					"uid": 60,
+					"sid": 559720698818403,
+					"tags": "",
 					"instanceVariables": {
 						"tab": "starter"
 					},
@@ -272,6 +293,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 292,
 						"y": 51.422221,
@@ -294,6 +317,7 @@
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
 			"color": [
 				1,
 				1,
@@ -319,6 +343,10 @@
 			"global": false
 		}
 	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
 	"sid": 742871783522715,
 	"nonworld-instances": [],
 	"effectTypes": [],

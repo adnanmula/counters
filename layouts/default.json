@@ -16,11 +16,15 @@
 						"live-preview": false
 					},
 					"uid": 4,
+					"sid": 500192442096829,
+					"tags": "",
 					"instanceVariables": {
 						"value": 0,
 						"text_uid": 0
 					},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 120,
 						"y": 96.7138982634464,
@@ -48,11 +52,15 @@
 						"live-preview": false
 					},
 					"uid": 24,
+					"sid": 925061369614370,
+					"tags": "",
 					"instanceVariables": {
 						"value": 0,
 						"base_uid": 0
 					},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 141.54820301986115,
 						"y": 116.85505827534845,
@@ -80,11 +88,15 @@
 						"live-preview": false
 					},
 					"uid": 25,
+					"sid": 519701180572839,
+					"tags": "",
 					"instanceVariables": {
 						"value": 0,
 						"base_uid": 0
 					},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 175.68420586595175,
 						"y": 116.25638022627948,
@@ -112,8 +124,12 @@
 						"live-preview": false
 					},
 					"uid": 8,
+					"sid": 885749097339911,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 122,
 						"y": 42.99539251850462,
@@ -151,6 +167,8 @@
 						"read-aloud": false
 					},
 					"uid": 35,
+					"sid": 505921133446448,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Anchor": {
@@ -163,6 +181,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 10,
 						"y": 101,
@@ -200,10 +220,14 @@
 						"read-aloud": false
 					},
 					"uid": 14,
+					"sid": 172040100500255,
+					"tags": "",
 					"instanceVariables": {
 						"base_uid": 0
 					},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 172.8923815532213,
 						"y": 78.80580873057052,
@@ -231,12 +255,16 @@
 						"live-preview": false
 					},
 					"uid": 18,
+					"sid": 755004746620816,
+					"tags": "",
 					"instanceVariables": {
 						"sides": 0,
 						"text_uid": 0,
 						"custom": false
 					},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 45,
 						"y": 45,
@@ -264,6 +292,8 @@
 						"live-preview": false
 					},
 					"uid": 29,
+					"sid": 762138484165809,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Anchor": {
@@ -276,6 +306,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 213.31723532432213,
 						"y": 34.93288052384849,
@@ -303,6 +335,8 @@
 						"live-preview": false
 					},
 					"uid": 32,
+					"sid": 478609365165769,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Anchor": {
@@ -315,6 +349,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 58.933468760486235,
 						"y": 161.99415466401032,
@@ -342,11 +378,15 @@
 						"live-preview": false
 					},
 					"uid": 46,
+					"sid": 760703973138403,
+					"tags": "",
 					"instanceVariables": {
 						"touchIndex": 0,
 						"touchId": 0
 					},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 45.82696537494091,
 						"y": 250.29137250974165,
@@ -374,11 +414,15 @@
 						"live-preview": false
 					},
 					"uid": 53,
+					"sid": 387163767398611,
+					"tags": "",
 					"instanceVariables": {
 						"value": 0,
 						"text_uid": 0
 					},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 120,
 						"y": 204.00041265701685,
@@ -406,11 +450,15 @@
 						"live-preview": false
 					},
 					"uid": 54,
+					"sid": 677700388253732,
+					"tags": "",
 					"instanceVariables": {
 						"value": 0,
 						"base_uid": 0
 					},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 167.10486389149798,
 						"y": 249.83722563401176,
@@ -438,11 +486,15 @@
 						"live-preview": false
 					},
 					"uid": 55,
+					"sid": 602907669515131,
+					"tags": "",
 					"instanceVariables": {
 						"value": 0,
 						"base_uid": 0
 					},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 238.88684531539457,
 						"y": 248.73603805466732,
@@ -465,6 +517,7 @@
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
 			"color": [
 				1,
 				1,
@@ -490,6 +543,10 @@
 			"global": false
 		}
 	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
 	"sid": 487276129283582,
 	"nonworld-instances": [],
 	"effectTypes": [],

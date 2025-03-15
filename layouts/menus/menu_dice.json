@@ -20,6 +20,8 @@
 						"seams": "overlap"
 					},
 					"uid": 31,
+					"sid": 772626729922219,
+					"tags": "",
 					"instanceVariables": {
 						"layout": "dice"
 					},
@@ -34,6 +36,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 180,
 						"y": 555.2947226964014,
@@ -56,6 +60,7 @@
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
 			"color": [
 				1,
 				1,
@@ -95,6 +100,8 @@
 						"live-preview": false
 					},
 					"uid": 15,
+					"sid": 112565253089665,
+					"tags": "",
 					"instanceVariables": {
 						"type": "dice",
 						"layout": "4"
@@ -110,6 +117,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 179.93973373595796,
 						"y": 169.1810022609493,
@@ -137,6 +146,8 @@
 						"live-preview": false
 					},
 					"uid": 28,
+					"sid": 297437280872317,
+					"tags": "",
 					"instanceVariables": {
 						"type": "dice",
 						"layout": "6"
@@ -152,6 +163,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 291.93973373595793,
 						"y": 169.1810022609493,
@@ -179,6 +192,8 @@
 						"live-preview": false
 					},
 					"uid": 9,
+					"sid": 703741208780118,
+					"tags": "",
 					"instanceVariables": {
 						"type": "dice",
 						"layout": "2"
@@ -194,6 +209,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 67.93973373595794,
 						"y": 169.1810022609493,
@@ -221,6 +238,8 @@
 						"live-preview": false
 					},
 					"uid": 11,
+					"sid": 265162846053471,
+					"tags": "",
 					"instanceVariables": {
 						"type": "dice",
 						"layout": "10"
@@ -236,6 +255,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 179.93973373595796,
 						"y": 295.0983576328504,
@@ -263,6 +284,8 @@
 						"live-preview": false
 					},
 					"uid": 12,
+					"sid": 734382140094311,
+					"tags": "",
 					"instanceVariables": {
 						"type": "dice",
 						"layout": "12"
@@ -278,6 +301,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 291.93973373595793,
 						"y": 295.0983576328504,
@@ -305,6 +330,8 @@
 						"live-preview": false
 					},
 					"uid": 13,
+					"sid": 602838212493608,
+					"tags": "",
 					"instanceVariables": {
 						"type": "dice",
 						"layout": "8"
@@ -320,6 +347,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 67.93973373595794,
 						"y": 295.0983576328504,
@@ -347,6 +376,8 @@
 						"live-preview": false
 					},
 					"uid": 16,
+					"sid": 225192089621493,
+					"tags": "",
 					"instanceVariables": {
 						"type": "dice",
 						"layout": "20"
@@ -362,6 +393,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 67.93973373595794,
 						"y": 421.49505184772676,
@@ -389,6 +422,8 @@
 						"live-preview": false
 					},
 					"uid": 22,
+					"sid": 275100000345694,
+					"tags": "",
 					"instanceVariables": {
 						"type": "dice",
 						"layout": "100"
@@ -404,6 +439,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 291.93973373595793,
 						"y": 421.4947197703843,
@@ -431,6 +468,8 @@
 						"live-preview": false
 					},
 					"uid": 10,
+					"sid": 443146239554487,
+					"tags": "",
 					"instanceVariables": {
 						"type": "dice",
 						"layout": "9999"
@@ -446,6 +485,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 179.93973373595793,
 						"y": 421.49505184772676,
@@ -473,6 +514,8 @@
 						"live-preview": false
 					},
 					"uid": 23,
+					"sid": 111601173197862,
+					"tags": "",
 					"instanceVariables": {
 						"type": "dice",
 						"layout": "custom"
@@ -488,6 +531,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 81.93823787601329,
 						"y": 555.0660961516966,
@@ -515,6 +560,8 @@
 						"live-preview": false
 					},
 					"uid": 26,
+					"sid": 883578579406590,
+					"tags": "",
 					"instanceVariables": {
 						"action": -1,
 						"type": "dice"
@@ -530,6 +577,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 164.92584264496978,
 						"y": 554.3190740431631,
@@ -557,6 +606,8 @@
 						"live-preview": false
 					},
 					"uid": 27,
+					"sid": 602753643935118,
+					"tags": "",
 					"instanceVariables": {
 						"action": 1,
 						"type": "dice"
@@ -572,6 +623,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 303.94400255470566,
 						"y": 554.3190740431633,
@@ -609,6 +662,8 @@
 						"read-aloud": false
 					},
 					"uid": 30,
+					"sid": 951473770029410,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Anchor": {
@@ -621,6 +676,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 188.0110941555951,
 						"y": 538.5905477154946,
@@ -648,6 +705,8 @@
 						"live-preview": false
 					},
 					"uid": 36,
+					"sid": 731249117854016,
+					"tags": "",
 					"instanceVariables": {
 						"tab": "dice"
 					},
@@ -662,6 +721,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 68,
 						"y": 51.422221,
@@ -689,6 +750,8 @@
 						"live-preview": false
 					},
 					"uid": 37,
+					"sid": 205739008147053,
+					"tags": "",
 					"instanceVariables": {
 						"tab": "counters"
 					},
@@ -703,6 +766,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 180,
 						"y": 51.422221,
@@ -730,6 +795,8 @@
 						"live-preview": false
 					},
 					"uid": 39,
+					"sid": 729263697281089,
+					"tags": "",
 					"instanceVariables": {
 						"tab": "starter"
 					},
@@ -744,6 +811,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 292,
 						"y": 51.422221,
@@ -766,6 +835,7 @@
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
 			"color": [
 				1,
 				1,
@@ -791,12 +861,18 @@
 			"global": false
 		}
 	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
 	"sid": 802840285617307,
 	"nonworld-instances": [
 		{
 			"type": "CountersInfo",
 			"properties": {},
 			"uid": 38,
+			"sid": 629648407243546,
+			"tags": "",
 			"instanceVariables": {}
 		},
 		{
@@ -807,6 +883,8 @@
 				"depth": 1
 			},
 			"uid": 20,
+			"sid": 464208028285424,
+			"tags": "",
 			"instanceVariables": {}
 		}
 	],

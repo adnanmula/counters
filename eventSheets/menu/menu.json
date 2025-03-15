@@ -249,26 +249,18 @@
 					],
 					"actions": [
 						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 400416994507265,
-							"parameters": {
-								"name": "\"updateCounterMenuAmount\"",
-								"parameter-n": [
-									"counter_amount"
-								]
-							}
+							"callFunction": "updateCounterMenuAmount",
+							"sid": 642811268327232,
+							"parameters": [
+								"counter_amount"
+							]
 						},
 						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 945922759918286,
-							"parameters": {
-								"name": "\"updateDiceMenuAmount\"",
-								"parameter-n": [
-									"dice_amount"
-								]
-							}
+							"callFunction": "updateDiceMenuAmount",
+							"sid": 303484202664017,
+							"parameters": [
+								"dice_amount"
+							]
 						}
 					],
 					"sid": 414631417317516
@@ -305,15 +297,11 @@
 							],
 							"actions": [
 								{
-									"id": "call-function",
-									"objectClass": "Function",
-									"sid": 152421942302400,
-									"parameters": {
-										"name": "\"updateCounterMenuAmount\"",
-										"parameter-n": [
-											"counter_amount + int(menu_amount_arrow.action)"
-										]
-									}
+									"callFunction": "updateCounterMenuAmount",
+									"sid": 352761252199633,
+									"parameters": [
+										"counter_amount + int(menu_amount_arrow.action)"
+									]
 								}
 							],
 							"sid": 185159596063825
@@ -334,15 +322,11 @@
 							],
 							"actions": [
 								{
-									"id": "call-function",
-									"objectClass": "Function",
-									"sid": 448600376730712,
-									"parameters": {
-										"name": "\"updateDiceMenuAmount\"",
-										"parameter-n": [
-											"dice_amount+ int(menu_amount_arrow.action)"
-										]
-									}
+									"callFunction": "updateDiceMenuAmount",
+									"sid": 470695110362416,
+									"parameters": [
+										"dice_amount+ int(menu_amount_arrow.action)"
+									]
 								}
 							],
 							"sid": 606530373109334
@@ -350,37 +334,43 @@
 					]
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"functionName": "updateCounterMenuAmount",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
 						{
-							"id": "on-function",
-							"objectClass": "Function",
-							"sid": 676217761344110,
-							"parameters": {
-								"name": "\"updateCounterMenuAmount\""
-							}
+							"name": "amount",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 676313212754309
 						}
 					],
+					"eventType": "function-block",
+					"conditions": [],
 					"actions": [
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 435497010779519,
+							"sid": 214744403911444,
 							"parameters": {
 								"variable": "counter_amount",
-								"value": "Function.Param(0)"
+								"value": "amount"
 							}
 						},
 						{
 							"id": "set-text",
 							"objectClass": "menu_counterlist_amount_text",
-							"sid": 964920768398041,
+							"sid": 656651965485828,
 							"parameters": {
 								"text": "counter_amount"
 							}
 						}
 					],
-					"sid": 879321030491667,
+					"sid": 253464374379523,
 					"children": [
 						{
 							"eventType": "variable",
@@ -390,7 +380,7 @@
 							"comment": "",
 							"isStatic": false,
 							"isConstant": false,
-							"sid": 965261452387831
+							"sid": 523132513559114
 						},
 						{
 							"eventType": "block",
@@ -398,9 +388,9 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 459936522943398,
+									"sid": 995463438998045,
 									"parameters": {
-										"first-value": "Function.Param(0)",
+										"first-value": "amount",
 										"comparison": 4,
 										"second-value": "counter_max"
 									}
@@ -410,7 +400,7 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 783934180492535,
+									"sid": 280600823509785,
 									"parameters": {
 										"variable": "counter_amount",
 										"value": "1"
@@ -419,13 +409,13 @@
 								{
 									"id": "set-text",
 									"objectClass": "menu_counterlist_amount_text",
-									"sid": 484611153371247,
+									"sid": 857035754449460,
 									"parameters": {
 										"text": "counter_amount"
 									}
 								}
 							],
-							"sid": 468105272302012
+							"sid": 755012552936144
 						},
 						{
 							"eventType": "block",
@@ -433,9 +423,9 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 473204621290469,
+									"sid": 366151951818287,
 									"parameters": {
-										"first-value": "Function.Param(0)",
+										"first-value": "amount",
 										"comparison": 2,
 										"second-value": "1"
 									}
@@ -445,7 +435,7 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 778887902795064,
+									"sid": 547215829803343,
 									"parameters": {
 										"variable": "counter_amount",
 										"value": "counter_max"
@@ -454,48 +444,54 @@
 								{
 									"id": "set-text",
 									"objectClass": "menu_counterlist_amount_text",
-									"sid": 749980275831441,
+									"sid": 984332232744723,
 									"parameters": {
 										"text": "counter_amount"
 									}
 								}
 							],
-							"sid": 575508478760422
+							"sid": 885746837512814
 						}
 					]
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"functionName": "updateDiceMenuAmount",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
 						{
-							"id": "on-function",
-							"objectClass": "Function",
-							"sid": 593716602971691,
-							"parameters": {
-								"name": "\"updateDiceMenuAmount\""
-							}
+							"name": "result",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 741486529808957
 						}
 					],
+					"eventType": "function-block",
+					"conditions": [],
 					"actions": [
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 157717267236639,
+							"sid": 735399696461839,
 							"parameters": {
 								"variable": "dice_amount",
-								"value": "Function.Param(0)"
+								"value": "result"
 							}
 						},
 						{
 							"id": "set-text",
 							"objectClass": "menu_dice_amount_text",
-							"sid": 778987126204522,
+							"sid": 103800596306784,
 							"parameters": {
 								"text": "dice_amount"
 							}
 						}
 					],
-					"sid": 372990843441834,
+					"sid": 613152544773042,
 					"children": [
 						{
 							"eventType": "variable",
@@ -505,7 +501,7 @@
 							"comment": "",
 							"isStatic": false,
 							"isConstant": false,
-							"sid": 217210999914439
+							"sid": 817531645815424
 						},
 						{
 							"eventType": "variable",
@@ -515,7 +511,7 @@
 							"comment": "",
 							"isStatic": false,
 							"isConstant": false,
-							"sid": 134436222416466
+							"sid": 602014847307970
 						},
 						{
 							"eventType": "block",
@@ -523,9 +519,9 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 108596635359000,
+									"sid": 506651566151870,
 									"parameters": {
-										"first-value": "Function.Param(0)",
+										"first-value": "result",
 										"comparison": 4,
 										"second-value": "dice_max"
 									}
@@ -535,7 +531,7 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 692996833198467,
+									"sid": 842000077409238,
 									"parameters": {
 										"variable": "dice_amount",
 										"value": "dice_min"
@@ -544,13 +540,13 @@
 								{
 									"id": "set-text",
 									"objectClass": "menu_dice_amount_text",
-									"sid": 249988847525110,
+									"sid": 612372374977656,
 									"parameters": {
 										"text": "dice_amount"
 									}
 								}
 							],
-							"sid": 652997310657899
+							"sid": 262248169925111
 						},
 						{
 							"eventType": "block",
@@ -558,9 +554,9 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 788575907127767,
+									"sid": 167943208365964,
 									"parameters": {
-										"first-value": "Function.Param(0)",
+										"first-value": "result",
 										"comparison": 2,
 										"second-value": "dice_min"
 									}
@@ -570,7 +566,7 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 495997511284509,
+									"sid": 849397796465510,
 									"parameters": {
 										"variable": "dice_amount",
 										"value": "dice_max"
@@ -579,13 +575,13 @@
 								{
 									"id": "set-text",
 									"objectClass": "menu_dice_amount_text",
-									"sid": 695190728955421,
+									"sid": 959696183682724,
 									"parameters": {
 										"text": "dice_amount"
 									}
 								}
 							],
-							"sid": 355250930691943
+							"sid": 137065824211548
 						}
 					]
 				},
@@ -647,15 +643,11 @@
 									],
 									"actions": [
 										{
-											"id": "call-function",
-											"objectClass": "Function",
-											"sid": 816780852606112,
-											"parameters": {
-												"name": "\"updateCounterMenuAmount\"",
-												"parameter-n": [
-													"counter_amount + menu_amount_arrow.action"
-												]
-											}
+											"callFunction": "updateCounterMenuAmount",
+											"sid": 860904762312642,
+											"parameters": [
+												"counter_amount + menu_amount_arrow.action"
+											]
 										}
 									],
 									"sid": 889654271954767
@@ -676,15 +668,11 @@
 									],
 									"actions": [
 										{
-											"id": "call-function",
-											"objectClass": "Function",
-											"sid": 925448965129438,
-											"parameters": {
-												"name": "\"updateDiceMenuAmount\"",
-												"parameter-n": [
-													"dice_amount + menu_amount_arrow.action"
-												]
-											}
+											"callFunction": "updateDiceMenuAmount",
+											"sid": 986788642064547,
+											"parameters": [
+												"dice_amount + menu_amount_arrow.action"
+											]
 										}
 									],
 									"sid": 538158690489773

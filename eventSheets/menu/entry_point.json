@@ -66,13 +66,8 @@
 					],
 					"actions": [
 						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 491395374584402,
-							"parameters": {
-								"name": "\"setUpLog\"",
-								"parameter-n": []
-							}
+							"callFunction": "setUpLog",
+							"sid": 149022966015960
 						},
 						{
 							"id": "wait",

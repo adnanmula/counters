@@ -111,15 +111,11 @@
 									}
 								},
 								{
-									"id": "call-function",
-									"objectClass": "Function",
-									"sid": 843554223732992,
-									"parameters": {
-										"name": "\"rollCoin\"",
-										"parameter-n": [
-											"2_sided_dice.UID"
-										]
-									}
+									"callFunction": "rollCoin",
+									"sid": 426919550941475,
+									"parameters": [
+										"2_sided_dice.UID"
+									]
 								}
 							],
 							"sid": 877924490024515
@@ -171,15 +167,11 @@
 									}
 								},
 								{
-									"id": "call-function",
-									"objectClass": "Function",
-									"sid": 919812131090084,
-									"parameters": {
-										"name": "\"rollDice\"",
-										"parameter-n": [
-											"generic_dice.UID"
-										]
-									}
+									"callFunction": "rollDice",
+									"sid": 818510992891069,
+									"parameters": [
+										"generic_dice.UID"
+									]
 								}
 							],
 							"sid": 853477865939894
@@ -190,7 +182,7 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 853633945472929,
+									"sid": 659491258253383,
 									"parameters": {
 										"first-value": "faces",
 										"comparison": 1,
@@ -200,7 +192,7 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 898728685872550,
+									"sid": 394076420166995,
 									"parameters": {
 										"first-value": "faces",
 										"comparison": 1,
@@ -232,15 +224,11 @@
 									}
 								},
 								{
-									"id": "call-function",
-									"objectClass": "Function",
-									"sid": 509834353802618,
-									"parameters": {
-										"name": "\"rollDice\"",
-										"parameter-n": [
-											"generic_dice.UID"
-										]
-									}
+									"callFunction": "rollDice",
+									"sid": 639974544107546,
+									"parameters": [
+										"generic_dice.UID"
+									]
 								}
 							],
 							"sid": 214783565607461
@@ -272,15 +260,11 @@
 					],
 					"actions": [
 						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 627660285973829,
-							"parameters": {
-								"name": "\"rollDice\"",
-								"parameter-n": [
-									"pixel_text.base_uid"
-								]
-							}
+							"callFunction": "rollDice",
+							"sid": 639258142783250,
+							"parameters": [
+								"pixel_text.base_uid"
+							]
 						}
 					],
 					"sid": 186045617461969
@@ -300,33 +284,35 @@
 					],
 					"actions": [
 						{
-							"id": "call-function",
-							"objectClass": "Function",
-							"sid": 734982469848081,
-							"parameters": {
-								"name": "\"rollCoin\"",
-								"parameter-n": [
-									"2_sided_dice.UID"
-								]
-							}
+							"callFunction": "rollCoin",
+							"sid": 818066873138559,
+							"parameters": [
+								"2_sided_dice.UID"
+							]
 						}
 					],
 					"sid": 354798739649399
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"functionName": "rollDice",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
 						{
-							"id": "on-function",
-							"objectClass": "Function",
-							"sid": 532802810404534,
-							"parameters": {
-								"name": "\"rollDice\""
-							}
+							"name": "faces",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 509233171788190
 						}
 					],
+					"eventType": "function-block",
+					"conditions": [],
 					"actions": [],
-					"sid": 631819958757639,
+					"sid": 574712730646053,
 					"children": [
 						{
 							"eventType": "variable",
@@ -336,7 +322,7 @@
 							"comment": "",
 							"isStatic": false,
 							"isConstant": false,
-							"sid": 936510532138605
+							"sid": 615897246461645
 						},
 						{
 							"eventType": "block",
@@ -344,14 +330,14 @@
 								{
 									"id": "pick-by-unique-id",
 									"objectClass": "dices",
-									"sid": 584833877944416,
+									"sid": 151668709081666,
 									"parameters": {
-										"unique-id": "Function.Param(0)"
+										"unique-id": "faces"
 									}
 								}
 							],
 							"actions": [],
-							"sid": 596782900211100,
+							"sid": 473894942477256,
 							"children": [
 								{
 									"eventType": "block",
@@ -359,7 +345,7 @@
 										{
 											"id": "is-boolean-instance-variable-set",
 											"objectClass": "dices",
-											"sid": 794579575487322,
+											"sid": 632054403799928,
 											"parameters": {
 												"instance-variable": "custom"
 											}
@@ -369,14 +355,14 @@
 										{
 											"id": "set-eventvar-value",
 											"objectClass": "System",
-											"sid": 890032377281007,
+											"sid": 134321257746960,
 											"parameters": {
 												"variable": "result",
 												"value": "int(((floor(random(0, 1) * 6)) + 1) & \"\" & ((floor(random(0, 1) * 6)) + 1))"
 											}
 										}
 									],
-									"sid": 746545246165095,
+									"sid": 409845581394204,
 									"children": [
 										{
 											"eventType": "block",
@@ -384,7 +370,7 @@
 												{
 													"id": "pick-by-unique-id",
 													"objectClass": "pixel_text",
-													"sid": 823314093779813,
+													"sid": 364510976788021,
 													"parameters": {
 														"unique-id": "dices.text_uid"
 													}
@@ -394,24 +380,20 @@
 												{
 													"id": "set-text",
 													"objectClass": "pixel_text",
-													"sid": 108198470651209,
+													"sid": 688285715463228,
 													"parameters": {
 														"text": "result"
 													}
 												},
 												{
-													"id": "call-function",
-													"objectClass": "Function",
-													"sid": 170357307703080,
-													"parameters": {
-														"name": "\"addLog\"",
-														"parameter-n": [
-															"\"2d6\" & \": \"  & result"
-														]
-													}
+													"callFunction": "addLog",
+													"sid": 685007813734993,
+													"parameters": [
+														"\"2d6\" & \": \"  & result"
+													]
 												}
 											],
-											"sid": 622664813155677
+											"sid": 264515226602821
 										}
 									]
 								},
@@ -421,21 +403,21 @@
 										{
 											"id": "else",
 											"objectClass": "System",
-											"sid": 581347474272127
+											"sid": 294924160576322
 										}
 									],
 									"actions": [
 										{
 											"id": "set-eventvar-value",
 											"objectClass": "System",
-											"sid": 919698490340869,
+											"sid": 757554412602356,
 											"parameters": {
 												"variable": "result",
 												"value": "(floor(random(0, 1) * dices.sides)) + 1"
 											}
 										}
 									],
-									"sid": 987332114640054,
+									"sid": 823879106134899,
 									"children": [
 										{
 											"eventType": "block",
@@ -443,7 +425,7 @@
 												{
 													"id": "pick-by-unique-id",
 													"objectClass": "pixel_text",
-													"sid": 530840417919032,
+													"sid": 492871974110025,
 													"parameters": {
 														"unique-id": "dices.text_uid"
 													}
@@ -453,13 +435,13 @@
 												{
 													"id": "set-text",
 													"objectClass": "pixel_text",
-													"sid": 466499955984694,
+													"sid": 680317547097463,
 													"parameters": {
 														"text": "result"
 													}
 												}
 											],
-											"sid": 711412292708970,
+											"sid": 871317503521773,
 											"children": [
 												{
 													"eventType": "block",
@@ -467,7 +449,7 @@
 														{
 															"id": "compare-two-values",
 															"objectClass": "System",
-															"sid": 186191693254779,
+															"sid": 713228759560305,
 															"parameters": {
 																"first-value": "len(str(dices.sides))",
 																"comparison": 0,
@@ -477,18 +459,14 @@
 													],
 													"actions": [
 														{
-															"id": "call-function",
-															"objectClass": "Function",
-															"sid": 191199343498255,
-															"parameters": {
-																"name": "\"addLog\"",
-																"parameter-n": [
-																	"\"d\" & dices.sides & \":\" &  \"  \" & result"
-																]
-															}
+															"callFunction": "addLog",
+															"sid": 518774963074577,
+															"parameters": [
+																"\"d\" & dices.sides & \":\" &  \"  \" & result"
+															]
 														}
 													],
-													"sid": 630321113578072
+													"sid": 542376551696025
 												},
 												{
 													"eventType": "block",
@@ -496,7 +474,7 @@
 														{
 															"id": "compare-two-values",
 															"objectClass": "System",
-															"sid": 301448482315120,
+															"sid": 166532296972158,
 															"parameters": {
 																"first-value": "len(str(dices.sides))",
 																"comparison": 0,
@@ -506,18 +484,14 @@
 													],
 													"actions": [
 														{
-															"id": "call-function",
-															"objectClass": "Function",
-															"sid": 824097462333573,
-															"parameters": {
-																"name": "\"addLog\"",
-																"parameter-n": [
-																	"\"d\" & dices.sides & \":\" &  \" \" & result"
-																]
-															}
+															"callFunction": "addLog",
+															"sid": 115952580521597,
+															"parameters": [
+																"\"d\" & dices.sides & \":\" &  \" \" & result"
+															]
 														}
 													],
-													"sid": 434541933404934
+													"sid": 664195656402294
 												},
 												{
 													"eventType": "block",
@@ -525,7 +499,7 @@
 														{
 															"id": "compare-two-values",
 															"objectClass": "System",
-															"sid": 845481985193358,
+															"sid": 917032740130835,
 															"parameters": {
 																"first-value": "len(str(dices.sides))",
 																"comparison": 1,
@@ -535,7 +509,7 @@
 														{
 															"id": "compare-two-values",
 															"objectClass": "System",
-															"sid": 263577088978811,
+															"sid": 111901890042490,
 															"parameters": {
 																"first-value": "len(str(dices.sides))",
 																"comparison": 1,
@@ -545,18 +519,14 @@
 													],
 													"actions": [
 														{
-															"id": "call-function",
-															"objectClass": "Function",
-															"sid": 180545913343719,
-															"parameters": {
-																"name": "\"addLog\"",
-																"parameter-n": [
-																	"\"d\" & dices.sides & \":\" &  \"\" & result"
-																]
-															}
+															"callFunction": "addLog",
+															"sid": 806548738705727,
+															"parameters": [
+																"\"d\" & dices.sides & \":\" &  \"\" & result"
+															]
 														}
 													],
-													"sid": 715026177962006
+													"sid": 778940813497757
 												}
 											]
 										}
@@ -567,19 +537,25 @@
 					]
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"functionName": "rollCoin",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
 						{
-							"id": "on-function",
-							"objectClass": "Function",
-							"sid": 153417416101635,
-							"parameters": {
-								"name": "\"rollCoin\""
-							}
+							"name": "uid",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 725541461033827
 						}
 					],
+					"eventType": "function-block",
+					"conditions": [],
 					"actions": [],
-					"sid": 830420439946258,
+					"sid": 390883541272793,
 					"children": [
 						{
 							"eventType": "variable",
@@ -589,7 +565,7 @@
 							"comment": "",
 							"isStatic": false,
 							"isConstant": false,
-							"sid": 997658261183349
+							"sid": 162770599122641
 						},
 						{
 							"eventType": "block",
@@ -597,9 +573,9 @@
 								{
 									"id": "pick-by-unique-id",
 									"objectClass": "2_sided_dice",
-									"sid": 733608664968657,
+									"sid": 334685630612233,
 									"parameters": {
-										"unique-id": "Function.Param(0)"
+										"unique-id": "uid"
 									}
 								}
 							],
@@ -607,7 +583,7 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 838900207191536,
+									"sid": 586485421623568,
 									"parameters": {
 										"variable": "result",
 										"value": "floor(random(0, 1) * 2)"
@@ -616,24 +592,20 @@
 								{
 									"id": "set-animation-frame",
 									"objectClass": "2_sided_dice",
-									"sid": 738757989051155,
+									"sid": 686321485159091,
 									"parameters": {
 										"frame-number": "result"
 									}
 								},
 								{
-									"id": "call-function",
-									"objectClass": "Function",
-									"sid": 464559484013869,
-									"parameters": {
-										"name": "\"addLog\"",
-										"parameter-n": [
-											"\"d2:  \"& (result ? \"tail\" : \"head\")"
-										]
-									}
+									"callFunction": "addLog",
+									"sid": 102398844398746,
+									"parameters": [
+										"\"d2:  \"& (result ? \"tail\" : \"head\")"
+									]
 								}
 							],
-							"sid": 377996515684396
+							"sid": 774437396355220
 						}
 					]
 				}
@@ -648,22 +620,20 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-function",
-							"objectClass": "Function",
-							"sid": 774457165903904,
-							"parameters": {
-								"name": "\"setUpLog\""
-							}
-						}
-					],
+					"functionName": "setUpLog",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
 					"actions": [
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 731122588653492,
+							"sid": 833085331885389,
 							"parameters": {
 								"object-to-create": "log",
 								"layer": "\"main\"",
@@ -676,7 +646,7 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 266784074354914,
+							"sid": 857289009255587,
 							"parameters": {
 								"object-to-create": "clean_log_button",
 								"layer": "\"main\"",
@@ -689,7 +659,7 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 182918416077790,
+							"sid": 775076633636300,
 							"parameters": {
 								"object-to-create": "main_back_button",
 								"layer": "\"main\"",
@@ -702,48 +672,54 @@
 						{
 							"id": "set-size",
 							"objectClass": "log",
-							"sid": 893645121201836,
+							"sid": 824180704216183,
 							"parameters": {
 								"width": "200",
 								"height": "630"
 							}
 						}
 					],
-					"sid": 358842163804364
+					"sid": 874130180390577
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"functionName": "addLog",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
 						{
-							"id": "on-function",
-							"objectClass": "Function",
-							"sid": 490250673601249,
-							"parameters": {
-								"name": "\"addLog\""
-							}
+							"name": "text",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 238945303434744
 						}
 					],
+					"eventType": "function-block",
+					"conditions": [],
 					"actions": [
 						{
 							"id": "push",
 							"objectClass": "logMessages",
-							"sid": 439270894639779,
+							"sid": 859966926420720,
 							"parameters": {
 								"where": "back",
-								"value": "Function.Param(0)",
+								"value": "text",
 								"axis": "x"
 							}
 						},
 						{
 							"id": "set-text",
 							"objectClass": "log",
-							"sid": 340402388998035,
+							"sid": 357931243244007,
 							"parameters": {
 								"text": "\"Log\" & newline"
 							}
 						}
 					],
-					"sid": 392690959252249,
+					"sid": 435390839397777,
 					"children": [
 						{
 							"eventType": "variable",
@@ -753,7 +729,7 @@
 							"comment": "",
 							"isStatic": false,
 							"isConstant": true,
-							"sid": 613410778092097
+							"sid": 723511847071019
 						},
 						{
 							"eventType": "block",
@@ -761,7 +737,7 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 465373917447080,
+									"sid": 838235501395137,
 									"parameters": {
 										"first-value": "logMessages.Width",
 										"comparison": 4,
@@ -773,14 +749,14 @@
 								{
 									"id": "pop",
 									"objectClass": "logMessages",
-									"sid": 376008088532472,
+									"sid": 554272125359903,
 									"parameters": {
 										"where": "front",
 										"axis": "x"
 									}
 								}
 							],
-							"sid": 788724428955063
+							"sid": 431383952181477
 						},
 						{
 							"eventType": "block",
@@ -788,7 +764,7 @@
 								{
 									"id": "for-each-element",
 									"objectClass": "logMessages",
-									"sid": 939443382985196,
+									"sid": 689984303978607,
 									"parameters": {
 										"axes": "x"
 									}
@@ -798,13 +774,13 @@
 								{
 									"id": "append-text",
 									"objectClass": "log",
-									"sid": 693853837402402,
+									"sid": 792128728429413,
 									"parameters": {
 										"text": "logMessages.CurValue & newline"
 									}
 								}
 							],
-							"sid": 859544722801861
+							"sid": 660615875707572
 						}
 					]
 				},

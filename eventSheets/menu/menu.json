@@ -281,7 +281,8 @@
 							"objectClass": "Touch",
 							"sid": 132751890242941,
 							"parameters": {
-								"object": "menu_amount_arrow"
+								"object": "menu_amount_arrow",
+								"type": "start"
 							}
 						}
 					],
@@ -778,7 +779,8 @@
 									"objectClass": "Touch",
 									"sid": 284513597459892,
 									"parameters": {
-										"object": "menu_tab"
+										"object": "menu_tab",
+										"type": "start"
 									}
 								}
 							],
@@ -1010,7 +1012,8 @@
 							"objectClass": "Touch",
 							"sid": 862737013286403,
 							"parameters": {
-								"object": "menu_button"
+								"object": "menu_button",
+								"type": "start"
 							}
 						}
 					],

@@ -84,7 +84,8 @@
 							"objectClass": "System",
 							"sid": 693886362589460,
 							"parameters": {
-								"seconds": "0"
+								"seconds": "0",
+								"use-timescale": true
 							}
 						},
 						{
@@ -145,7 +146,8 @@
 					"objectClass": "Touch",
 					"sid": 648787470640136,
 					"parameters": {
-						"object": "main_back_button"
+						"object": "main_back_button",
+						"type": "start"
 					}
 				},
 				{

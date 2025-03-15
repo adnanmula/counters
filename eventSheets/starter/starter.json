@@ -47,7 +47,8 @@
 					"objectClass": "System",
 					"sid": 461426902542822,
 					"parameters": {
-						"seconds": "0"
+						"seconds": "0",
+						"use-timescale": true
 					}
 				},
 				{
@@ -177,7 +178,8 @@
 					"objectClass": "System",
 					"sid": 478322983859916,
 					"parameters": {
-						"seconds": "2"
+						"seconds": "2",
+						"use-timescale": true
 					}
 				}
 			],

@@ -259,7 +259,8 @@
 							"objectClass": "Touch",
 							"sid": 196056291530361,
 							"parameters": {
-								"object": "pixel_text"
+								"object": "pixel_text",
+								"type": "start"
 							}
 						}
 					],
@@ -286,7 +287,8 @@
 							"objectClass": "Touch",
 							"sid": 807912932626980,
 							"parameters": {
-								"object": "2_sided_dice"
+								"object": "2_sided_dice",
+								"type": "start"
 							}
 						}
 					],
@@ -808,7 +810,8 @@
 							"objectClass": "Touch",
 							"sid": 234789900370388,
 							"parameters": {
-								"object": "clean_log_button"
+								"object": "clean_log_button",
+								"type": "start"
 							}
 						}
 					],

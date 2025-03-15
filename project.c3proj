@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 36000,
+	"savedWithRelease": 43000,
 	"name": "Simple dice and counters",
 	"runtime": "c3",
 	"useWorker": "dom",
@@ -324,9 +324,14 @@
 			}
 		]
 	},
+	"flowcharts": {
+		"items": [],
+		"subfolders": []
+	},
 	"properties": {
 		"description": "Helper app for board and card games, keep track of points, throw dice and coins.",
 		"version": "1.4.0.0",
+		"autoIncrementVersion": false,
 		"author": "Adnan Mula",
 		"authorEmail": "adnan.mula.bakkar@gmail.com",
 		"authorWebsite": "http://adnanmula.com",
@@ -362,7 +367,6 @@
 		"gpuPreference": "high-performance",
 		"scriptsType": "module",
 		"framerateMode": "vsync",
-		"compositingMode": "standard",
 		"sampling": "nearest",
 		"downscaling": "medium",
 		"renderingMode": "auto",
@@ -372,10 +376,9 @@
 		"maxSpriteSheetSize": 2048,
 		"loaderStyle": "progress-logo",
 		"preloadSounds": false,
-		"cordovaiOSScheme": "file",
-		"cordovaAndroidScheme": "file",
-		"autoReloadScriptsOnPreview": false,
-		"exportFileStructure": "flat",
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"exportFileStructure": "folders",
 		"uidAllocationMode": "increment"
 	},
 	"viewportWidth": 360,

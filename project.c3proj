@@ -322,7 +322,7 @@
 	},
 	"properties": {
 		"description": "Helper app for board and card games, keep track of points, throw dice and coins.",
-		"version": "1.4.0.0",
+		"version": "1.5.0.0",
 		"autoIncrementVersion": false,
 		"author": "Adnan Mula",
 		"authorEmail": "adnan.mula.bakkar@gmail.com",

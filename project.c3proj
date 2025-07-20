@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 43000,
+	"savedWithRelease": 44002,
 	"name": "Simple dice and counters",
 	"runtime": "c3",
 	"useWorker": "dom",
@@ -147,6 +147,7 @@
 			}
 		]
 	},
+	"functionsName": "Functions",
 	"autosaveData": null,
 	"containers": [
 		{
@@ -322,7 +323,7 @@
 	},
 	"properties": {
 		"description": "Helper app for board and card games, keep track of points, throw dice and coins.",
-		"version": "1.5.0.0",
+		"version": "1.5.0.1",
 		"autoIncrementVersion": false,
 		"author": "Adnan Mula",
 		"authorEmail": "adnan.mula.bakkar@gmail.com",

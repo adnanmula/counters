@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "starter_wait_seconds",
 			"type": "number",
-			"initialValue": "2",
+			"initialValue": "3",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": true,
@@ -266,15 +266,6 @@
 					}
 				},
 				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 461426902542822,
-					"parameters": {
-						"seconds": "0",
-						"use-timescale": true
-					}
-				},
-				{
 					"id": "set-instvar-value",
 					"objectClass": "starter_touch_marker",
 					"sid": 848157080660568,
@@ -304,6 +295,15 @@
 					"parameters": {
 						"animation": "str(Touch.TouchIndex)",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 839669312283900,
+					"parameters": {
+						"seconds": "0",
+						"use-timescale": true
 					}
 				}
 			],

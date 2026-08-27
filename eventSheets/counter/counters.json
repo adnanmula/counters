@@ -193,13 +193,13 @@
 			"actions": [
 				{
 					"callFunction": "createCounterBlock",
-					"sid": 721922109880440,
+					"sid": 864389594409754,
 					"parameters": [
 						"1",
 						"LayoutWidth/2",
 						"0",
 						"LayoutHeight",
-						"LayoutWidth/2",
+						"LayoutWidth/2 - main_back_button.Height * 2",
 						"90"
 					]
 				},
@@ -214,27 +214,6 @@
 						"LayoutWidth/2",
 						"-90"
 					]
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 726683517765951,
-					"parameters": {
-						"object-to-create": "main_back_button",
-						"layer": "\"main\"",
-						"x": "300",
-						"y": "605",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "main_back_button",
-					"sid": 465327274537873,
-					"parameters": {
-						"frame-number": "1"
-					}
 				}
 			],
 			"sid": 840606545314757
@@ -273,27 +252,6 @@
 						"LayoutWidth/2",
 						"90"
 					]
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 457040930536450,
-					"parameters": {
-						"object-to-create": "main_back_button",
-						"layer": "\"main\"",
-						"x": "300",
-						"y": "605",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "main_back_button",
-					"sid": 473729194700422,
-					"parameters": {
-						"frame-number": "1"
-					}
 				}
 			],
 			"sid": 106035463583386
@@ -344,27 +302,6 @@
 						"LayoutHeight/2",
 						"0"
 					]
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 507446287135123,
-					"parameters": {
-						"object-to-create": "main_back_button",
-						"layer": "\"main\"",
-						"x": "300",
-						"y": "605",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "main_back_button",
-					"sid": 658071670243181,
-					"parameters": {
-						"frame-number": "1"
-					}
 				}
 			],
 			"sid": 657265550163990
@@ -427,27 +364,6 @@
 						"LayoutWidth/2",
 						"-90"
 					]
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 937903928128154,
-					"parameters": {
-						"object-to-create": "main_back_button",
-						"layer": "\"main\"",
-						"x": "300",
-						"y": "605",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "main_back_button",
-					"sid": 250045886771597,
-					"parameters": {
-						"frame-number": "1"
-					}
 				}
 			],
 			"sid": 290494462343925
@@ -510,27 +426,6 @@
 						"LayoutWidth/2",
 						"90"
 					]
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 550876162204769,
-					"parameters": {
-						"object-to-create": "main_back_button",
-						"layer": "\"main\"",
-						"x": "300",
-						"y": "605",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "main_back_button",
-					"sid": 106678818458902,
-					"parameters": {
-						"frame-number": "1"
-					}
 				}
 			],
 			"sid": 909479171267022

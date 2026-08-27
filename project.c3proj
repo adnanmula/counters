@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 44002,
+	"savedWithRelease": 49502,
 	"name": "Simple dice and counters",
 	"runtime": "c3",
 	"useWorker": "dom",
@@ -321,6 +321,10 @@
 		"items": [],
 		"subfolders": []
 	},
+	"models3d": {
+		"items": [],
+		"subfolders": []
+	},
 	"properties": {
 		"description": "Helper app for board and card games, keep track of points, throw dice and coins.",
 		"version": "1.5.0.1",
@@ -330,7 +334,7 @@
 		"authorWebsite": "http://adnanmula.com",
 		"appId": "com.demigrantsoft.counters",
 		"pixelRounding": true,
-		"zAxisScale": "normalized",
+		"zAxisScale": "regular",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
 		"fullscreenMode": "scale-outer",
@@ -357,9 +361,10 @@
 		],
 		"orientations": "portrait",
 		"webgpu": "auto",
+		"multitexturing": "auto",
 		"gpuPreference": "high-performance",
-		"scriptsType": "module",
 		"framerateMode": "vsync",
+		"fixedFramerate": 30,
 		"sampling": "nearest",
 		"downscaling": "medium",
 		"renderingMode": "auto",
@@ -369,10 +374,11 @@
 		"maxSpriteSheetSize": 2048,
 		"loaderStyle": "progress-logo",
 		"preloadSounds": false,
+		"uidAllocationMode": "increment",
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
 		"exportFileStructure": "folders",
-		"uidAllocationMode": "increment"
+		"scriptsType": "module"
 	},
 	"viewportWidth": 360,
 	"viewportHeight": 640,
